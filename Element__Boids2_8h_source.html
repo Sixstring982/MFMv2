@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,8 +107,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* GetName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;B2&quot;</span>; }</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> <a class="code" href="classMFM_1_1Element__Boids2.html">Element_Boids2</a> THE_INSTANCE;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> SUB_TYPE = 2;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> TYPE = <a class="code" href="classMFM_1_1Element__Boids.html">Element_Boids&lt;CC&gt;::TYPE</a>|(SUB_TYPE&lt;&lt;Element_Boids&lt;CC&gt;::TYPE_BITS);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> u32 SUB_TYPE = 2;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> u32 TYPE = <a class="code" href="classMFM_1_1Element__Boids.html">Element_Boids&lt;CC&gt;::TYPE</a>|(SUB_TYPE&lt;&lt;Element_Boids&lt;CC&gt;::TYPE_BITS);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classMFM_1_1Element__Boids2.html">Element_Boids2</a>() { }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
@@ -119,7 +118,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keywordflow">return</span> defaultAtom;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Boids2.html#acbfd33ef65bdbb35fdce23aef5e093b8">   30</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1Element__Boids2.html#acbfd33ef65bdbb35fdce23aef5e093b8">DefaultPhysicsColor</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Boids2.html#acbfd33ef65bdbb35fdce23aef5e093b8">   30</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element__Boids2.html#acbfd33ef65bdbb35fdce23aef5e093b8">DefaultPhysicsColor</a>()<span class="keyword"> const </span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">return</span> 0xfff00000;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
@@ -133,13 +132,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ELEMENT_BOIDS2_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="classMFM_1_1Element__Boids_html"><div class="ttname"><a href="classMFM_1_1Element__Boids.html">MFM::Element_Boids</a></div><div class="ttdef"><b>Definition:</b> Element_Boids.h:111</div></div>
 <div class="ttc" id="classMFM_1_1Element__Boids2_html_a456f6a62ff8b5ce223e431f9143a4c48"><div class="ttname"><a href="classMFM_1_1Element__Boids2.html#a456f6a62ff8b5ce223e431f9143a4c48">MFM::Element_Boids2::GetDefaultAtom</a></div><div class="ttdeci">virtual const T &amp; GetDefaultAtom() const </div><div class="ttdef"><b>Definition:</b> Element_Boids2.h:24</div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="classMFM_1_1Element__Boids2_html_acbfd33ef65bdbb35fdce23aef5e093b8"><div class="ttname"><a href="classMFM_1_1Element__Boids2.html#acbfd33ef65bdbb35fdce23aef5e093b8">MFM::Element_Boids2::DefaultPhysicsColor</a></div><div class="ttdeci">virtual u32 DefaultPhysicsColor() const </div><div class="ttdef"><b>Definition:</b> Element_Boids2.h:30</div></div>
 <div class="ttc" id="classMFM_1_1Element__Boids2_html"><div class="ttname"><a href="classMFM_1_1Element__Boids2.html">MFM::Element_Boids2</a></div><div class="ttdef"><b>Definition:</b> Element_Boids2.h:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:14 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

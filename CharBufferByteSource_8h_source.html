@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classMFM_1_1CharBufferByteSource.html#af356317199ddaea4b4f4337660f2212f">   53</a></span>&#160;    <a class="code" href="classMFM_1_1CharBufferByteSource.html#af356317199ddaea4b4f4337660f2212f">CharBufferByteSource</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * input, <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> length)</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classMFM_1_1CharBufferByteSource.html#af356317199ddaea4b4f4337660f2212f">   53</a></span>&#160;    <a class="code" href="classMFM_1_1CharBufferByteSource.html#af356317199ddaea4b4f4337660f2212f">CharBufferByteSource</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * input, u32 length)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      : m_input(input),</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        m_length(length),</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        m_read(0)</div>
@@ -141,7 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordflow">return</span> m_input[m_read++];</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classMFM_1_1CharBufferByteSource.html#af4cb83e7cb6d3a78d4e5e63a4ecc224a">   90</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1CharBufferByteSource.html#af4cb83e7cb6d3a78d4e5e63a4ecc224a">ChangeBuffer</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * newBuffer, <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> bufferLength)</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classMFM_1_1CharBufferByteSource.html#af4cb83e7cb6d3a78d4e5e63a4ecc224a">   90</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1CharBufferByteSource.html#af4cb83e7cb6d3a78d4e5e63a4ecc224a">ChangeBuffer</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * newBuffer, u32 bufferLength)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordflow">if</span> (!newBuffer)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      {</div>
@@ -162,16 +161,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> * m_input;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> m_length;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    u32 m_length;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> m_read;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    u32 m_read;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  };</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CHARBUFFERBYTESOURCE_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="classMFM_1_1CharBufferByteSource_html_af356317199ddaea4b4f4337660f2212f"><div class="ttname"><a href="classMFM_1_1CharBufferByteSource.html#af356317199ddaea4b4f4337660f2212f">MFM::CharBufferByteSource::CharBufferByteSource</a></div><div class="ttdeci">CharBufferByteSource(const char *input, u32 length)</div><div class="ttdef"><b>Definition:</b> CharBufferByteSource.h:53</div></div>
 <div class="ttc" id="classMFM_1_1CharBufferByteSource_html"><div class="ttname"><a href="classMFM_1_1CharBufferByteSource.html">MFM::CharBufferByteSource</a></div><div class="ttdef"><b>Definition:</b> CharBufferByteSource.h:37</div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="ByteSource_8h_html"><div class="ttname"><a href="ByteSource_8h.html">ByteSource.h</a></div></div>
 <div class="ttc" id="classMFM_1_1ByteSource_html"><div class="ttname"><a href="classMFM_1_1ByteSource.html">MFM::ByteSource</a></div><div class="ttdef"><b>Definition:</b> ByteSource.h:44</div></div>
 <div class="ttc" id="classMFM_1_1CharBufferByteSource_html_af4cb83e7cb6d3a78d4e5e63a4ecc224a"><div class="ttname"><a href="classMFM_1_1CharBufferByteSource.html#af4cb83e7cb6d3a78d4e5e63a4ecc224a">MFM::CharBufferByteSource::ChangeBuffer</a></div><div class="ttdeci">void ChangeBuffer(const char *newBuffer, u32 bufferLength)</div><div class="ttdef"><b>Definition:</b> CharBufferByteSource.h:90</div></div>
@@ -180,7 +178,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:14 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -151,15 +150,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> RegisterFunction(ConfigFunctionCall&lt;GC&gt; &amp; fc) ;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> RegisterElement(<span class="keyword">const</span> UUID &amp; uuid, <a class="code" href="namespaceMFM.html#ad56bd71549af2872cb871a9f08583050">OString16</a> &amp; nick) ;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> RegisterElement(<span class="keyword">const</span> UUID &amp; uuid, OString16 &amp; nick) ;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    Element&lt;CC&gt; * LookupElement(<span class="keyword">const</span> <a class="code" href="namespaceMFM.html#ad56bd71549af2872cb871a9f08583050">OString16</a> &amp; nick) <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    Element&lt;CC&gt; * LookupElement(<span class="keyword">const</span> OString16 &amp; nick) <span class="keyword">const</span> ;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> PlaceAtom(<span class="keyword">const</span> Element&lt;CC&gt; &amp; elt, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> x, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> y, <span class="keyword">const</span> <span class="keywordtype">char</span>* dataStr) ;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> PlaceAtom(<span class="keyword">const</span> Element&lt;CC&gt; &amp; elt, s32 x, s32 y, <span class="keyword">const</span> <span class="keywordtype">char</span>* dataStr) ;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">bool</span> PlaceAtom(<span class="keyword">const</span> Element&lt;CC&gt; &amp; elt, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> x, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> y, <span class="keyword">const</span> BitVector&lt;BPA&gt; &amp; bv) ;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">bool</span> PlaceAtom(<span class="keyword">const</span> Element&lt;CC&gt; &amp; elt, s32 x, s32 y, <span class="keyword">const</span> BitVector&lt;BPA&gt; &amp; bv) ;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> SetTileToExecuteOnly(<span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>&amp; tileLoc, <span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> SetTileToExecuteOnly(<span class="keyword">const</span> SPoint&amp; tileLoc, <span class="keywordtype">bool</span> value);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    LineCountingByteSource &amp; GetByteSource()</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
@@ -176,15 +175,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#define MAX_REGISTERED_FUNCTIONS 64</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span>    ConfigFunctionCall&lt;GC&gt; * (m_registeredFunctions[MAX_REGISTERED_FUNCTIONS]);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> m_registeredFunctionCount;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    u32 m_registeredFunctionCount;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#define MAX_REGISTERED_ELEMENTS 64</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span>    <span class="keyword">struct </span>RegElt {</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      UUID m_uuid;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <a class="code" href="namespaceMFM.html#ad56bd71549af2872cb871a9f08583050">OString16</a> m_nick;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      OString16 m_nick;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      Element&lt;CC&gt; * m_element;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    } m_registeredElements[MAX_REGISTERED_ELEMENTS];</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> m_registeredElementCount;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    u32 m_registeredElementCount;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  };</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
@@ -193,22 +192,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#include &quot;ExternalConfig.tcc&quot;</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EXTERNALCONFIG_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="namespaceMFM_html_a7c8c9ccec4fe4047d908ce5eb5e0b1d4"><div class="ttname"><a href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">MFM::SPoint</a></div><div class="ttdeci">Point&lt; s32 &gt; SPoint</div><div class="ttdef"><b>Definition:</b> Point.h:561</div></div>
 <div class="ttc" id="ConfigFunctionCall_8h_html"><div class="ttname"><a href="ConfigFunctionCall_8h.html">ConfigFunctionCall.h</a></div></div>
 <div class="ttc" id="LineCountingByteSource_8h_html"><div class="ttname"><a href="LineCountingByteSource_8h.html">LineCountingByteSource.h</a></div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="classMFM_1_1ExternalConfig_html_a37e10e95fac88ab0dbca6c4601247f73"><div class="ttname"><a href="classMFM_1_1ExternalConfig.html#a37e10e95fac88ab0dbca6c4601247f73">MFM::ExternalConfig::Read</a></div><div class="ttdeci">bool Read()</div><div class="ttdef"><b>Definition:</b> ExternalConfig.tcc:35</div></div>
 <div class="ttc" id="ByteSink_8h_html"><div class="ttname"><a href="ByteSink_8h.html">ByteSink.h</a></div></div>
 <div class="ttc" id="OverflowableCharBufferByteSink_8h_html"><div class="ttname"><a href="OverflowableCharBufferByteSink_8h.html">OverflowableCharBufferByteSink.h</a></div></div>
-<div class="ttc" id="namespaceMFM_html_ad56bd71549af2872cb871a9f08583050"><div class="ttname"><a href="namespaceMFM.html#ad56bd71549af2872cb871a9f08583050">MFM::OString16</a></div><div class="ttdeci">OverflowableCharBufferByteSink&lt; 16+2 &gt; OString16</div><div class="ttdef"><b>Definition:</b> OverflowableCharBufferByteSink.h:243</div></div>
 <div class="ttc" id="ElementRegistry_8h_html"><div class="ttname"><a href="ElementRegistry_8h.html">ElementRegistry.h</a></div></div>
 <div class="ttc" id="classMFM_1_1ExternalConfig_html_a1688d5e50d4b6f93e60aa2faa0a61e7d"><div class="ttname"><a href="classMFM_1_1ExternalConfig.html#a1688d5e50d4b6f93e60aa2faa0a61e7d">MFM::ExternalConfig::Write</a></div><div class="ttdeci">void Write(ByteSink &amp;byteSink)</div><div class="ttdef"><b>Definition:</b> ExternalConfig.tcc:83</div></div>
 <div class="ttc" id="Grid_8h_html"><div class="ttname"><a href="Grid_8h.html">Grid.h</a></div></div>
-<div class="ttc" id="namespaceMFM_html_af35531c1df0ac4c25ef5937c2c21a78d"><div class="ttname"><a href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">MFM::s32</a></div><div class="ttdeci">int32_t s32</div><div class="ttdef"><b>Definition:</b> itype.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:15 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

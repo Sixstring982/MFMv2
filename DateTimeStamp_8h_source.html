@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,12 +120,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>MFM</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classMFM_1_1DateTimeStamp.html">   37</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classMFM_1_1DateTimeStamp.html">DateTimeStamp</a> : <span class="keyword">public</span> <a class="code" href="classMFM_1_1ByteSerializable.html">ByteSerializable</a> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="namespaceMFM.html#a45ba433d2ad12a66827205a309701c5f">u64</a> m_lastDateTime;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> m_sequence;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    u64 m_lastDateTime;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    u32 m_sequence;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classMFM_1_1DateTimeStamp.html">DateTimeStamp</a>() : m_lastDateTime(0), m_sequence(0) { }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> Reset() { m_lastDateTime = 0; }</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classMFM_1_1DateTimeStamp.html#abc903d80ac80a034207db67fe1df393b">   43</a></span>&#160;    <span class="keyword">virtual</span> Result <a class="code" href="classMFM_1_1DateTimeStamp.html#abc903d80ac80a034207db67fe1df393b">PrintTo</a>(<a class="code" href="classMFM_1_1ByteSink.html">ByteSink</a> &amp; byteSink, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> argument = 0)</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classMFM_1_1DateTimeStamp.html#abc903d80ac80a034207db67fe1df393b">   43</a></span>&#160;    <span class="keyword">virtual</span> Result <a class="code" href="classMFM_1_1DateTimeStamp.html#abc903d80ac80a034207db67fe1df393b">PrintTo</a>(<a class="code" href="classMFM_1_1ByteSink.html">ByteSink</a> &amp; byteSink, s32 argument = 0)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      m_lastDateTime = Utils::GetDateTimeNow();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      byteSink.<a class="code" href="classMFM_1_1ByteSink.html#a86f6367eabe1b973ff14acfa0795a830">Print</a>(m_lastDateTime);</div>
@@ -140,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">return</span> SUCCESS;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classMFM_1_1DateTimeStamp.html#a42e3a9c41d8b61ba1e29ac089837b8fc">   57</a></span>&#160;    <span class="keyword">virtual</span> Result <a class="code" href="classMFM_1_1DateTimeStamp.html#a42e3a9c41d8b61ba1e29ac089837b8fc">ReadFrom</a>(<a class="code" href="classMFM_1_1ByteSource.html">ByteSource</a> &amp; byteSource, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> argument = 0)</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classMFM_1_1DateTimeStamp.html#a42e3a9c41d8b61ba1e29ac089837b8fc">   57</a></span>&#160;    <span class="keyword">virtual</span> Result <a class="code" href="classMFM_1_1DateTimeStamp.html#a42e3a9c41d8b61ba1e29ac089837b8fc">ReadFrom</a>(<a class="code" href="classMFM_1_1ByteSource.html">ByteSource</a> &amp; byteSource, s32 argument = 0)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">return</span> UNSUPPORTED;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
@@ -152,21 +151,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1DateTimeStamp_html"><div class="ttname"><a href="classMFM_1_1DateTimeStamp.html">MFM::DateTimeStamp</a></div><div class="ttdef"><b>Definition:</b> DateTimeStamp.h:37</div></div>
 <div class="ttc" id="ByteSerializable_8h_html"><div class="ttname"><a href="ByteSerializable_8h.html">ByteSerializable.h</a></div></div>
 <div class="ttc" id="classMFM_1_1DateTimeStamp_html_a42e3a9c41d8b61ba1e29ac089837b8fc"><div class="ttname"><a href="classMFM_1_1DateTimeStamp.html#a42e3a9c41d8b61ba1e29ac089837b8fc">MFM::DateTimeStamp::ReadFrom</a></div><div class="ttdeci">virtual Result ReadFrom(ByteSource &amp;byteSource, s32 argument=0)</div><div class="ttdef"><b>Definition:</b> DateTimeStamp.h:57</div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="Utils_8h_html"><div class="ttname"><a href="Utils_8h.html">Utils.h</a></div></div>
 <div class="ttc" id="classMFM_1_1ByteSource_html"><div class="ttname"><a href="classMFM_1_1ByteSource.html">MFM::ByteSource</a></div><div class="ttdef"><b>Definition:</b> ByteSource.h:44</div></div>
 <div class="ttc" id="structMFM_1_1Format_html_af8b0efb1fad45cd8ecaae70c02ec1ceaa0a13c9afc2be34b59492dc497ea85867"><div class="ttname"><a href="structMFM_1_1Format.html#af8b0efb1fad45cd8ecaae70c02ec1ceaa0a13c9afc2be34b59492dc497ea85867">MFM::Format::LEX32</a></div><div class="ttdef"><b>Definition:</b> Format.h:49</div></div>
 <div class="ttc" id="classMFM_1_1ByteSink_html"><div class="ttname"><a href="classMFM_1_1ByteSink.html">MFM::ByteSink</a></div><div class="ttdef"><b>Definition:</b> ByteSink.h:47</div></div>
 <div class="ttc" id="classMFM_1_1ByteSink_html_a86f6367eabe1b973ff14acfa0795a830"><div class="ttname"><a href="classMFM_1_1ByteSink.html#a86f6367eabe1b973ff14acfa0795a830">MFM::ByteSink::Print</a></div><div class="ttdeci">void Print(const char *str, s32 fieldWidth=-1, u8 padChar= ' ')</div><div class="ttdef"><b>Definition:</b> ByteSink.cpp:31</div></div>
 <div class="ttc" id="itype_8h_html"><div class="ttname"><a href="itype_8h.html">itype.h</a></div></div>
-<div class="ttc" id="namespaceMFM_html_a45ba433d2ad12a66827205a309701c5f"><div class="ttname"><a href="namespaceMFM.html#a45ba433d2ad12a66827205a309701c5f">MFM::u64</a></div><div class="ttdeci">uint64_t u64</div><div class="ttdef"><b>Definition:</b> itype.h:61</div></div>
 <div class="ttc" id="classMFM_1_1DateTimeStamp_html_abc903d80ac80a034207db67fe1df393b"><div class="ttname"><a href="classMFM_1_1DateTimeStamp.html#abc903d80ac80a034207db67fe1df393b">MFM::DateTimeStamp::PrintTo</a></div><div class="ttdeci">virtual Result PrintTo(ByteSink &amp;byteSink, s32 argument=0)</div><div class="ttdef"><b>Definition:</b> DateTimeStamp.h:43</div></div>
 <div class="ttc" id="classMFM_1_1ByteSerializable_html"><div class="ttname"><a href="classMFM_1_1ByteSerializable.html">MFM::ByteSerializable</a></div><div class="ttdef"><b>Definition:</b> ByteSerializable.h:45</div></div>
-<div class="ttc" id="namespaceMFM_html_af35531c1df0ac4c25ef5937c2c21a78d"><div class="ttname"><a href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">MFM::s32</a></div><div class="ttdeci">int32_t s32</div><div class="ttdef"><b>Definition:</b> itype.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:15 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

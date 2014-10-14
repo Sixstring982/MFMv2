@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -126,11 +125,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;   <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> BUTTON_BORDER_COLOR = Drawing::GREY10;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> u32 BUTTON_BORDER_COLOR = Drawing::GREY10;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> BUTTON_BACKGROUND_COLOR = Drawing::GREY20;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> u32 BUTTON_BACKGROUND_COLOR = Drawing::GREY20;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> BUTTON_COLOR = Drawing::GREY90;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> u32 BUTTON_COLOR = Drawing::GREY90;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classMFM_1_1Point.html">SPoint</a> m_dimensions;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
@@ -248,9 +247,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1AbstractButton.html#a2d3f32c1bb8807b6bffa3c8e35c53673">PaintComponent</a>(Drawing &amp; d);</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1AbstractButton.html#a6bbd9f9bc5fcb05347f72ce5b04b5143">OnClick</a>(<a class="code" href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">u8</a> button) = 0;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1AbstractButton.html#a6bbd9f9bc5fcb05347f72ce5b04b5143">OnClick</a>(u8 button) = 0;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="classMFM_1_1AbstractButton.html#a363ad857be3a726fc4b42ee8d9b5901b">  323</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1AbstractButton.html#a363ad857be3a726fc4b42ee8d9b5901b">OnPress</a>(<a class="code" href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">u8</a> button)</div>
+<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="classMFM_1_1AbstractButton.html#a363ad857be3a726fc4b42ee8d9b5901b">  323</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1AbstractButton.html#a363ad857be3a726fc4b42ee8d9b5901b">OnPress</a>(u8 button)</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    { }</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  };</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div>
@@ -263,14 +262,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="Panel_8h_html"><div class="ttname"><a href="Panel_8h.html">Panel.h</a></div></div>
 <div class="ttc" id="classMFM_1_1AbstractButton_html_a1b3932bfb2ab06d5e93849fae498c320"><div class="ttname"><a href="classMFM_1_1AbstractButton.html#a1b3932bfb2ab06d5e93849fae498c320">MFM::AbstractButton::HandleResize</a></div><div class="ttdeci">virtual void HandleResize(const UPoint &amp;parentSize)</div><div class="ttdef"><b>Definition:</b> AbstractButton.h:279</div></div>
 <div class="ttc" id="classMFM_1_1AbstractButton_html_a385bb1a4f8530ba6f8e41215f84c919b"><div class="ttname"><a href="classMFM_1_1AbstractButton.html#a385bb1a4f8530ba6f8e41215f84c919b">MFM::AbstractButton::~AbstractButton</a></div><div class="ttdeci">~AbstractButton()</div><div class="ttdef"><b>Definition:</b> AbstractButton.cpp:47</div></div>
-<div class="ttc" id="namespaceMFM_html_ab8c79d22c49af9b5b1f757ae5d436218"><div class="ttname"><a href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">MFM::u8</a></div><div class="ttdeci">uint8_t u8</div><div class="ttdef"><b>Definition:</b> itype.h:58</div></div>
 <div class="ttc" id="classMFM_1_1Drawing_html_afe30dd885cbd5728724c9de34f10afc4"><div class="ttname"><a href="classMFM_1_1Drawing.html#afe30dd885cbd5728724c9de34f10afc4">MFM::Drawing::SetForeground</a></div><div class="ttdeci">u32 SetForeground(const u32 color)</div><div class="ttdef"><b>Definition:</b> Drawing.h:188</div></div>
 <div class="ttc" id="Point_8h_html"><div class="ttname"><a href="Point_8h.html">Point.h</a></div></div>
 <div class="ttc" id="structMFM_1_1MouseButtonEvent_html"><div class="ttname"><a href="structMFM_1_1MouseButtonEvent.html">MFM::MouseButtonEvent</a></div><div class="ttdef"><b>Definition:</b> Panel.h:73</div></div>
 <div class="ttc" id="classMFM_1_1AbstractButton_html"><div class="ttname"><a href="classMFM_1_1AbstractButton.html">MFM::AbstractButton</a></div><div class="ttdef"><b>Definition:</b> AbstractButton.h:44</div></div>
 <div class="ttc" id="classMFM_1_1AbstractButton_html_af0249cc4455bc3d8523c458c157ad75d"><div class="ttname"><a href="classMFM_1_1AbstractButton.html#af0249cc4455bc3d8523c458c157ad75d">MFM::AbstractButton::AbstractButton</a></div><div class="ttdeci">AbstractButton()</div><div class="ttdef"><b>Definition:</b> AbstractButton.cpp:14</div></div>
 <div class="ttc" id="classMFM_1_1AbstractButton_html_abc5af5fa0a8b7b2666d1ed0dd4882832"><div class="ttname"><a href="classMFM_1_1AbstractButton.html#abc5af5fa0a8b7b2666d1ed0dd4882832">MFM::AbstractButton::SetEnabled</a></div><div class="ttdeci">void SetEnabled(bool isEnabled)</div><div class="ttdef"><b>Definition:</b> AbstractButton.h:200</div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="classMFM_1_1Point_html_a3dc1de7350cbd1e82da54c456aabb268"><div class="ttname"><a href="classMFM_1_1Point.html#a3dc1de7350cbd1e82da54c456aabb268">MFM::Point::GetY</a></div><div class="ttdeci">T GetY() const </div><div class="ttdef"><b>Definition:</b> Point.tcc:40</div></div>
 <div class="ttc" id="Drawing_8h_html"><div class="ttname"><a href="Drawing_8h.html">Drawing.h</a></div></div>
 <div class="ttc" id="classMFM_1_1AbstractButton_html_ad48ab0d9ab8d081ce7e904153c264285"><div class="ttname"><a href="classMFM_1_1AbstractButton.html#ad48ab0d9ab8d081ce7e904153c264285">MFM::AbstractButton::GetText</a></div><div class="ttdeci">const char * GetText()</div><div class="ttdef"><b>Definition:</b> AbstractButton.h:224</div></div>
@@ -290,7 +287,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:15 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

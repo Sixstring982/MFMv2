@@ -1,8 +1,7 @@
 var searchData=
 [
   ['cacheat',['CacheAt',['../classMFM_1_1Tile.html#a778540131a25f346539a83380302427f',1,'MFM::Tile']]],
-  ['canmakesigned',['CanMakeSigned',['../namespaceMFM.html#a9628c46ed5a6f5182a4709ef2c2466a5',1,'MFM']]],
-  ['canmakeunsigned',['CanMakeUnsigned',['../namespaceMFM.html#aeb3676c540a9b2f293a06561b95813be',1,'MFM']]],
+  ['canseeatomoftype',['CanSeeAtomOfType',['../classMFM_1_1EventWindow.html#a43cd56dbceeb4aab83288eec3bca9a6c',1,'MFM::EventWindow']]],
   ['canwrite',['CanWrite',['../classMFM_1_1ByteSink.html#aabf2e2d4e21f28b891fb593c4d005ea4',1,'MFM::ByteSink::CanWrite()'],['../classMFM_1_1DiscardBytes.html#a06131f68a916bc66ebe925f889ed65be',1,'MFM::DiscardBytes::CanWrite()'],['../classMFM_1_1CharBufferByteSink.html#a8e975fe3fd34222d7b8564b2556e1e34',1,'MFM::CharBufferByteSink::CanWrite()'],['../classMFM_1_1LineTailByteSink.html#a96b0b35d7b29775995ecc9ceba07cb81',1,'MFM::LineTailByteSink::CanWrite()'],['../classMFM_1_1OverflowableCharBufferByteSink.html#ab8462dfc8c7b1d72c90e8cda0264f7d7',1,'MFM::OverflowableCharBufferByteSink::CanWrite()'],['../classMFM_1_1TeeByteSink.html#aa77e2830dedce34eaf043ec29ca87996',1,'MFM::TeeByteSink::CanWrite()'],['../classMFM_1_1FileByteSink.html#a2d210a623b7ef109a63992aab772d0cc',1,'MFM::FileByteSink::CanWrite()']]],
   ['ccwdir',['CCWDir',['../classMFM_1_1Dirs.html#ae55fb0ecde1c7d61a918e9368c80e46b',1,'MFM::Dirs']]],
   ['changebuffer',['ChangeBuffer',['../classMFM_1_1CharBufferByteSource.html#af4cb83e7cb6d3a78d4e5e63a4ecc224a',1,'MFM::CharBufferByteSource']]],

@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -151,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> m_valid;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> <a class="code" href="classMFM_1_1ConfigFunctionCall.html#a8b4ed3499bf8f732469a276f3e9d8965">SkipToNextArg</a>(<a class="code" href="classMFM_1_1LineCountingByteSource.html">LineCountingByteSource</a> &amp; in) ;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    s32 <a class="code" href="classMFM_1_1ConfigFunctionCall.html#a8b4ed3499bf8f732469a276f3e9d8965">SkipToNextArg</a>(<a class="code" href="classMFM_1_1LineCountingByteSource.html">LineCountingByteSource</a> &amp; in) ;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1ConfigFunctionCall.html#a68e092311452f601237eebd31a095ebd">SkipToNextExistingArg</a>(<a class="code" href="classMFM_1_1LineCountingByteSource.html">LineCountingByteSource</a> &amp; in, <span class="keyword">const</span> <span class="keywordtype">char</span> * description) ;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
@@ -170,11 +169,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1ConfigFunctionCall_html_a8b4ed3499bf8f732469a276f3e9d8965"><div class="ttname"><a href="classMFM_1_1ConfigFunctionCall.html#a8b4ed3499bf8f732469a276f3e9d8965">MFM::ConfigFunctionCall::SkipToNextArg</a></div><div class="ttdeci">s32 SkipToNextArg(LineCountingByteSource &amp;in)</div><div class="ttdef"><b>Definition:</b> ConfigFunctionCall.tcc:31</div></div>
 <div class="ttc" id="classMFM_1_1ByteSink_html"><div class="ttname"><a href="classMFM_1_1ByteSink.html">MFM::ByteSink</a></div><div class="ttdef"><b>Definition:</b> ByteSink.h:47</div></div>
 <div class="ttc" id="classMFM_1_1ConfigFunctionCall_html_a68e092311452f601237eebd31a095ebd"><div class="ttname"><a href="classMFM_1_1ConfigFunctionCall.html#a68e092311452f601237eebd31a095ebd">MFM::ConfigFunctionCall::SkipToNextExistingArg</a></div><div class="ttdeci">bool SkipToNextExistingArg(LineCountingByteSource &amp;in, const char *description)</div><div class="ttdef"><b>Definition:</b> ConfigFunctionCall.tcc:6</div></div>
-<div class="ttc" id="namespaceMFM_html_af35531c1df0ac4c25ef5937c2c21a78d"><div class="ttname"><a href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">MFM::s32</a></div><div class="ttdeci">int32_t s32</div><div class="ttdef"><b>Definition:</b> itype.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:15 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

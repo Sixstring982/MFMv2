@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -73,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceMFM.html">MFM</a></li><li class="navelem"><a class="el" href="classMFM_1_1ColorMap.html">ColorMap</a></li>  </ul>
+<li class="navelem"><b>MFM</b></li><li class="navelem"><a class="el" href="classMFM_1_1ColorMap.html">ColorMap</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -95,28 +94,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">MFM::ColorMap Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="ColorMap_8h_source.html">ColorMap.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afbd393e71c49a99c27a3f78c39cd40b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1ColorMap.html#afbd393e71c49a99c27a3f78c39cd40b9">GetSelectedColor</a> (float value, float min, float max, <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> badColor) const </td></tr>
+<tr class="memitem:afbd393e71c49a99c27a3f78c39cd40b9"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1ColorMap.html#afbd393e71c49a99c27a3f78c39cd40b9">GetSelectedColor</a> (float value, float min, float max, u32 badColor) const </td></tr>
 <tr class="separator:afbd393e71c49a99c27a3f78c39cd40b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9789772a4ce1f8a63885a9040c181276"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1ColorMap.html#a9789772a4ce1f8a63885a9040c181276">GetInterpolatedColor</a> (float value, float min, float max, <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> badColor) const </td></tr>
+<tr class="memitem:a9789772a4ce1f8a63885a9040c181276"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1ColorMap.html#a9789772a4ce1f8a63885a9040c181276">GetInterpolatedColor</a> (float value, float min, float max, u32 badColor) const </td></tr>
 <tr class="separator:a9789772a4ce1f8a63885a9040c181276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aabe1ac3b76beb38785ad30b4394102f1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1ColorMap.html#aabe1ac3b76beb38785ad30b4394102f1">GetMapCount</a> ()</td></tr>
+<tr class="memitem:aabe1ac3b76beb38785ad30b4394102f1"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1ColorMap.html#aabe1ac3b76beb38785ad30b4394102f1">GetMapCount</a> ()</td></tr>
 <tr class="separator:aabe1ac3b76beb38785ad30b4394102f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12d4ca683713ac636e23c94ef968a136"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMFM_1_1ColorMap.html">ColorMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1ColorMap.html#a12d4ca683713ac636e23c94ef968a136">GetMap</a> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> index)</td></tr>
+<tr class="memitem:a12d4ca683713ac636e23c94ef968a136"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMFM_1_1ColorMap.html">ColorMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1ColorMap.html#a12d4ca683713ac636e23c94ef968a136">GetMap</a> (u32 index)</td></tr>
 <tr class="separator:a12d4ca683713ac636e23c94ef968a136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A bunch of color scales and gradients for heat-map and similar types of displays. Based on suggestions from colorbrewer2.org, restricting to 'colorblind safe' and 'print friendly' choices. We include samples of 'sequential', 'diverging', and 'qualitative' palettes (see colorbrewer2.org for details), and both sets of five colors, which have a distinguished center color, and sets of six colors, which have a distinguished center 'break' between two colors </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a9789772a4ce1f8a63885a9040c181276"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> MFM::ColorMap::GetInterpolatedColor </td>
+          <td class="memname">u32 MFM::ColorMap::GetInterpolatedColor </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>value</em>, </td>
@@ -136,7 +139,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td>
+          <td class="paramtype">u32&#160;</td>
           <td class="paramname"><em>badColor</em>&#160;</td>
         </tr>
         <tr>
@@ -160,7 +163,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classMFM_1_1ColorMap.html">ColorMap</a> &amp; MFM::ColorMap::GetMap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td>
+          <td class="paramtype">u32&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
@@ -190,7 +193,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> MFM::ColorMap::GetMapCount </td>
+          <td class="memname">u32 MFM::ColorMap::GetMapCount </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -212,7 +215,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> MFM::ColorMap::GetSelectedColor </td>
+          <td class="memname">u32 MFM::ColorMap::GetSelectedColor </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>value</em>, </td>
@@ -232,7 +235,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td>
+          <td class="paramtype">u32&#160;</td>
           <td class="paramname"><em>badColor</em>&#160;</td>
         </tr>
         <tr>
@@ -253,7 +256,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:18 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:30 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

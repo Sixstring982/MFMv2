@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['makemaskclip',['MakeMaskClip',['../namespaceMFM.html#adcb5f6a5168e8d2ec3d9bd31b9bf518a',1,'MFM']]],
-  ['makesigned',['MakeSigned',['../namespaceMFM.html#a9a221cd60dd81fbe2bb32b58cd470a74',1,'MFM']]],
-  ['makeunsigned',['MakeUnsigned',['../namespaceMFM.html#ab9309b192e885625046b0f507500fb30',1,'MFM']]],
-  ['map',['Map',['../namespaceMFM.html#adc5ef5db6f3540cad83e2997a014db08',1,'MFM::Map(const SPoint &amp;in)'],['../namespaceMFM.html#aa5638d0423348a39b231d48861130603',1,'MFM::Map(const SPoint &amp;in, const PointSymmetry psym, const SPoint &amp;ifNone)']]],
   ['mapgridtotile',['MapGridToTile',['../classMFM_1_1Grid.html#a0baeddc6bd91f5bf5c96bb9a6070d64e',1,'MFM::Grid']]],
   ['mapgridtouncachedtile',['MapGridToUncachedTile',['../classMFM_1_1Grid.html#a06fd2237f35cd373a9185a35a013f7db',1,'MFM::Grid']]],
   ['maptotilevalid',['MapToTileValid',['../classMFM_1_1EventWindow.html#a71c7d90d48e638ca9576499a39415ba6',1,'MFM::EventWindow']]],

@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -158,42 +157,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <a class="code" href="classMFM_1_1Element.html#ab4d7e6b9447f709ea007ca245c12f4cf">Element&lt;CC&gt;::SetName</a>(<span class="stringliteral">&quot;Consumer&quot;</span>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="namespaceMFM.html#a45ba433d2ad12a66827205a309701c5f">u64</a> GetAndResetDatumsConsumed(Tile&lt;CC&gt; &amp; t)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    u64 GetAndResetDatumsConsumed(Tile&lt;CC&gt; &amp; t)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      ElementTable&lt;CC&gt; &amp; et = t.GetElementTable();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <a class="code" href="namespaceMFM.html#a45ba433d2ad12a66827205a309701c5f">u64</a> * datap = et.GetDataIfRegistered(this-&gt;<a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>(), DATA_SLOT_COUNT);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      u64 * datap = et.GetDataIfRegistered(this-&gt;<a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>(), DATA_SLOT_COUNT);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">if</span> (!datap)</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <a class="code" href="namespaceMFM.html#a45ba433d2ad12a66827205a309701c5f">u64</a> ret = datap[DATUMS_CONSUMED_SLOT];</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      u64 ret = datap[DATUMS_CONSUMED_SLOT];</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      datap[DATUMS_CONSUMED_SLOT] = 0;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="namespaceMFM.html#a45ba433d2ad12a66827205a309701c5f">u64</a> GetAndResetBucketError(Tile&lt;CC&gt; &amp; t)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    u64 GetAndResetBucketError(Tile&lt;CC&gt; &amp; t)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      ElementTable&lt;CC&gt; &amp; et = t.GetElementTable();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="namespaceMFM.html#a45ba433d2ad12a66827205a309701c5f">u64</a> * datap = et.GetDataIfRegistered(this-&gt;<a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>(), DATA_SLOT_COUNT);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      u64 * datap = et.GetDataIfRegistered(this-&gt;<a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>(), DATA_SLOT_COUNT);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordflow">if</span> (!datap)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="namespaceMFM.html#a45ba433d2ad12a66827205a309701c5f">u64</a> ret = datap[TOTAL_BUCKET_ERROR_SLOT];</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      u64 ret = datap[TOTAL_BUCKET_ERROR_SLOT];</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      datap[TOTAL_BUCKET_ERROR_SLOT] = 0;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Consumer.html#a91165bdbb695a0310656090d88fd516f">  100</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1Element__Consumer.html#a91165bdbb695a0310656090d88fd516f">PercentMovable</a>(<span class="keyword">const</span> T&amp; you,</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Consumer.html#a91165bdbb695a0310656090d88fd516f">  100</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element__Consumer.html#a91165bdbb695a0310656090d88fd516f">PercentMovable</a>(<span class="keyword">const</span> T&amp; you,</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                               <span class="keyword">const</span> T&amp; me, <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; offset)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Consumer.html#a6c0a9613bc9aaa7b0924e5db464ef72e">  106</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1Element__Consumer.html#a6c0a9613bc9aaa7b0924e5db464ef72e">DefaultPhysicsColor</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Consumer.html#a6c0a9613bc9aaa7b0924e5db464ef72e">  106</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element__Consumer.html#a6c0a9613bc9aaa7b0924e5db464ef72e">DefaultPhysicsColor</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="keywordflow">return</span> 0xff202030;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Consumer.html#ab97e61a6927f93669a52ef9438509602">  111</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1Element__Consumer.html#ab97e61a6927f93669a52ef9438509602">DefaultLowlightColor</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Consumer.html#ab97e61a6927f93669a52ef9438509602">  111</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element__Consumer.html#ab97e61a6927f93669a52ef9438509602">DefaultLowlightColor</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keywordflow">return</span> 0xff101018;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
@@ -212,7 +211,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      T <span class="keyword">self</span> = window.<a class="code" href="classMFM_1_1EventWindow.html#a9c406623e599af246697ac674dcce529">GetCenterAtom</a>();</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="comment">// Find nearest-on-right consumable, if any</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> i = 1; i &lt; R; ++i) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="keywordflow">for</span> (u32 i = 1; i &lt; R; ++i) {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="classMFM_1_1Point.html">SPoint</a> consPt(i,0);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">if</span>(window.<a class="code" href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">GetRelativeAtom</a>(consPt).GetType() == <a class="code" href="classMFM_1_1Element__Data.html">Element_Data&lt;CC&gt;::TYPE</a>())          {</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="comment">// Use the expanded info maintained by reprovert to</span></div>
@@ -221,27 +220,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="comment">// does increase the overall sorting error a bit.  But it&#39;s so</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="comment">// damn robust.  Turn off an output tile and it starts sorting</span></div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> above = this-&gt;GetAbove(<span class="keyword">self</span>,0);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> below = this-&gt;GetBelow(<span class="keyword">self</span>,0);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> range = above + below + 1;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> bucketSize = DATA_MAXVAL / range;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            u32 above = this-&gt;GetAbove(<span class="keyword">self</span>,0);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            u32 below = this-&gt;GetBelow(<span class="keyword">self</span>,0);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            u32 range = above + below + 1;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keyword">const</span> u32 bucketSize = DATA_MAXVAL / range;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> val = <a class="code" href="classMFM_1_1Element__Data.html">Element_Data&lt;CC&gt;::THE_INSTANCE</a>.GetDatum(window.<a class="code" href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">GetRelativeAtom</a>(consPt), 0);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            u32 val = <a class="code" href="classMFM_1_1Element__Data.html">Element_Data&lt;CC&gt;::THE_INSTANCE</a>.GetDatum(window.<a class="code" href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">GetRelativeAtom</a>(consPt), 0);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> minBucketVal = bucketSize * above;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> maxBucketVal = bucketSize * (above + 1);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> midpoint = (maxBucketVal+minBucketVal)/2;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            u32 minBucketVal = bucketSize * above;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            u32 maxBucketVal = bucketSize * (above + 1);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            u32 midpoint = (maxBucketVal+minBucketVal)/2;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> diff;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            u32 diff;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordflow">if</span> (val &lt; midpoint) diff = midpoint - val;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordflow">else</span> diff = val - midpoint;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> bucketsOff = diff / bucketSize;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            u32 bucketsOff = diff / bucketSize;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <a class="code" href="classMFM_1_1Tile.html">Tile&lt;CC&gt;</a> &amp; tile = window.<a class="code" href="classMFM_1_1EventWindow.html#a7a606f42f900437f90286c47077105a6">GetTile</a>();</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <a class="code" href="classMFM_1_1ElementTable.html">ElementTable&lt;CC&gt;</a> &amp; et = tile.<a class="code" href="classMFM_1_1Tile.html#a96b8bff13d442825bc3c52080cef933a">GetElementTable</a>();</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <a class="code" href="namespaceMFM.html#a45ba433d2ad12a66827205a309701c5f">u64</a> * datap = et.GetDataAndRegister(this-&gt;<a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>(), DATA_SLOT_COUNT);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            u64 * datap = et.GetDataAndRegister(this-&gt;<a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>(), DATA_SLOT_COUNT);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            ++datap[DATUMS_CONSUMED_SLOT];                 <span class="comment">// Count datums consumed</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            datap[TOTAL_BUCKET_ERROR_SLOT] += bucketsOff;  <span class="comment">// Count total bucket error</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
@@ -280,8 +279,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1Element_html_ab4d7e6b9447f709ea007ca245c12f4cf"><div class="ttname"><a href="classMFM_1_1Element.html#ab4d7e6b9447f709ea007ca245c12f4cf">MFM::Element::SetName</a></div><div class="ttdeci">void SetName(const char *name)</div><div class="ttdef"><b>Definition:</b> Element.h:209</div></div>
 <div class="ttc" id="classMFM_1_1Element_html_ae1dd9fcdee4a757fea02a7dba3e7c2ad"><div class="ttname"><a href="classMFM_1_1Element.html#ae1dd9fcdee4a757fea02a7dba3e7c2ad">MFM::Element::SetAtomicSymbol</a></div><div class="ttdeci">void SetAtomicSymbol(const char *symbol)</div><div class="ttdef"><b>Definition:</b> Element.h:193</div></div>
 <div class="ttc" id="ElementTable_8h_html"><div class="ttname"><a href="ElementTable_8h.html">ElementTable.h</a></div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_ad2763d07d8381b8097f59a7e344094c6"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">MFM::EventWindow::GetRelativeAtom</a></div><div class="ttdeci">const T &amp; GetRelativeAtom(const SPoint &amp;offset) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:26</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_ad2763d07d8381b8097f59a7e344094c6"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">MFM::EventWindow::GetRelativeAtom</a></div><div class="ttdeci">const T &amp; GetRelativeAtom(const SPoint &amp;offset) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:50</div></div>
 <div class="ttc" id="classMFM_1_1Element__Consumer_html"><div class="ttname"><a href="classMFM_1_1Element__Consumer.html">MFM::Element_Consumer</a></div><div class="ttdef"><b>Definition:</b> Element_Consumer.h:45</div></div>
 <div class="ttc" id="Element__Emitter_8h_html"><div class="ttname"><a href="Element__Emitter_8h.html">Element_Emitter.h</a></div></div>
 <div class="ttc" id="classMFM_1_1EventWindow_html_a9c406623e599af246697ac674dcce529"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a9c406623e599af246697ac674dcce529">MFM::EventWindow::GetCenterAtom</a></div><div class="ttdeci">const T &amp; GetCenterAtom() const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:207</div></div>
@@ -300,15 +298,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="itype_8h_html"><div class="ttname"><a href="itype_8h.html">itype.h</a></div></div>
 <div class="ttc" id="classMFM_1_1EventWindow_html"><div class="ttname"><a href="classMFM_1_1EventWindow.html">MFM::EventWindow</a></div><div class="ttdef"><b>Definition:</b> ElementTable.h:43</div></div>
 <div class="ttc" id="AbstractElement__Reprovert_8h_html"><div class="ttname"><a href="AbstractElement__Reprovert_8h.html">AbstractElement_Reprovert.h</a></div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a4b499a32d5c8423e8cc72e7abf103f5b"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a4b499a32d5c8423e8cc72e7abf103f5b">MFM::EventWindow::SetRelativeAtom</a></div><div class="ttdeci">bool SetRelativeAtom(const SPoint &amp;offset, const T &amp;atom)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:14</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a4b499a32d5c8423e8cc72e7abf103f5b"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a4b499a32d5c8423e8cc72e7abf103f5b">MFM::EventWindow::SetRelativeAtom</a></div><div class="ttdeci">bool SetRelativeAtom(const SPoint &amp;offset, const T &amp;atom)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:39</div></div>
 <div class="ttc" id="Element_8h_html"><div class="ttname"><a href="Element_8h.html">Element.h</a></div></div>
-<div class="ttc" id="namespaceMFM_html_a45ba433d2ad12a66827205a309701c5f"><div class="ttname"><a href="namespaceMFM.html#a45ba433d2ad12a66827205a309701c5f">MFM::u64</a></div><div class="ttdeci">uint64_t u64</div><div class="ttdef"><b>Definition:</b> itype.h:61</div></div>
 <div class="ttc" id="Element__Data_8h_html"><div class="ttname"><a href="Element__Data_8h.html">Element_Data.h</a></div></div>
 <div class="ttc" id="classMFM_1_1Point_html"><div class="ttname"><a href="classMFM_1_1Point.html">MFM::Point&lt; s32 &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:14 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

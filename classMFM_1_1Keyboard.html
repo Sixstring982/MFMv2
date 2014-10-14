@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -73,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceMFM.html">MFM</a></li><li class="navelem"><a class="el" href="classMFM_1_1Keyboard.html">Keyboard</a></li>  </ul>
+<li class="navelem"><b>MFM</b></li><li class="navelem"><a class="el" href="classMFM_1_1Keyboard.html">Keyboard</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -101,10 +100,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEvent</b> (SDL_KeyboardEvent *e)</td></tr>
 <tr class="separator:a88e317e0f52489bd45bb56086d6ddc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b7755e43f9c4f6a492c7835d1f9c9c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b7755e43f9c4f6a492c7835d1f9c9c2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Press</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> key)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Press</b> (u32 key)</td></tr>
 <tr class="separator:a3b7755e43f9c4f6a492c7835d1f9c9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe15303bf1ab2d798c8014902b323d9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe15303bf1ab2d798c8014902b323d9c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> key)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> (u32 key)</td></tr>
 <tr class="separator:afe15303bf1ab2d798c8014902b323d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a442cd9761000d3a7f865a789e01af110"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a442cd9761000d3a7f865a789e01af110"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShiftHeld</b> () const </td></tr>
@@ -116,13 +115,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CtrlHeld</b> () const
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>AltHeld</b> () const </td></tr>
 <tr class="separator:ab81ef48eb18820f7feda63b52051d933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c123cfb101cf97845a0ebb6fbbe4b6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c123cfb101cf97845a0ebb6fbbe4b6c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDown</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> key) const </td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDown</b> (u32 key) const </td></tr>
 <tr class="separator:a5c123cfb101cf97845a0ebb6fbbe4b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da389639a12eb14d3fb4d164d66dc4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5da389639a12eb14d3fb4d164d66dc4c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsUp</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> key) const </td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsUp</b> (u32 key) const </td></tr>
 <tr class="separator:a5da389639a12eb14d3fb4d164d66dc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7e5dbf5a009cf9f9a9903c5dc0da924"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7e5dbf5a009cf9f9a9903c5dc0da924"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SemiAuto</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> key)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SemiAuto</b> (u32 key)</td></tr>
 <tr class="separator:ad7e5dbf5a009cf9f9a9903c5dc0da924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a724741d0a916bce52fffd62ae09b75b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a724741d0a916bce52fffd62ae09b75b2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Flip</b> ()</td></tr>
@@ -135,7 +134,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Flip</b> ()</td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:51 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:50 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

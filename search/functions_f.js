@@ -13,6 +13,7 @@ var searchData=
   ['setatomicsymbol',['SetAtomicSymbol',['../classMFM_1_1Element.html#ae1dd9fcdee4a757fea02a7dba3e7c2ad',1,'MFM::Element']]],
   ['setbackground',['SetBackground',['../classMFM_1_1Drawing.html#afb25a6aec18275cf5538f2128056be0d',1,'MFM::Drawing::SetBackground()'],['../classMFM_1_1Panel.html#a769887940542282b8a2757e4cedadd1c',1,'MFM::Panel::SetBackground()']]],
   ['setbackgroundradiation',['SetBackgroundRadiation',['../classMFM_1_1Tile.html#a036e3d61eb7b126e7a70d531afe0b4ef',1,'MFM::Tile::SetBackgroundRadiation()'],['../classMFM_1_1Grid.html#aac3fec990c2d7e70366ecc50c04cc0e0',1,'MFM::Grid::SetBackgroundRadiation()']]],
+  ['setbigtext',['SetBigText',['../classMFM_1_1ToolboxPanel.html#a4b2cf24ebfc774c10b87afb8df9ee209',1,'MFM::ToolboxPanel']]],
   ['setbit',['SetBit',['../classMFM_1_1BitField.html#ac9dbe2d83d9a116b2d457e9f426535f3',1,'MFM::BitField::SetBit()'],['../classMFM_1_1BitVector.html#a422918f8104a2546c31148f5b0063023',1,'MFM::BitVector::SetBit()']]],
   ['setbits',['SetBits',['../classMFM_1_1BitVector.html#a162b334b8142f5e2cf3e5351853b4d8f',1,'MFM::BitVector']]],
   ['setbitsass32',['SetBitsAsS32',['../classMFM_1_1VD.html#aa63c31d7808e7c55727d27b5f9712f78',1,'MFM::VD']]],
@@ -63,10 +64,10 @@ var searchData=
   ['skiptonextarg',['SkipToNextArg',['../classMFM_1_1ConfigFunctionCall.html#a8b4ed3499bf8f732469a276f3e9d8965',1,'MFM::ConfigFunctionCall']]],
   ['skiptonextexistingarg',['SkipToNextExistingArg',['../classMFM_1_1ConfigFunctionCall.html#a68e092311452f601237eebd31a095ebd',1,'MFM::ConfigFunctionCall']]],
   ['skipwhitespace',['SkipWhitespace',['../classMFM_1_1ByteSource.html#a64123a7601960f6164466cc5feb74ad6',1,'MFM::ByteSource']]],
-  ['sleep',['Sleep',['../namespaceMFM.html#afec04035913edcbb8a8d521efaad971a',1,'MFM']]],
   ['start',['Start',['../classMFM_1_1Tile.html#a745ac018aaf8837a383705e526b75bb8',1,'MFM::Tile']]],
   ['storebits',['StoreBits',['../classMFM_1_1BitVector.html#ae381a986106f6be903690e6e4316ef27',1,'MFM::BitVector']]],
   ['strlevel',['StrLevel',['../classMFM_1_1Logger.html#af91ce6bb0b53e792453942dd5d0e412e',1,'MFM::Logger']]],
   ['subtract',['Subtract',['../classMFM_1_1Point.html#aaf3eec90af08e14a4030bb101fc08afb',1,'MFM::Point::Subtract(const Point&lt; T &gt; &amp;offset)'],['../classMFM_1_1Point.html#a13c42e446b27485d539d7f7c898c3ca4',1,'MFM::Point::Subtract(T x, T y)']]],
-  ['swapatoms',['SwapAtoms',['../classMFM_1_1EventWindow.html#ac58f8e3e36e72b8e3f88b1ee675b38c2',1,'MFM::EventWindow']]]
+  ['swapatoms',['SwapAtoms',['../classMFM_1_1EventWindow.html#ac58f8e3e36e72b8e3f88b1ee675b38c2',1,'MFM::EventWindow']]],
+  ['swapcenteratom',['SwapCenterAtom',['../classMFM_1_1EventWindow.html#a905177b4d4bf835d2deed5cb546c5589',1,'MFM::EventWindow']]]
 ];

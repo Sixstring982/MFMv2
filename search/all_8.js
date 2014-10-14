@@ -8,6 +8,5 @@ var searchData=
   ['helppanel',['HelpPanel',['../classMFM_1_1HelpPanel.html',1,'MFM']]],
   ['helppanel',['HelpPanel',['../classMFM_1_1HelpPanel.html#a6fa0f48824e1f911696a1ba1a41a77ea',1,'MFM::HelpPanel']]],
   ['helppanel_2eh',['HelpPanel.h',['../HelpPanel_8h.html',1,'']]],
-  ['hex',['HEX',['../structMFM_1_1Format.html#af8b0efb1fad45cd8ecaae70c02ec1ceaa2a03325a6b010c67ce7daac57c13c6c2',1,'MFM::Format']]],
-  ['hexu64',['HexU64',['../namespaceMFM.html#aa02b66b9ff30ee7f46cfb0c8ed9682e1',1,'MFM']]]
+  ['hex',['HEX',['../structMFM_1_1Format.html#af8b0efb1fad45cd8ecaae70c02ec1ceaa2a03325a6b010c67ce7daac57c13c6c2',1,'MFM::Format']]]
 ];

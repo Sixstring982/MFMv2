@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -134,13 +133,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      m_packet(packet)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    { }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classMFM_1_1PacketSerializer.html#a5cddb06f4e10a766d39ac1deedcbd115">   52</a></span>&#160;    <span class="keyword">virtual</span> Result <a class="code" href="classMFM_1_1PacketSerializer.html#a5cddb06f4e10a766d39ac1deedcbd115">PrintTo</a>(<a class="code" href="classMFM_1_1ByteSink.html">ByteSink</a>&amp; byteSink, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> argument = 0)</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classMFM_1_1PacketSerializer.html#a5cddb06f4e10a766d39ac1deedcbd115">   52</a></span>&#160;    <span class="keyword">virtual</span> Result <a class="code" href="classMFM_1_1PacketSerializer.html#a5cddb06f4e10a766d39ac1deedcbd115">PrintTo</a>(<a class="code" href="classMFM_1_1ByteSink.html">ByteSink</a>&amp; byteSink, s32 argument = 0)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="classMFM_1_1Point.html">SPoint</a> loc = m_packet.GetLocation();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <a class="code" href="classMFM_1_1AtomSerializer.html">AtomSerializer&lt;CC&gt;</a> atom(m_packet.GetAtom());</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      byteSink.Printf(<span class="stringliteral">&quot;Pkt%d{%d/%s, gen:%d, nghb:%d, (%d, %d), %@}&quot;</span>,</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                      <span class="keyword">sizeof</span>(<a class="code" href="classMFM_1_1Packet.html">Packet&lt;T&gt;</a>),</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                      (<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>) m_packet.GetType(),</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                      (u32) m_packet.GetType(),</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                      m_packet.GetTypeString(),</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                      m_packet.GetGeneration(),</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                      m_packet.GetReceivingNeighbor(),</div>
@@ -150,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">return</span> SUCCESS;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classMFM_1_1PacketSerializer.html#a32b3054e189e41ab8fb22624d8308eee">   68</a></span>&#160;    <span class="keyword">virtual</span> Result <a class="code" href="classMFM_1_1PacketSerializer.html#a32b3054e189e41ab8fb22624d8308eee">ReadFrom</a>(<a class="code" href="classMFM_1_1ByteSource.html">ByteSource</a> &amp; byteSource, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> argument = 0)</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classMFM_1_1PacketSerializer.html#a32b3054e189e41ab8fb22624d8308eee">   68</a></span>&#160;    <span class="keyword">virtual</span> Result <a class="code" href="classMFM_1_1PacketSerializer.html#a32b3054e189e41ab8fb22624d8308eee">ReadFrom</a>(<a class="code" href="classMFM_1_1ByteSource.html">ByteSource</a> &amp; byteSource, s32 argument = 0)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> UNSUPPORTED;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
@@ -161,7 +160,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1PacketSerializer_html_a32b3054e189e41ab8fb22624d8308eee"><div class="ttname"><a href="classMFM_1_1PacketSerializer.html#a32b3054e189e41ab8fb22624d8308eee">MFM::PacketSerializer::ReadFrom</a></div><div class="ttdeci">virtual Result ReadFrom(ByteSource &amp;byteSource, s32 argument=0)</div><div class="ttdef"><b>Definition:</b> PacketSerializer.h:68</div></div>
 <div class="ttc" id="ByteSerializable_8h_html"><div class="ttname"><a href="ByteSerializable_8h.html">ByteSerializable.h</a></div></div>
 <div class="ttc" id="AtomSerializer_8h_html"><div class="ttname"><a href="AtomSerializer_8h.html">AtomSerializer.h</a></div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="classMFM_1_1Point_html_a3dc1de7350cbd1e82da54c456aabb268"><div class="ttname"><a href="classMFM_1_1Point.html#a3dc1de7350cbd1e82da54c456aabb268">MFM::Point::GetY</a></div><div class="ttdeci">T GetY() const </div><div class="ttdef"><b>Definition:</b> Point.tcc:40</div></div>
 <div class="ttc" id="classMFM_1_1ByteSource_html"><div class="ttname"><a href="classMFM_1_1ByteSource.html">MFM::ByteSource</a></div><div class="ttdef"><b>Definition:</b> ByteSource.h:44</div></div>
 <div class="ttc" id="classMFM_1_1PacketSerializer_html_a5cddb06f4e10a766d39ac1deedcbd115"><div class="ttname"><a href="classMFM_1_1PacketSerializer.html#a5cddb06f4e10a766d39ac1deedcbd115">MFM::PacketSerializer::PrintTo</a></div><div class="ttdeci">virtual Result PrintTo(ByteSink &amp;byteSink, s32 argument=0)</div><div class="ttdef"><b>Definition:</b> PacketSerializer.h:52</div></div>
@@ -172,12 +170,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="Packet_8h_html"><div class="ttname"><a href="Packet_8h.html">Packet.h</a></div></div>
 <div class="ttc" id="classMFM_1_1ByteSerializable_html"><div class="ttname"><a href="classMFM_1_1ByteSerializable.html">MFM::ByteSerializable</a></div><div class="ttdef"><b>Definition:</b> ByteSerializable.h:45</div></div>
 <div class="ttc" id="classMFM_1_1Point_html"><div class="ttname"><a href="classMFM_1_1Point.html">MFM::Point&lt; s32 &gt;</a></div></div>
-<div class="ttc" id="namespaceMFM_html_af35531c1df0ac4c25ef5937c2c21a78d"><div class="ttname"><a href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">MFM::s32</a></div><div class="ttdeci">int32_t s32</div><div class="ttdef"><b>Definition:</b> itype.h:36</div></div>
 <div class="ttc" id="classMFM_1_1Point_html_a293a3d4c35e5cbaf6d7d3486a45287a8"><div class="ttname"><a href="classMFM_1_1Point.html#a293a3d4c35e5cbaf6d7d3486a45287a8">MFM::Point::GetX</a></div><div class="ttdeci">T GetX() const </div><div class="ttdef"><b>Definition:</b> Point.tcc:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:14 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

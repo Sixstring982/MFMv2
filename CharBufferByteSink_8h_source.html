@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -127,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      m_written(0)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      { }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classMFM_1_1CharBufferByteSink.html#ab245ed12943e8f47a820197f5212e6b5">   64</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1CharBufferByteSink.html#ab245ed12943e8f47a820197f5212e6b5">WriteBytes</a>(<span class="keyword">const</span> <a class="code" href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">u8</a> * data, <span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> len)</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classMFM_1_1CharBufferByteSink.html#ab245ed12943e8f47a820197f5212e6b5">   64</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1CharBufferByteSink.html#ab245ed12943e8f47a820197f5212e6b5">WriteBytes</a>(<span class="keyword">const</span> u8 * data, <span class="keyword">const</span> u32 len)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">if</span> (m_written + len &lt; BUFSIZE-1)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      {</div>
@@ -138,7 +137,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      FAIL(OUT_OF_ROOM);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classMFM_1_1CharBufferByteSink.html#a8e975fe3fd34222d7b8564b2556e1e34">   82</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> <a class="code" href="classMFM_1_1CharBufferByteSink.html#a8e975fe3fd34222d7b8564b2556e1e34">CanWrite</a>()</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classMFM_1_1CharBufferByteSink.html#a8e975fe3fd34222d7b8564b2556e1e34">   82</a></span>&#160;    <span class="keyword">virtual</span> s32 <a class="code" href="classMFM_1_1CharBufferByteSink.html#a8e975fe3fd34222d7b8564b2556e1e34">CanWrite</a>()</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">return</span> BUFSIZE - m_written - 1;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
@@ -154,12 +153,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">return</span> (<span class="keyword">const</span> <span class="keywordtype">char</span> *) m_buf;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classMFM_1_1CharBufferByteSink.html#a7c1e02b8c00ce7ac6eaac74195d54e8d">  123</a></span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1CharBufferByteSink.html#a7c1e02b8c00ce7ac6eaac74195d54e8d">GetLength</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classMFM_1_1CharBufferByteSink.html#a7c1e02b8c00ce7ac6eaac74195d54e8d">  123</a></span>&#160;    u32 <a class="code" href="classMFM_1_1CharBufferByteSink.html#a7c1e02b8c00ce7ac6eaac74195d54e8d">GetLength</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="keywordflow">return</span> m_written;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classMFM_1_1CharBufferByteSink.html#af461d59d80b8786d3d778df961057b4f">  135</a></span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1CharBufferByteSink.html#af461d59d80b8786d3d778df961057b4f">GetCapacity</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classMFM_1_1CharBufferByteSink.html#af461d59d80b8786d3d778df961057b4f">  135</a></span>&#160;    u32 <a class="code" href="classMFM_1_1CharBufferByteSink.html#af461d59d80b8786d3d778df961057b4f">GetCapacity</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">return</span> BUFSIZE;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
@@ -170,15 +169,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">u8</a> m_buf[BUFSIZE];</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    u8 m_buf[BUFSIZE];</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> m_written;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    u32 m_written;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  };</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CHARBUFFERBYTESINK_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="namespaceMFM_html_ab8c79d22c49af9b5b1f757ae5d436218"><div class="ttname"><a href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">MFM::u8</a></div><div class="ttdeci">uint8_t u8</div><div class="ttdef"><b>Definition:</b> itype.h:58</div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="ByteSink_8h_html"><div class="ttname"><a href="ByteSink_8h.html">ByteSink.h</a></div></div>
 <div class="ttc" id="classMFM_1_1CharBufferByteSink_html_a7c1e02b8c00ce7ac6eaac74195d54e8d"><div class="ttname"><a href="classMFM_1_1CharBufferByteSink.html#a7c1e02b8c00ce7ac6eaac74195d54e8d">MFM::CharBufferByteSink::GetLength</a></div><div class="ttdeci">u32 GetLength() const </div><div class="ttdef"><b>Definition:</b> CharBufferByteSink.h:123</div></div>
 <div class="ttc" id="classMFM_1_1CharBufferByteSink_html_a8e975fe3fd34222d7b8564b2556e1e34"><div class="ttname"><a href="classMFM_1_1CharBufferByteSink.html#a8e975fe3fd34222d7b8564b2556e1e34">MFM::CharBufferByteSink::CanWrite</a></div><div class="ttdeci">virtual s32 CanWrite()</div><div class="ttdef"><b>Definition:</b> CharBufferByteSink.h:82</div></div>
@@ -189,11 +186,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1CharBufferByteSink_html_a83b48b58ca179a0d5a7171625d18ad8a"><div class="ttname"><a href="classMFM_1_1CharBufferByteSink.html#a83b48b58ca179a0d5a7171625d18ad8a">MFM::CharBufferByteSink::GetZString</a></div><div class="ttdeci">const char * GetZString()</div><div class="ttdef"><b>Definition:</b> CharBufferByteSink.h:112</div></div>
 <div class="ttc" id="classMFM_1_1CharBufferByteSink_html_a67de70cea8601b43045329ee1fba37a7"><div class="ttname"><a href="classMFM_1_1CharBufferByteSink.html#a67de70cea8601b43045329ee1fba37a7">MFM::CharBufferByteSink::Equals</a></div><div class="ttdeci">bool Equals(const char *str)</div><div class="ttdef"><b>Definition:</b> CharBufferByteSink.h:99</div></div>
 <div class="ttc" id="classMFM_1_1CharBufferByteSink_html_af461d59d80b8786d3d778df961057b4f"><div class="ttname"><a href="classMFM_1_1CharBufferByteSink.html#af461d59d80b8786d3d778df961057b4f">MFM::CharBufferByteSink::GetCapacity</a></div><div class="ttdeci">u32 GetCapacity() const </div><div class="ttdef"><b>Definition:</b> CharBufferByteSink.h:135</div></div>
-<div class="ttc" id="namespaceMFM_html_af35531c1df0ac4c25ef5937c2c21a78d"><div class="ttname"><a href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">MFM::s32</a></div><div class="ttdeci">int32_t s32</div><div class="ttdef"><b>Definition:</b> itype.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:14 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -130,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">enum</span> { R = P::EVENT_WINDOW_RADIUS };</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;   <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> GetWanderDistance() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> u32 GetWanderDistance() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
@@ -138,7 +137,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      : <a class="code" href="classMFM_1_1Element.html">Element&lt;CC&gt;</a>(u)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    { }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classMFM_1_1AbstractElement__Wanderer.html#aea0cf81a3b5984444a4493f14663ec70">   55</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1AbstractElement__Wanderer.html#aea0cf81a3b5984444a4493f14663ec70">PercentMovable</a>(<span class="keyword">const</span> T&amp; you,</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classMFM_1_1AbstractElement__Wanderer.html#aea0cf81a3b5984444a4493f14663ec70">   55</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1AbstractElement__Wanderer.html#aea0cf81a3b5984444a4493f14663ec70">PercentMovable</a>(<span class="keyword">const</span> T&amp; you,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                               <span class="keyword">const</span> T&amp; me, <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; offset)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">return</span> 100;</div>
@@ -159,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span>(window.<a class="code" href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">GetRelativeAtom</a>(wanderPt).GetType() ==</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;           <a class="code" href="classMFM_1_1Element__Empty.html">Element_Empty&lt;CC&gt;::THE_INSTANCE</a>.<a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>())</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          window.<a class="code" href="classMFM_1_1EventWindow.html#ac58f8e3e36e72b8e3f88b1ee675b38c2">SwapAtoms</a>(wanderPt, <a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>(0, 0));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          window.<a class="code" href="classMFM_1_1EventWindow.html#ac58f8e3e36e72b8e3f88b1ee675b38c2">SwapAtoms</a>(wanderPt, <a class="code" href="classMFM_1_1Point.html">SPoint</a>(0, 0));</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
@@ -167,17 +166,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ABSTRACTELEMENT_WANDERER_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="namespaceMFM_html_a7c8c9ccec4fe4047d908ce5eb5e0b1d4"><div class="ttname"><a href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">MFM::SPoint</a></div><div class="ttdeci">Point&lt; s32 &gt; SPoint</div><div class="ttdef"><b>Definition:</b> Point.h:561</div></div>
 <div class="ttc" id="classMFM_1_1Element_html_ad5996762a71ff9998222bf89a4d0dfd6"><div class="ttname"><a href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">MFM::Element::GetType</a></div><div class="ttdeci">u32 GetType() const </div><div class="ttdef"><b>Definition:</b> Element.h:339</div></div>
-<div class="ttc" id="classMFM_1_1Dirs_html_aa036c8e89ec2ba80a8dbe46f66b9776f"><div class="ttname"><a href="classMFM_1_1Dirs.html#aa036c8e89ec2ba80a8dbe46f66b9776f">MFM::Dirs::IsCorner</a></div><div class="ttdeci">static bool IsCorner(Dir dir)</div><div class="ttdef"><b>Definition:</b> Dirs.h:72</div></div>
+<div class="ttc" id="classMFM_1_1Dirs_html_aa036c8e89ec2ba80a8dbe46f66b9776f"><div class="ttname"><a href="classMFM_1_1Dirs.html#aa036c8e89ec2ba80a8dbe46f66b9776f">MFM::Dirs::IsCorner</a></div><div class="ttdeci">static bool IsCorner(Dir dir)</div><div class="ttdef"><b>Definition:</b> Dirs.h:73</div></div>
 <div class="ttc" id="classMFM_1_1Element__Empty_html"><div class="ttname"><a href="classMFM_1_1Element__Empty.html">MFM::Element_Empty</a></div><div class="ttdef"><b>Definition:</b> Element_Empty.h:41</div></div>
 <div class="ttc" id="classMFM_1_1Random_html"><div class="ttname"><a href="classMFM_1_1Random.html">MFM::Random</a></div><div class="ttdef"><b>Definition:</b> Random.h:45</div></div>
 <div class="ttc" id="P1Atom_8h_html"><div class="ttname"><a href="P1Atom_8h.html">P1Atom.h</a></div></div>
 <div class="ttc" id="ElementTable_8h_html"><div class="ttname"><a href="ElementTable_8h.html">ElementTable.h</a></div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="classMFM_1_1EventWindow_html_a81a9f82636aa75fd134ca45d50e31291"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a81a9f82636aa75fd134ca45d50e31291">MFM::EventWindow::IsLiveSite</a></div><div class="ttdeci">bool IsLiveSite(const SPoint &amp;location) const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:147</div></div>
 <div class="ttc" id="classMFM_1_1EventWindow_html_a9d12bbd638be0a792379579803842c30"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a9d12bbd638be0a792379579803842c30">MFM::EventWindow::GetRandom</a></div><div class="ttdeci">Random &amp; GetRandom()</div><div class="ttdef"><b>Definition:</b> EventWindow.h:121</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_ad2763d07d8381b8097f59a7e344094c6"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">MFM::EventWindow::GetRelativeAtom</a></div><div class="ttdeci">const T &amp; GetRelativeAtom(const SPoint &amp;offset) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:26</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_ad2763d07d8381b8097f59a7e344094c6"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">MFM::EventWindow::GetRelativeAtom</a></div><div class="ttdeci">const T &amp; GetRelativeAtom(const SPoint &amp;offset) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:50</div></div>
 <div class="ttc" id="classMFM_1_1Random_html_aa2f43bbb751d3f6d9f75937b49047f3a"><div class="ttname"><a href="classMFM_1_1Random.html#aa2f43bbb751d3f6d9f75937b49047f3a">MFM::Random::Create</a></div><div class="ttdeci">u32 Create()</div><div class="ttdef"><b>Definition:</b> Random.h:161</div></div>
 <div class="ttc" id="EventWindow_8h_html"><div class="ttname"><a href="EventWindow_8h.html">EventWindow.h</a></div></div>
 <div class="ttc" id="itype_8h_html"><div class="ttname"><a href="itype_8h.html">itype.h</a></div></div>
@@ -190,11 +187,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1AbstractElement__Wanderer_html"><div class="ttname"><a href="classMFM_1_1AbstractElement__Wanderer.html">MFM::AbstractElement_Wanderer</a></div><div class="ttdef"><b>Definition:</b> AbstractElement_Wanderer.h:39</div></div>
 <div class="ttc" id="classMFM_1_1Element_html"><div class="ttname"><a href="classMFM_1_1Element.html">MFM::Element</a></div><div class="ttdef"><b>Definition:</b> Atom.h:43</div></div>
 <div class="ttc" id="classMFM_1_1Point_html"><div class="ttname"><a href="classMFM_1_1Point.html">MFM::Point&lt; s32 &gt;</a></div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_ac58f8e3e36e72b8e3f88b1ee675b38c2"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ac58f8e3e36e72b8e3f88b1ee675b38c2">MFM::EventWindow::SwapAtoms</a></div><div class="ttdeci">void SwapAtoms(const SPoint &amp;locA, const SPoint &amp;locB)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:32</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_ac58f8e3e36e72b8e3f88b1ee675b38c2"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ac58f8e3e36e72b8e3f88b1ee675b38c2">MFM::EventWindow::SwapAtoms</a></div><div class="ttdeci">void SwapAtoms(const SPoint &amp;locA, const SPoint &amp;locB)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:148</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:14 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -4,6 +4,5 @@ var searchData=
   ['handleresize',['HandleResize',['../classMFM_1_1AbstractButton.html#a1b3932bfb2ab06d5e93849fae498c320',1,'MFM::AbstractButton::HandleResize()'],['../classMFM_1_1Panel.html#a0252994e6042441a7db365d26908163c',1,'MFM::Panel::HandleResize()']]],
   ['hasbeenrepaired',['HasBeenRepaired',['../classMFM_1_1Atom.html#a771747c6abd76a03b9e3e7586ba0c072',1,'MFM::Atom']]],
   ['hasoverflowed',['HasOverflowed',['../classMFM_1_1OverflowableCharBufferByteSink.html#aefaad00fda26a3759ecc82504bad3b3c',1,'MFM::OverflowableCharBufferByteSink']]],
-  ['helppanel',['HelpPanel',['../classMFM_1_1HelpPanel.html#a6fa0f48824e1f911696a1ba1a41a77ea',1,'MFM::HelpPanel']]],
-  ['hexu64',['HexU64',['../namespaceMFM.html#aa02b66b9ff30ee7f46cfb0c8ed9682e1',1,'MFM']]]
+  ['helppanel',['HelpPanel',['../classMFM_1_1HelpPanel.html#a6fa0f48824e1f911696a1ba1a41a77ea',1,'MFM::HelpPanel']]]
 ];

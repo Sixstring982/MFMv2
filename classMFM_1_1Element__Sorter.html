@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -73,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceMFM.html">MFM</a></li><li class="navelem"><a class="el" href="classMFM_1_1Element__Sorter.html">Element_Sorter</a></li>  </ul>
+<li class="navelem"><b>MFM</b></li><li class="navelem"><a class="el" href="classMFM_1_1Element__Sorter.html">Element_Sorter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -109,27 +108,27 @@ Inheritance diagram for MFM::Element_Sorter&lt; CC &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a69af03468256fb3df060228a103f74cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69af03468256fb3df060228a103f74cd"></a>
-<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetThreshold</b> (const T &amp;atom, <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> badType) const </td></tr>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetThreshold</b> (const T &amp;atom, u32 badType) const </td></tr>
 <tr class="separator:a69af03468256fb3df060228a103f74cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2851c61593d4fc58e4df4588c6b6b2cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2851c61593d4fc58e4df4588c6b6b2cd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetThreshold</b> (T &amp;atom, <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> value) const </td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetThreshold</b> (T &amp;atom, u32 value) const </td></tr>
 <tr class="separator:a2851c61593d4fc58e4df4588c6b6b2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af42c45bb0027d3e7a2ac2aa8005716a4"><td class="memItemLeft" align="right" valign="top">virtual const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#af42c45bb0027d3e7a2ac2aa8005716a4">GetDefaultAtom</a> () const </td></tr>
 <tr class="separator:af42c45bb0027d3e7a2ac2aa8005716a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecea2cf6d63c57d38d557afc68ce877d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#aecea2cf6d63c57d38d557afc68ce877d">PercentMovable</a> (const T &amp;you, const T &amp;me, const <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> &amp;offset) const </td></tr>
+<tr class="memitem:aecea2cf6d63c57d38d557afc68ce877d"><td class="memItemLeft" align="right" valign="top">virtual u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#aecea2cf6d63c57d38d557afc68ce877d">PercentMovable</a> (const T &amp;you, const T &amp;me, const <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;offset) const </td></tr>
 <tr class="separator:aecea2cf6d63c57d38d557afc68ce877d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4d4a0e27e6497eedb02e2e936989441"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4d4a0e27e6497eedb02e2e936989441"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>FillAvailableSubwindowPoint</b> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;window, <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> &amp;pt, Dir subwindow, ElementType type) const </td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>FillAvailableSubwindowPoint</b> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;window, <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;pt, Dir subwindow, ElementType type) const </td></tr>
 <tr class="separator:af4d4a0e27e6497eedb02e2e936989441"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab65017c02e6726e38e2add8360fec03"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#aab65017c02e6726e38e2add8360fec03">DefaultPhysicsColor</a> () const </td></tr>
+<tr class="memitem:aab65017c02e6726e38e2add8360fec03"><td class="memItemLeft" align="right" valign="top">virtual u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#aab65017c02e6726e38e2add8360fec03">DefaultPhysicsColor</a> () const </td></tr>
 <tr class="separator:aab65017c02e6726e38e2add8360fec03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e0a4673f45ae5c3f2a756058dd35b30"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#a8e0a4673f45ae5c3f2a756058dd35b30">DefaultLowlightColor</a> () const </td></tr>
+<tr class="memitem:a8e0a4673f45ae5c3f2a756058dd35b30"><td class="memItemLeft" align="right" valign="top">virtual u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#a8e0a4673f45ae5c3f2a756058dd35b30">DefaultLowlightColor</a> () const </td></tr>
 <tr class="separator:a8e0a4673f45ae5c3f2a756058dd35b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2548d8fdc16b9c7e7df86c31af5bd5b"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#af2548d8fdc16b9c7e7df86c31af5bd5b">GetDescription</a> () const </td></tr>
 <tr class="separator:af2548d8fdc16b9c7e7df86c31af5bd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bdeb16d12d15253bf75ed965ba6e8f7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#a4bdeb16d12d15253bf75ed965ba6e8f7">AppendDescription</a> (const T *atom, <a class="el" href="namespaceMFM.html#a0fff976ac68efcd203d4857379d8fbf9">OString64</a> &amp;desc) const </td></tr>
+<tr class="memitem:a4bdeb16d12d15253bf75ed965ba6e8f7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#a4bdeb16d12d15253bf75ed965ba6e8f7">AppendDescription</a> (const T *atom, <a class="el" href="classMFM_1_1OverflowableCharBufferByteSink.html">OString64</a> &amp;desc) const </td></tr>
 <tr class="separator:a4bdeb16d12d15253bf75ed965ba6e8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1099026c91cbc6fdf15859b1880c23ec"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#a1099026c91cbc6fdf15859b1880c23ec">LocalPhysicsColor</a> (const T &amp;atom, <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> selector) const </td></tr>
+<tr class="memitem:a1099026c91cbc6fdf15859b1880c23ec"><td class="memItemLeft" align="right" valign="top">virtual u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#a1099026c91cbc6fdf15859b1880c23ec">LocalPhysicsColor</a> (const T &amp;atom, u32 selector) const </td></tr>
 <tr class="separator:a1099026c91cbc6fdf15859b1880c23ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a798a26090a3fb6c462b69d207f427024"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#a798a26090a3fb6c462b69d207f427024">Behavior</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;window) const </td></tr>
 <tr class="separator:a798a26090a3fb6c462b69d207f427024"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,23 +137,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>FillAvailableSubwindo
 <tr class="separator:acabf798cea4e848357b84c38d71307cc inherit pub_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98ff6561053690a19215f707445b4423 inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a98ff6561053690a19215f707445b4423">AllocateType</a> ()</td></tr>
 <tr class="separator:a98ff6561053690a19215f707445b4423 inherit pub_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5996762a71ff9998222bf89a4d0dfd6 inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a> () const </td></tr>
+<tr class="memitem:ad5996762a71ff9998222bf89a4d0dfd6 inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a> () const </td></tr>
 <tr class="separator:ad5996762a71ff9998222bf89a4d0dfd6 inherit pub_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c17125eeabd6650daf9ec10259423be inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a7c17125eeabd6650daf9ec10259423be">GetAtomicSymbol</a> () const </td></tr>
 <tr class="separator:a7c17125eeabd6650daf9ec10259423be inherit pub_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c935ab276c3d9ff771c03821539e9e7 inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a4c935ab276c3d9ff771c03821539e9e7">GetName</a> () const </td></tr>
 <tr class="separator:a4c935ab276c3d9ff771c03821539e9e7 inherit pub_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ea722a701c1484c350189885f8ac3fb inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a5ea722a701c1484c350189885f8ac3fb">IsType</a> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> type) const </td></tr>
+<tr class="memitem:a5ea722a701c1484c350189885f8ac3fb inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a5ea722a701c1484c350189885f8ac3fb">IsType</a> (u32 type) const </td></tr>
 <tr class="separator:a5ea722a701c1484c350189885f8ac3fb inherit pub_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3406dd620b3306e6cc4d9d385cf19fee inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classMFM_1_1UUID.html">UUID</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a3406dd620b3306e6cc4d9d385cf19fee">GetUUID</a> () const </td></tr>
 <tr class="separator:a3406dd620b3306e6cc4d9d385cf19fee inherit pub_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2728dd6f071beb94f44adaf7c462d6e1 inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a2728dd6f071beb94f44adaf7c462d6e1">PhysicsColor</a> () const </td></tr>
+<tr class="memitem:a2728dd6f071beb94f44adaf7c462d6e1 inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">virtual u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a2728dd6f071beb94f44adaf7c462d6e1">PhysicsColor</a> () const </td></tr>
 <tr class="separator:a2728dd6f071beb94f44adaf7c462d6e1 inherit pub_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9e4e3c61458a093cacd04935f50cefa inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#aa9e4e3c61458a093cacd04935f50cefa">ToggleLowlightPhysicsColor</a> ()</td></tr>
 <tr class="separator:aa9e4e3c61458a093cacd04935f50cefa inherit pub_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70048e83c7a189191414d2eee9334a11 inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a70048e83c7a189191414d2eee9334a11">Diffusability</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;ew, <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> nowAt, <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> maybeAt) const </td></tr>
+<tr class="memitem:a70048e83c7a189191414d2eee9334a11 inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">virtual u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a70048e83c7a189191414d2eee9334a11">Diffusability</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;ew, <a class="el" href="classMFM_1_1Point.html">SPoint</a> nowAt, <a class="el" href="classMFM_1_1Point.html">SPoint</a> maybeAt) const </td></tr>
 <tr class="separator:a70048e83c7a189191414d2eee9334a11 inherit pub_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bdd6c89fb1d6e183e71eb65a737c9fb inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a1bdd6c89fb1d6e183e71eb65a737c9fb">NoDiffusability</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;ew, <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> nowAt, <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> maybeAt) const </td></tr>
+<tr class="memitem:a1bdd6c89fb1d6e183e71eb65a737c9fb inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a1bdd6c89fb1d6e183e71eb65a737c9fb">NoDiffusability</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;ew, <a class="el" href="classMFM_1_1Point.html">SPoint</a> nowAt, <a class="el" href="classMFM_1_1Point.html">SPoint</a> maybeAt) const </td></tr>
 <tr class="separator:a1bdd6c89fb1d6e183e71eb65a737c9fb inherit pub_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a18c36b9add164716d47ececb8f8e95 inherit pub_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a18c36b9add164716d47ececb8f8e95"></a>
 const <a class="el" href="classMFM_1_1ElementParameters.html">ElementParameters</a>&lt; CC &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetElementParameters</b> () const </td></tr>
@@ -172,7 +171,7 @@ const <a class="el" href="classMFM_1_1AtomicParameters.html">AtomicParameters</a
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:adb62243fc09888bd094fcfb2a26449c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb62243fc09888bd094fcfb2a26449c3"></a>
-static const <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE</b> ()</td></tr>
+static const u32&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE</b> ()</td></tr>
 <tr class="separator:adb62243fc09888bd094fcfb2a26449c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -181,18 +180,18 @@ Static Public Attributes</h2></td></tr>
 static <a class="el" href="classMFM_1_1Element__Sorter.html">Element_Sorter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>THE_INSTANCE</b></td></tr>
 <tr class="separator:aed12da8ad56c91e45d6cb1ad378b9108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f2fc2619edbc8e485903c4873a88fb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f2fc2619edbc8e485903c4873a88fb8"></a>
-static const <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_THRESHOLD_IDX</b> = 0</td></tr>
+static const u32&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_THRESHOLD_IDX</b> = 0</td></tr>
 <tr class="separator:a1f2fc2619edbc8e485903c4873a88fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a828e1279ae74c24e5b558dd9da11f443"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a828e1279ae74c24e5b558dd9da11f443"></a>
-static const <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_THRESHOLD_LEN</b> = 32</td></tr>
+static const u32&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_THRESHOLD_LEN</b> = 32</td></tr>
 <tr class="separator:a828e1279ae74c24e5b558dd9da11f443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaea257d7519e550270942568b4935498"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaea257d7519e550270942568b4935498"></a>
-static const <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_BITS</b> = STATE_THRESHOLD_LEN</td></tr>
+static const u32&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_BITS</b> = STATE_THRESHOLD_LEN</td></tr>
 <tr class="separator:aaea257d7519e550270942568b4935498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63d756903d6b020618053ad7bb5a49e1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_southeastSubwindow</b> [4]</td></tr>
+<tr class="memitem:a63d756903d6b020618053ad7bb5a49e1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classMFM_1_1Point.html">SPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_southeastSubwindow</b> [4]</td></tr>
 <tr class="separator:a63d756903d6b020618053ad7bb5a49e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_classMFM_1_1Element"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classMFM_1_1Element')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classMFM_1_1Element.html">MFM::Element&lt; CC &gt;</a></td></tr>
-<tr class="memitem:a94892de98cadfb7ec96ebb28dcf9c179 inherit pub_static_attribs_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">COMPLETE_DIFFUSABILITY</a> = 1000</td></tr>
+<tr class="memitem:a94892de98cadfb7ec96ebb28dcf9c179 inherit pub_static_attribs_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">static const u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">COMPLETE_DIFFUSABILITY</a> = 1000</td></tr>
 <tr class="separator:a94892de98cadfb7ec96ebb28dcf9c179 inherit pub_static_attribs_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -211,14 +210,14 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ae1dd9fcdee4a757fea02a7dba3e7c2ad inherit pro_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d7e6b9447f709ea007ca245c12f4cf inherit pro_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#ab4d7e6b9447f709ea007ca245c12f4cf">SetName</a> (const char *name)</td></tr>
 <tr class="separator:ab4d7e6b9447f709ea007ca245c12f4cf inherit pro_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a314bff267b279018a804f8865e76e12d inherit pro_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a314bff267b279018a804f8865e76e12d">FillAvailableVNNeighbor</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;window, <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> &amp;pt) const </td></tr>
+<tr class="memitem:a314bff267b279018a804f8865e76e12d inherit pro_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a314bff267b279018a804f8865e76e12d">FillAvailableVNNeighbor</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;window, <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;pt) const </td></tr>
 <tr class="separator:a314bff267b279018a804f8865e76e12d inherit pro_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d26590257769859ce54cb50de75f6e3 inherit pro_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a7d26590257769859ce54cb50de75f6e3">FillPointWithType</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;window, <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> &amp;pt, const <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> *relevants, <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> relevantCount, Dir rotation, ElementType type) const </td></tr>
+<tr class="memitem:a7d26590257769859ce54cb50de75f6e3 inherit pro_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a7d26590257769859ce54cb50de75f6e3">FillPointWithType</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;window, <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;pt, const <a class="el" href="classMFM_1_1Point.html">SPoint</a> *relevants, u32 relevantCount, Dir rotation, ElementType type) const </td></tr>
 <tr class="separator:a7d26590257769859ce54cb50de75f6e3 inherit pro_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93881c4d4a7e6d46421d2befec00fb1e inherit pro_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a93881c4d4a7e6d46421d2befec00fb1e">Diffuse</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;window) const </td></tr>
 <tr class="separator:a93881c4d4a7e6d46421d2befec00fb1e inherit pro_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_classMFM_1_1Element"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classMFM_1_1Element')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classMFM_1_1Element.html">MFM::Element&lt; CC &gt;</a></td></tr>
-<tr class="memitem:a41ed13a0052b9d1028a392b5ed4c76e3 inherit pro_static_attribs_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a41ed13a0052b9d1028a392b5ed4c76e3">VNNeighbors</a> [4]</td></tr>
+<tr class="memitem:a41ed13a0052b9d1028a392b5ed4c76e3 inherit pro_static_attribs_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classMFM_1_1Point.html">SPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a41ed13a0052b9d1028a392b5ed4c76e3">VNNeighbors</a> [4]</td></tr>
 <tr class="separator:a41ed13a0052b9d1028a392b5ed4c76e3 inherit pro_static_attribs_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -240,7 +239,7 @@ template&lt;class CC &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceMFM.html#a0fff976ac68efcd203d4857379d8fbf9">OString64</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classMFM_1_1OverflowableCharBufferByteSink.html">OString64</a> &amp;&#160;</td>
           <td class="paramname"><em>desc</em>&#160;</td>
         </tr>
         <tr>
@@ -313,7 +312,7 @@ template&lt;class CC &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::DefaultLowlightColor </td>
+          <td class="memname">virtual u32 <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::DefaultLowlightColor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -342,7 +341,7 @@ template&lt;class CC &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::DefaultPhysicsColor </td>
+          <td class="memname">virtual u32 <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::DefaultPhysicsColor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -430,7 +429,7 @@ template&lt;class CC &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::LocalPhysicsColor </td>
+          <td class="memname">virtual u32 <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::LocalPhysicsColor </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>atom</em>, </td>
@@ -438,7 +437,7 @@ template&lt;class CC &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td>
+          <td class="paramtype">u32&#160;</td>
           <td class="paramname"><em>selector</em>&#160;</td>
         </tr>
         <tr>
@@ -477,7 +476,7 @@ template&lt;class CC &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::PercentMovable </td>
+          <td class="memname">virtual u32 <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::PercentMovable </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>you</em>, </td>
@@ -491,7 +490,7 @@ template&lt;class CC &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;&#160;</td>
           <td class="paramname"><em>offset</em>&#160;</td>
         </tr>
         <tr>
@@ -524,7 +523,7 @@ template&lt;class CC &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::m_southeastSubwindow</td>
+          <td class="memname">const <a class="el" href="classMFM_1_1Point.html">SPoint</a> <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::m_southeastSubwindow</td>
         </tr>
       </table>
   </td>
@@ -535,7 +534,7 @@ template&lt;class CC &gt; </div>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">  {</div>
-<div class="line">    <a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>(1,1),<a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>(1,2),<a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>(2,1),<a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>(2,2)</div>
+<div class="line">    SPoint(1,1),SPoint(1,2),SPoint(2,1),SPoint(2,2)</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 </div>
@@ -546,7 +545,7 @@ template&lt;class CC &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:40 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:43 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

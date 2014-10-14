@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -174,13 +173,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> SetDimensions(<a class="code" href="classMFM_1_1Point.html">UPoint</a> dimensions);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> IncreaseAtomSize(<a class="code" href="classMFM_1_1Point.html">SPoint</a> around = <a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>(0,0));</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> IncreaseAtomSize(<a class="code" href="classMFM_1_1Point.html">SPoint</a> around = <a class="code" href="classMFM_1_1Point.html">SPoint</a>(0,0));</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> ToggleTileSeparation();</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> ToggleDataHeatmap();</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> DecreaseAtomSize(<a class="code" href="classMFM_1_1Point.html">SPoint</a> around = <a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>(0,0));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> DecreaseAtomSize(<a class="code" href="classMFM_1_1Point.html">SPoint</a> around = <a class="code" href="classMFM_1_1Point.html">SPoint</a>(0,0));</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> ToggleGrid();</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
@@ -202,13 +201,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> SetCloneOrigin(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; cloneOrigin) ;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> MoveUp(<a class="code" href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">u8</a> amount);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> MoveUp(u8 amount);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> MoveDown(<a class="code" href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">u8</a> amount);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> MoveDown(u8 amount);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">void</span> MoveLeft(<a class="code" href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">u8</a> amount);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">void</span> MoveLeft(u8 amount);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">void</span> MoveRight(<a class="code" href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">u8</a> amount);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">void</span> MoveRight(u8 amount);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> DeselectTile();</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
@@ -232,7 +231,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> GC&gt;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> RenderGrid(<a class="code" href="classMFM_1_1Drawing.html">Drawing</a> &amp; drawing, <a class="code" href="classMFM_1_1Grid.html">Grid&lt;GC&gt;</a>&amp; grid, <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> brushSize);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> RenderGrid(<a class="code" href="classMFM_1_1Drawing.html">Drawing</a> &amp; drawing, <a class="code" href="classMFM_1_1Grid.html">Grid&lt;GC&gt;</a>&amp; grid, u32 brushSize);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> GC&gt;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> SelectTile(<a class="code" href="classMFM_1_1Grid.html">Grid&lt;GC&gt;</a>&amp; grid, <a class="code" href="classMFM_1_1Point.html">SPoint</a> clickPt);</div>
@@ -248,11 +247,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#include &quot;GridRenderer.tcc&quot;</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*GRIDRENDERER_H*/</span><span class="preprocessor"></span></div>
-<div class="ttc" id="namespaceMFM_html_a7c8c9ccec4fe4047d908ce5eb5e0b1d4"><div class="ttname"><a href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">MFM::SPoint</a></div><div class="ttdeci">Point&lt; s32 &gt; SPoint</div><div class="ttdef"><b>Definition:</b> Point.h:561</div></div>
-<div class="ttc" id="namespaceMFM_html_ab8c79d22c49af9b5b1f757ae5d436218"><div class="ttname"><a href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">MFM::u8</a></div><div class="ttdeci">uint8_t u8</div><div class="ttdef"><b>Definition:</b> itype.h:58</div></div>
 <div class="ttc" id="AtomViewPanel_8h_html"><div class="ttname"><a href="AtomViewPanel_8h.html">AtomViewPanel.h</a></div></div>
 <div class="ttc" id="classMFM_1_1Point_html_aa2994cb65d5ca1237844a6555edf7bca"><div class="ttname"><a href="classMFM_1_1Point.html#aa2994cb65d5ca1237844a6555edf7bca">MFM::Point::Set</a></div><div class="ttdeci">void Set(T x, T y)</div><div class="ttdef"><b>Definition:</b> Point.tcc:183</div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="classMFM_1_1GridRenderer_html"><div class="ttname"><a href="classMFM_1_1GridRenderer.html">MFM::GridRenderer</a></div><div class="ttdef"><b>Definition:</b> GridRenderer.h:46</div></div>
 <div class="ttc" id="classMFM_1_1Grid_html"><div class="ttname"><a href="classMFM_1_1Grid.html">MFM::Grid</a></div><div class="ttdef"><b>Definition:</b> Grid.h:47</div></div>
 <div class="ttc" id="Drawing_8h_html"><div class="ttname"><a href="Drawing_8h.html">Drawing.h</a></div></div>
@@ -264,7 +260,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:15 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

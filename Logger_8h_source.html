@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -159,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classMFM_1_1Logger.html#a90ef6bec21e63e6a7e5fc3c62fa27a2d">  101</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1Logger.html#a90ef6bec21e63e6a7e5fc3c62fa27a2d">ValidLevel</a>(<a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> levelNumber)</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classMFM_1_1Logger.html#a90ef6bec21e63e6a7e5fc3c62fa27a2d">  101</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1Logger.html#a90ef6bec21e63e6a7e5fc3c62fa27a2d">ValidLevel</a>(s32 levelNumber)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordflow">return</span> levelNumber &gt;= MIN &amp;&amp; levelNumber &lt;= MAX;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
@@ -169,7 +168,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keywordflow">return</span> m_logLevel;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classMFM_1_1Logger.html#a19b87d011aec0d4ea195f07cabde906f">  127</a></span>&#160;    <a class="code" href="classMFM_1_1Logger.html#a9f34d068e9bfac3b4a76d818510123b6">Level</a> <a class="code" href="classMFM_1_1Logger.html#a19b87d011aec0d4ea195f07cabde906f">SetLevel</a>(<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> newLevel)</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classMFM_1_1Logger.html#a19b87d011aec0d4ea195f07cabde906f">  127</a></span>&#160;    <a class="code" href="classMFM_1_1Logger.html#a9f34d068e9bfac3b4a76d818510123b6">Level</a> <a class="code" href="classMFM_1_1Logger.html#a19b87d011aec0d4ea195f07cabde906f">SetLevel</a>(u32 newLevel)</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Logger.html#a19b87d011aec0d4ea195f07cabde906f">SetLevel</a>((<a class="code" href="classMFM_1_1Logger.html#a9f34d068e9bfac3b4a76d818510123b6">Level</a>)newLevel);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
@@ -285,17 +284,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keyword">class </span>DefaultTimeStamper : <span class="keyword">public</span> <a class="code" href="classMFM_1_1ByteSerializable.html">ByteSerializable</a></div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> m_calls;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      u32 m_calls;</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      DefaultTimeStamper() : m_calls(0) { }</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <span class="keywordtype">void</span> Reset() { m_calls = 0; }</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      <span class="keyword">virtual</span> Result PrintTo(ByteSink &amp; byteSink, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> argument = 0)</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      <span class="keyword">virtual</span> Result PrintTo(ByteSink &amp; byteSink, s32 argument = 0)</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      {</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        byteSink.Print(++m_calls, <a class="code" href="structMFM_1_1Format.html#af8b0efb1fad45cd8ecaae70c02ec1ceaa0a13c9afc2be34b59492dc497ea85867">Format::LEX32</a>);</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        byteSink.Print(<span class="stringliteral">&quot;: &quot;</span>);</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">return</span> SUCCESS;</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      }</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      <span class="keyword">virtual</span> Result ReadFrom(ByteSource &amp; byteSource, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> argument = 0)</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      <span class="keyword">virtual</span> Result ReadFrom(ByteSource &amp; byteSource, s32 argument = 0)</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      {</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordflow">return</span> UNSUPPORTED;</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;      }</div>
@@ -315,7 +314,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="ByteSerializable_8h_html"><div class="ttname"><a href="ByteSerializable_8h.html">ByteSerializable.h</a></div></div>
 <div class="ttc" id="classMFM_1_1Logger_html_a9f34d068e9bfac3b4a76d818510123b6"><div class="ttname"><a href="classMFM_1_1Logger.html#a9f34d068e9bfac3b4a76d818510123b6">MFM::Logger::Level</a></div><div class="ttdeci">Level</div><div class="ttdef"><b>Definition:</b> Logger.h:52</div></div>
 <div class="ttc" id="classMFM_1_1Logger_html_a12113b75b13882a489c2b58322111565"><div class="ttname"><a href="classMFM_1_1Logger.html#a12113b75b13882a489c2b58322111565">MFM::Logger::SetByteSink</a></div><div class="ttdeci">ByteSink * SetByteSink(ByteSink &amp;byteSink)</div><div class="ttdef"><b>Definition:</b> Logger.h:171</div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="classMFM_1_1Logger_html_ac134364a6cab97733d814523bd0ece7e"><div class="ttname"><a href="classMFM_1_1Logger.html#ac134364a6cab97733d814523bd0ece7e">MFM::Logger::SetLevel</a></div><div class="ttdeci">Level SetLevel(Level newLevel)</div><div class="ttdef"><b>Definition:</b> Logger.h:142</div></div>
 <div class="ttc" id="classMFM_1_1Logger_html_a452e7b39b21033d57dd3acb62012c64b"><div class="ttname"><a href="classMFM_1_1Logger.html#a452e7b39b21033d57dd3acb62012c64b">MFM::Logger::Error</a></div><div class="ttdeci">void Error(const char *format,...)</div><div class="ttdef"><b>Definition:</b> Logger.h:259</div></div>
 <div class="ttc" id="ByteSink_8h_html"><div class="ttname"><a href="ByteSink_8h.html">ByteSink.h</a></div></div>
@@ -336,11 +334,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1Logger_html_aabb246739a2ab2de6c2413ad86533d9f"><div class="ttname"><a href="classMFM_1_1Logger.html#aabb246739a2ab2de6c2413ad86533d9f">MFM::Logger::SetTimeStamper</a></div><div class="ttdeci">void SetTimeStamper(ByteSerializable *stamper)</div><div class="ttdef"><b>Definition:</b> Logger.h:316</div></div>
 <div class="ttc" id="classMFM_1_1ByteSerializable_html"><div class="ttname"><a href="classMFM_1_1ByteSerializable.html">MFM::ByteSerializable</a></div><div class="ttdef"><b>Definition:</b> ByteSerializable.h:45</div></div>
 <div class="ttc" id="classMFM_1_1Logger_html_a90ef6bec21e63e6a7e5fc3c62fa27a2d"><div class="ttname"><a href="classMFM_1_1Logger.html#a90ef6bec21e63e6a7e5fc3c62fa27a2d">MFM::Logger::ValidLevel</a></div><div class="ttdeci">static bool ValidLevel(s32 levelNumber)</div><div class="ttdef"><b>Definition:</b> Logger.h:101</div></div>
-<div class="ttc" id="namespaceMFM_html_af35531c1df0ac4c25ef5937c2c21a78d"><div class="ttname"><a href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">MFM::s32</a></div><div class="ttdeci">int32_t s32</div><div class="ttdef"><b>Definition:</b> itype.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:14 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

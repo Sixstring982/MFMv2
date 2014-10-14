@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -73,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceMFM.html">MFM</a></li><li class="navelem"><a class="el" href="classMFM_1_1P2Atom.html">P2Atom</a></li>  </ul>
+<li class="navelem"><b>MFM</b></li><li class="navelem"><a class="el" href="classMFM_1_1P2Atom.html">P2Atom</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -106,7 +105,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab235ba843270b3eb998fc32e86415cc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab235ba843270b3eb998fc32e86415cc2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>P2Atom</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> state)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>P2Atom</b> (u32 state)</td></tr>
 <tr class="separator:ab235ba843270b3eb998fc32e86415cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d514b25d6683976609d0066bdc25be5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d514b25d6683976609d0066bdc25be5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSane</b> () const </td></tr>
@@ -115,55 +114,55 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSane</b> () const <
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasBeenRepaired</b> ()</td></tr>
 <tr class="separator:acdaf8039a43a40ec6def1b7af1d97e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6616f07523a4ae22fb9dd7592d75c56b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6616f07523a4ae22fb9dd7592d75c56b"></a>
-<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</b> ()</td></tr>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</b> ()</td></tr>
 <tr class="separator:a6616f07523a4ae22fb9dd7592d75c56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f928a04ef27b6c3c1484de8e078d203"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f928a04ef27b6c3c1484de8e078d203"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetState</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> state)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetState</b> (u32 state)</td></tr>
 <tr class="separator:a4f928a04ef27b6c3c1484de8e078d203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4153f7b01af0e62bc4518ce485c4d513"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4153f7b01af0e62bc4518ce485c4d513"></a>
-<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetLongBondCount</b> ()</td></tr>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetLongBondCount</b> ()</td></tr>
 <tr class="separator:a4153f7b01af0e62bc4518ce485c4d513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a074ef0811ecd1b54d001455f5702ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a074ef0811ecd1b54d001455f5702ee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLongBondCount</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> count)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLongBondCount</b> (u32 count)</td></tr>
 <tr class="separator:a9a074ef0811ecd1b54d001455f5702ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d56afe56a327b4db09f7a91fc0cf016"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d56afe56a327b4db09f7a91fc0cf016"></a>
-<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetShortBondCount</b> ()</td></tr>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetShortBondCount</b> ()</td></tr>
 <tr class="separator:a8d56afe56a327b4db09f7a91fc0cf016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e7278d92c2f3a60d88d1872d5fbd72b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e7278d92c2f3a60d88d1872d5fbd72b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetShortBondCount</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> count)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetShortBondCount</b> (u32 count)</td></tr>
 <tr class="separator:a3e7278d92c2f3a60d88d1872d5fbd72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83f03e16f526d4c43738cc16b4f1b974"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83f03e16f526d4c43738cc16b4f1b974"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadVariableBodyInto</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> *arr)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadVariableBodyInto</b> (u32 *arr)</td></tr>
 <tr class="separator:a83f03e16f526d4c43738cc16b4f1b974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad512f8ee29fbcee4794cd87236351dd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad512f8ee29fbcee4794cd87236351dd6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteVariableBodyFrom</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> *arr)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteVariableBodyFrom</b> (u32 *arr)</td></tr>
 <tr class="separator:ad512f8ee29fbcee4794cd87236351dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b305c17cf0cbb942b4eba3f0f88b6b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b305c17cf0cbb942b4eba3f0f88b6b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteLowerBits</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> val)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteLowerBits</b> (u32 val)</td></tr>
 <tr class="separator:a2b305c17cf0cbb942b4eba3f0f88b6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82ecae05326a0e1e07e0c22c450201ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82ecae05326a0e1e07e0c22c450201ee"></a>
-<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReadLowerBits</b> ()</td></tr>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>ReadLowerBits</b> ()</td></tr>
 <tr class="separator:a82ecae05326a0e1e07e0c22c450201ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0776d0119f74a1e2a7d900950e44665d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0776d0119f74a1e2a7d900950e44665d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintBits</b> (<a class="el" href="classMFM_1_1ByteSink.html">ByteSink</a> &amp;ostream)</td></tr>
 <tr class="separator:a0776d0119f74a1e2a7d900950e44665d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a350489cfb98bd41c40e4842131d19254"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a350489cfb98bd41c40e4842131d19254"></a>
-<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddLongBond</b> (const <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> &amp;offset)</td></tr>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>AddLongBond</b> (const <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;offset)</td></tr>
 <tr class="separator:a350489cfb98bd41c40e4842131d19254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab141a3be501386195a64d3322291348"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab141a3be501386195a64d3322291348"></a>
-<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddShortBond</b> (const <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> &amp;offset)</td></tr>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>AddShortBond</b> (const <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;offset)</td></tr>
 <tr class="separator:aab141a3be501386195a64d3322291348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a01305511179ac0a49e6f8a8742b1f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a01305511179ac0a49e6f8a8742b1f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FillLongBond</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> index, <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> &amp;pt)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FillLongBond</b> (u32 index, <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;pt)</td></tr>
 <tr class="separator:a1a01305511179ac0a49e6f8a8742b1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a3d180595bb4fbd2017805aee85e4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07a3d180595bb4fbd2017805aee85e4a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FillShortBond</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> index, <a class="el" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> &amp;pt)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FillShortBond</b> (u32 index, <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;pt)</td></tr>
 <tr class="separator:a07a3d180595bb4fbd2017805aee85e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2583258ac95e8370a0eeaa573bbf2d09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2583258ac95e8370a0eeaa573bbf2d09"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveLongBond</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> index)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveLongBond</b> (u32 index)</td></tr>
 <tr class="separator:a2583258ac95e8370a0eeaa573bbf2d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acee96e84a99dffe3ccc365f8827b510b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acee96e84a99dffe3ccc365f8827b510b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveShortBond</b> (<a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> index)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveShortBond</b> (u32 index)</td></tr>
 <tr class="separator:acee96e84a99dffe3ccc365f8827b510b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae862e8e882a3291e10102a3fd4b0aa0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae862e8e882a3291e10102a3fd4b0aa0"></a>
 <a class="el" href="classMFM_1_1P2Atom.html">P2Atom</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classMFM_1_1P2Atom.html">P2Atom</a> rhs)</td></tr>
@@ -172,7 +171,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveShortBond</b> (
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a7daccf523ebc3577523d84df40ec1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a7daccf523ebc3577523d84df40ec1e"></a>
-static <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StateFunc</b> (<a class="el" href="classMFM_1_1P2Atom.html">P2Atom</a> *atom)</td></tr>
+static u32&#160;</td><td class="memItemRight" valign="bottom"><b>StateFunc</b> (<a class="el" href="classMFM_1_1P2Atom.html">P2Atom</a> *atom)</td></tr>
 <tr class="separator:a1a7daccf523ebc3577523d84df40ec1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -182,7 +181,7 @@ static <a class="el" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:20 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:31 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

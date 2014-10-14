@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -139,11 +138,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classMFM_1_1Random.html">Random</a> m_random;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> m_seed;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    u32 m_seed;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> ReinitSeed();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> m_width, m_height;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">const</span> u32 m_width, m_height;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classMFM_1_1Point.html">SPoint</a> m_lastEventTile;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
@@ -153,9 +152,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classMFM_1_1ElementRegistry.html">ElementRegistry&lt;CC&gt;</a> m_er;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> m_xraySiteOdds;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    s32 m_xraySiteOdds;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">u8</a> m_gridGeneration;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    u8 m_gridGeneration;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">struct </span>TileControl</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
@@ -223,7 +222,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classMFM_1_1GridRenderer.html">GridRenderer</a>;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> SetSeed(<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> seed);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> SetSeed(u32 seed);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="classMFM_1_1Grid.html">Grid</a>(<a class="code" href="classMFM_1_1ElementRegistry.html">ElementRegistry&lt;CC&gt;</a>&amp; elts) :</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      m_seed(0),</div>
@@ -233,23 +232,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      m_xraySiteOdds(1000),</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      m_gridGeneration(0)</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> y = 0; y &lt; H; ++y)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      <span class="keywordflow">for</span> (u32 y = 0; y &lt; H; ++y)</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> x = 0; x &lt; W; ++x)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">for</span> (u32 x = 0; x &lt; W; ++x)</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;          LOG.<a class="code" href="classMFM_1_1Logger.html#a7137c6959d0e7bfe05d4f48db9e5e311">Debug</a>(<span class="stringliteral">&quot;Tile[%d][%d] @ %p&quot;</span>, x, y, &amp;m_tiles[x][y]);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      }</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a>* GetXraySiteOddsPtr()</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    s32* GetXraySiteOddsPtr()</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="keywordflow">return</span> &amp;m_xraySiteOdds;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">void</span> Reinit();</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1Element.html">Element&lt;CC&gt;</a> * LookupElement(<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> elementType)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1Element.html">Element&lt;CC&gt;</a> * LookupElement(u32 elementType)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      <span class="keywordflow">return</span> m_tiles[0][0].GetElementTable().Lookup(elementType);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
@@ -264,9 +263,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      anElement.<a class="code" href="classMFM_1_1Element.html#a98ff6561053690a19215f707445b4423">AllocateType</a>();         <span class="comment">// Force a type now</span></div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      m_er.RegisterElement(anElement);  <span class="comment">// Make sure we&#39;re in here (How could we not?)</span></div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="keywordflow">for</span>(<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> i = 0; i &lt; W; i++)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="keywordflow">for</span>(u32 i = 0; i &lt; W; i++)</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> j = 0; j &lt; H; j++)</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">for</span>(u32 j = 0; j &lt; H; j++)</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;          m_tiles[i][j].RegisterElement(anElement);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        }</div>
@@ -277,8 +276,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="classMFM_1_1Grid_1_1MyIterator.html">  210</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>erType&gt; <span class="keyword">class </span><a class="code" href="classMFM_1_1Grid_1_1MyIterator.html">MyIterator</a></div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    {</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <a class="code" href="classMFM_1_1Grid.html">Grid</a> &amp; g;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> i;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> j;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      s32 i;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      s32 j;</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      <a class="code" href="classMFM_1_1Grid_1_1MyIterator.html">MyIterator</a>(<a class="code" href="classMFM_1_1Grid.html">Grid&lt;GC&gt;</a> &amp; g, <span class="keywordtype">int</span> i = 0, <span class="keywordtype">int</span> j = 0) : g(g), i(i), j(j) { }</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
@@ -297,8 +296,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      }</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      <span class="keywordtype">int</span> operator-(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Grid_1_1MyIterator.html">MyIterator</a> &amp;m)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keyword">      </span>{</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> rows = j-m.j;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> cols = i-m.i;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        s32 rows = j-m.j;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        s32 cols = i-m.i;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">return</span> rows*g.W + cols;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      }</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
@@ -322,9 +321,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    ~Grid()</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    { }</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Grid.html#a8767b3e517c1c5e571601cbdb86a37a7">SetTileToExecuteOnly</a>(<span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>&amp; tileLoc, <span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Grid.html#a8767b3e517c1c5e571601cbdb86a37a7">SetTileToExecuteOnly</a>(<span class="keyword">const</span> SPoint&amp; tileLoc, <span class="keywordtype">bool</span> value);</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1Grid.html#afbaf8281d2d2e1ae8f0c4c4df935079e">GetTileExecutionStatus</a>(<span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>&amp; tileLoc);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1Grid.html#afbaf8281d2d2e1ae8f0c4c4df935079e">GetTileExecutionStatus</a>(<span class="keyword">const</span> SPoint&amp; tileLoc);</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
 <div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="classMFM_1_1Grid.html#adfb13e123145f40ebff39f8ef39f95db">  285</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Grid.html#adfb13e123145f40ebff39f8ef39f95db">EmptyTile</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; tileLoc)</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    {</div>
@@ -343,16 +342,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1Grid.html#a06fd2237f35cd373a9185a35a013f7db">MapGridToUncachedTile</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a> &amp; siteInGrid, <a class="code" href="classMFM_1_1Point.html">SPoint</a> &amp; tileInGrid, <a class="code" href="classMFM_1_1Point.html">SPoint</a> &amp; siteInTile) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00337"></a><span class="lineno"><a class="line" href="classMFM_1_1Grid.html#a07bf8e6eb96bce41e0c73e82030412c0">  337</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1Grid.html#a07bf8e6eb96bce41e0c73e82030412c0">GetHeight</a>() { <span class="keywordflow">return</span> H; }</div>
+<div class="line"><a name="l00337"></a><span class="lineno"><a class="line" href="classMFM_1_1Grid.html#a07bf8e6eb96bce41e0c73e82030412c0">  337</a></span>&#160;    <span class="keyword">static</span> u32 <a class="code" href="classMFM_1_1Grid.html#a07bf8e6eb96bce41e0c73e82030412c0">GetHeight</a>() { <span class="keywordflow">return</span> H; }</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="classMFM_1_1Grid.html#a98ba064f8d89fe57bef55111b1fe1064">  342</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1Grid.html#a98ba064f8d89fe57bef55111b1fe1064">GetWidth</a>() { <span class="keywordflow">return</span> W; }</div>
+<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="classMFM_1_1Grid.html#a98ba064f8d89fe57bef55111b1fe1064">  342</a></span>&#160;    <span class="keyword">static</span> u32 <a class="code" href="classMFM_1_1Grid.html#a98ba064f8d89fe57bef55111b1fe1064">GetWidth</a>() { <span class="keywordflow">return</span> W; }</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00347"></a><span class="lineno"><a class="line" href="classMFM_1_1Grid.html#ad97365521c13bc304b50caadd083baef">  347</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1Grid.html#ad97365521c13bc304b50caadd083baef">GetHeightSites</a>()</div>
+<div class="line"><a name="l00347"></a><span class="lineno"><a class="line" href="classMFM_1_1Grid.html#ad97365521c13bc304b50caadd083baef">  347</a></span>&#160;    <span class="keyword">static</span> u32 <a class="code" href="classMFM_1_1Grid.html#ad97365521c13bc304b50caadd083baef">GetHeightSites</a>()</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    {</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Grid.html#a07bf8e6eb96bce41e0c73e82030412c0">GetHeight</a>() * <a class="code" href="classMFM_1_1Tile.html">Tile&lt;CC&gt;::OWNED_SIDE</a>;</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    }</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="classMFM_1_1Grid.html#a5040c5752065ad8c7e603f133f0821fc">  355</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1Grid.html#a5040c5752065ad8c7e603f133f0821fc">GetWidthSites</a>()</div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="classMFM_1_1Grid.html#a5040c5752065ad8c7e603f133f0821fc">  355</a></span>&#160;    <span class="keyword">static</span> u32 <a class="code" href="classMFM_1_1Grid.html#a5040c5752065ad8c7e603f133f0821fc">GetWidthSites</a>()</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    {</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Grid.html#a98ba064f8d89fe57bef55111b1fe1064">GetWidth</a>() * <a class="code" href="classMFM_1_1Tile.html">Tile&lt;CC&gt;::OWNED_SIDE</a>;</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div>
@@ -389,9 +388,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      <span class="keywordflow">return</span> GetTile(tileInGrid).GetAtom(siteInTile);</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    }</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    T* GetWritableAtom(<a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>&amp; loc)</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    T* GetWritableAtom(SPoint&amp; loc)</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    {</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      <a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a> tileInGrid, siteInTile;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      SPoint tileInGrid, siteInTile;</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="classMFM_1_1Grid.html#a0baeddc6bd91f5bf5c96bb9a6070d64e">MapGridToTile</a>(loc, tileInGrid, siteInTile))</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      {</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        LOG.<a class="code" href="classMFM_1_1Logger.html#a452e7b39b21033d57dd3acb62012c64b">Error</a>(<span class="stringliteral">&quot;Can&#39;t get atom at site (%d,%d): Does not map to grid.&quot;</span>,</div>
@@ -401,25 +400,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      <span class="keywordflow">return</span> GetTile(tileInGrid).GetWritableAtom(siteInTile);</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    }</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordtype">void</span> FillLastEventTile(<a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>&amp; out);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordtype">void</span> FillLastEventTile(SPoint&amp; out);</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keyword">inline</span> Tile&lt;CC&gt; &amp; GetTile(<span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>&amp; pt)</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keyword">inline</span> Tile&lt;CC&gt; &amp; GetTile(<span class="keyword">const</span> SPoint&amp; pt)</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    {<span class="keywordflow">return</span> GetTile(pt.GetX(), pt.GetY());}</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> Tile&lt;CC&gt; &amp; GetTile(<span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">SPoint</a>&amp; pt)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> Tile&lt;CC&gt; &amp; GetTile(<span class="keyword">const</span> SPoint&amp; pt)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="keyword">    </span>{<span class="keywordflow">return</span> GetTile(pt.GetX(), pt.GetY());}</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keyword">inline</span> Tile&lt;CC&gt; &amp; GetTile(<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> x, <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> y)</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keyword">inline</span> Tile&lt;CC&gt; &amp; GetTile(u32 x, u32 y)</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    { <span class="keywordflow">return</span> m_tiles[x][y]; }</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> Tile&lt;CC&gt; &amp; GetTile(<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> x, <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> y)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> Tile&lt;CC&gt; &amp; GetTile(u32 x, u32 y)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="keyword">    </span>{ <span class="keywordflow">return</span> m_tiles[x][y]; }</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="comment">/* Don&#39;t count caches! */</span></div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> GetTotalSites()</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">const</span> u32 GetTotalSites()</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Grid.html#a5040c5752065ad8c7e603f133f0821fc">GetWidthSites</a>() * <a class="code" href="classMFM_1_1Grid.html#ad97365521c13bc304b50caadd083baef">GetHeightSites</a>(); }</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <a class="code" href="namespaceMFM.html#a45ba433d2ad12a66827205a309701c5f">u64</a> GetTotalEventsExecuted() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    u64 GetTotalEventsExecuted() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keywordtype">void</span> WriteEPSImage(ByteSink &amp; outstrm) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
@@ -427,7 +426,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordtype">void</span> ResetEPSCounts();</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> GetAtomCount(ElementType atomType) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    u32 GetAtomCount(ElementType atomType) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
 <div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="classMFM_1_1Grid.html#a352ddd5e89aa8fceaa658d198ac6f5aa">  449</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classMFM_1_1Grid.html#a352ddd5e89aa8fceaa658d198ac6f5aa">GetEmptySitePercentage</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="keyword">    </span>{</div>
@@ -435,7 +434,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                    (<span class="keywordtype">double</span>)(<a class="code" href="classMFM_1_1Grid.html#ad97365521c13bc304b50caadd083baef">GetHeightSites</a>() * <a class="code" href="classMFM_1_1Grid.html#a5040c5752065ad8c7e603f133f0821fc">GetWidthSites</a>()));</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    }</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordtype">void</span> SurroundRectangleWithWall(<a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> x, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> y, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> w, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> h, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> thickness);</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordtype">void</span> SurroundRectangleWithWall(s32 x, s32 y, s32 w, s32 h, s32 thickness);</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Grid.html#aad28deefbc6f8dd0222b1c586260f27b">RandomNuke</a>();</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
@@ -453,14 +452,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Grid.html#ab742faa372aead040d806d4e48ae2b55">XRay</a>();</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> CountActiveSites() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    u32 CountActiveSites() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  };</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;} <span class="comment">/* namespace MFM */</span></div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="preprocessor">#include &quot;Grid.tcc&quot;</span></div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*GRID_H*/</span><span class="preprocessor"></span></div>
-<div class="ttc" id="namespaceMFM_html_a7c8c9ccec4fe4047d908ce5eb5e0b1d4"><div class="ttname"><a href="namespaceMFM.html#a7c8c9ccec4fe4047d908ce5eb5e0b1d4">MFM::SPoint</a></div><div class="ttdeci">Point&lt; s32 &gt; SPoint</div><div class="ttdef"><b>Definition:</b> Point.h:561</div></div>
 <div class="ttc" id="classMFM_1_1Element_html_ad5996762a71ff9998222bf89a4d0dfd6"><div class="ttname"><a href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">MFM::Element::GetType</a></div><div class="ttdeci">u32 GetType() const </div><div class="ttdef"><b>Definition:</b> Element.h:339</div></div>
 <div class="ttc" id="classMFM_1_1Element__Empty_html"><div class="ttname"><a href="classMFM_1_1Element__Empty.html">MFM::Element_Empty</a></div><div class="ttdef"><b>Definition:</b> Element_Empty.h:41</div></div>
 <div class="ttc" id="classMFM_1_1Grid_html_afbaf8281d2d2e1ae8f0c4c4df935079e"><div class="ttname"><a href="classMFM_1_1Grid.html#afbaf8281d2d2e1ae8f0c4c4df935079e">MFM::Grid::GetTileExecutionStatus</a></div><div class="ttdeci">bool GetTileExecutionStatus(const SPoint &amp;tileLoc)</div><div class="ttdef"><b>Definition:</b> Grid.tcc:116</div></div>
@@ -468,14 +466,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1Logger_html_a9f34d068e9bfac3b4a76d818510123b6"><div class="ttname"><a href="classMFM_1_1Logger.html#a9f34d068e9bfac3b4a76d818510123b6">MFM::Logger::Level</a></div><div class="ttdeci">Level</div><div class="ttdef"><b>Definition:</b> Logger.h:52</div></div>
 <div class="ttc" id="classMFM_1_1Grid_html_aad28deefbc6f8dd0222b1c586260f27b"><div class="ttname"><a href="classMFM_1_1Grid.html#aad28deefbc6f8dd0222b1c586260f27b">MFM::Grid::RandomNuke</a></div><div class="ttdeci">void RandomNuke()</div><div class="ttdef"><b>Definition:</b> Grid.tcc:468</div></div>
 <div class="ttc" id="classMFM_1_1Random_html"><div class="ttname"><a href="classMFM_1_1Random.html">MFM::Random</a></div><div class="ttdef"><b>Definition:</b> Random.h:45</div></div>
-<div class="ttc" id="namespaceMFM_html_ab8c79d22c49af9b5b1f757ae5d436218"><div class="ttname"><a href="namespaceMFM.html#ab8c79d22c49af9b5b1f757ae5d436218">MFM::u8</a></div><div class="ttdeci">uint8_t u8</div><div class="ttdef"><b>Definition:</b> itype.h:58</div></div>
 <div class="ttc" id="classMFM_1_1Tile_html_a745ac018aaf8837a383705e526b75bb8"><div class="ttname"><a href="classMFM_1_1Tile.html#a745ac018aaf8837a383705e526b75bb8">MFM::Tile::Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> Tile.tcc:1072</div></div>
 <div class="ttc" id="classMFM_1_1Element_html_a98ff6561053690a19215f707445b4423"><div class="ttname"><a href="classMFM_1_1Element.html#a98ff6561053690a19215f707445b4423">MFM::Element::AllocateType</a></div><div class="ttdeci">void AllocateType()</div><div class="ttdef"><b>Definition:</b> Element.h:322</div></div>
 <div class="ttc" id="classMFM_1_1Grid_html_a07bf8e6eb96bce41e0c73e82030412c0"><div class="ttname"><a href="classMFM_1_1Grid.html#a07bf8e6eb96bce41e0c73e82030412c0">MFM::Grid::GetHeight</a></div><div class="ttdeci">static u32 GetHeight()</div><div class="ttdef"><b>Definition:</b> Grid.h:337</div></div>
 <div class="ttc" id="classMFM_1_1Grid_html_aad43eef52be7b01e2ec11f438a833514"><div class="ttname"><a href="classMFM_1_1Grid.html#aad43eef52be7b01e2ec11f438a833514">MFM::Grid::Pause</a></div><div class="ttdeci">void Pause()</div><div class="ttdef"><b>Definition:</b> Grid.h:363</div></div>
 <div class="ttc" id="classMFM_1_1Grid_html_a0baeddc6bd91f5bf5c96bb9a6070d64e"><div class="ttname"><a href="classMFM_1_1Grid.html#a0baeddc6bd91f5bf5c96bb9a6070d64e">MFM::Grid::MapGridToTile</a></div><div class="ttdeci">bool MapGridToTile(const SPoint &amp;siteInGrid, SPoint &amp;tileInGrid, SPoint &amp;siteInTile) const </div><div class="ttdef"><b>Definition:</b> Grid.tcc:132</div></div>
 <div class="ttc" id="ElementTable_8h_html"><div class="ttname"><a href="ElementTable_8h.html">ElementTable.h</a></div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="classMFM_1_1Grid_html_a74df2e327a44ae3cf5ba135972a3c033"><div class="ttname"><a href="classMFM_1_1Grid.html#a74df2e327a44ae3cf5ba135972a3c033">MFM::Grid::ToggleBackgroundRadiation</a></div><div class="ttdeci">void ToggleBackgroundRadiation()</div><div class="ttdef"><b>Definition:</b> Grid.h:472</div></div>
 <div class="ttc" id="classMFM_1_1Logger_html_a452e7b39b21033d57dd3acb62012c64b"><div class="ttname"><a href="classMFM_1_1Logger.html#a452e7b39b21033d57dd3acb62012c64b">MFM::Logger::Error</a></div><div class="ttdeci">void Error(const char *format,...)</div><div class="ttdef"><b>Definition:</b> Logger.h:259</div></div>
 <div class="ttc" id="classMFM_1_1Point_html_a3dc1de7350cbd1e82da54c456aabb268"><div class="ttname"><a href="classMFM_1_1Point.html#a3dc1de7350cbd1e82da54c456aabb268">MFM::Point::GetY</a></div><div class="ttdeci">T GetY() const </div><div class="ttdef"><b>Definition:</b> Point.tcc:40</div></div>
@@ -506,7 +502,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1Logger_html_af578a4cd8f4b6d51506f978e4596b88d"><div class="ttname"><a href="classMFM_1_1Logger.html#af578a4cd8f4b6d51506f978e4596b88d">MFM::Logger::Message</a></div><div class="ttdeci">void Message(const char *format,...)</div><div class="ttdef"><b>Definition:</b> Logger.h:287</div></div>
 <div class="ttc" id="classMFM_1_1Grid_html_ad97365521c13bc304b50caadd083baef"><div class="ttname"><a href="classMFM_1_1Grid.html#ad97365521c13bc304b50caadd083baef">MFM::Grid::GetHeightSites</a></div><div class="ttdeci">static u32 GetHeightSites()</div><div class="ttdef"><b>Definition:</b> Grid.h:347</div></div>
 <div class="ttc" id="classMFM_1_1Grid_html_adfb13e123145f40ebff39f8ef39f95db"><div class="ttname"><a href="classMFM_1_1Grid.html#adfb13e123145f40ebff39f8ef39f95db">MFM::Grid::EmptyTile</a></div><div class="ttdeci">void EmptyTile(const SPoint &amp;tileLoc)</div><div class="ttdef"><b>Definition:</b> Grid.h:285</div></div>
-<div class="ttc" id="namespaceMFM_html_a45ba433d2ad12a66827205a309701c5f"><div class="ttname"><a href="namespaceMFM.html#a45ba433d2ad12a66827205a309701c5f">MFM::u64</a></div><div class="ttdeci">uint64_t u64</div><div class="ttdef"><b>Definition:</b> itype.h:61</div></div>
 <div class="ttc" id="classMFM_1_1Grid_html_a73cd0c47a3555c2ed8388bd3c78eb153"><div class="ttname"><a href="classMFM_1_1Grid.html#a73cd0c47a3555c2ed8388bd3c78eb153">MFM::Grid::RecountAtoms</a></div><div class="ttdeci">void RecountAtoms()</div><div class="ttdef"><b>Definition:</b> Grid.tcc:160</div></div>
 <div class="ttc" id="classMFM_1_1Element_html"><div class="ttname"><a href="classMFM_1_1Element.html">MFM::Element</a></div><div class="ttdef"><b>Definition:</b> Atom.h:43</div></div>
 <div class="ttc" id="classMFM_1_1Grid_html_aac3fec990c2d7e70366ecc50c04cc0e0"><div class="ttname"><a href="classMFM_1_1Grid.html#aac3fec990c2d7e70366ecc50c04cc0e0">MFM::Grid::SetBackgroundRadiation</a></div><div class="ttdeci">void SetBackgroundRadiation(bool value)</div><div class="ttdef"><b>Definition:</b> Grid.tcc:534</div></div>
@@ -517,12 +512,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1Grid_html_a98ba064f8d89fe57bef55111b1fe1064"><div class="ttname"><a href="classMFM_1_1Grid.html#a98ba064f8d89fe57bef55111b1fe1064">MFM::Grid::GetWidth</a></div><div class="ttdeci">static u32 GetWidth()</div><div class="ttdef"><b>Definition:</b> Grid.h:342</div></div>
 <div class="ttc" id="classMFM_1_1Point_html"><div class="ttname"><a href="classMFM_1_1Point.html">MFM::Point&lt; s32 &gt;</a></div></div>
 <div class="ttc" id="classMFM_1_1Tile_html_aa37707ee35c55980843e7711db762894"><div class="ttname"><a href="classMFM_1_1Tile.html#aa37707ee35c55980843e7711db762894">MFM::Tile::IsPauseReady</a></div><div class="ttdeci">bool IsPauseReady()</div><div class="ttdef"><b>Definition:</b> Tile.tcc:1101</div></div>
-<div class="ttc" id="namespaceMFM_html_af35531c1df0ac4c25ef5937c2c21a78d"><div class="ttname"><a href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">MFM::s32</a></div><div class="ttdeci">int32_t s32</div><div class="ttdef"><b>Definition:</b> itype.h:36</div></div>
 <div class="ttc" id="classMFM_1_1Point_html_a293a3d4c35e5cbaf6d7d3486a45287a8"><div class="ttname"><a href="classMFM_1_1Point.html#a293a3d4c35e5cbaf6d7d3486a45287a8">MFM::Point::GetX</a></div><div class="ttdeci">T GetX() const </div><div class="ttdef"><b>Definition:</b> Point.tcc:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:15 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

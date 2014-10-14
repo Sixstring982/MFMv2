@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -160,19 +159,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1ElementRegistry.html#afa28ab8adeb3e505230a25eec6854bd8">RegisterElement</a>(<a class="code" href="classMFM_1_1Element.html">Element&lt;CC&gt;</a>&amp; e) ;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classMFM_1_1ElementRegistry.html#aa313c67599759d26a4c868c0e6c7c173">  104</a></span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1ElementRegistry.html#aa313c67599759d26a4c868c0e6c7c173">GetEntryCount</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classMFM_1_1ElementRegistry.html#aa313c67599759d26a4c868c0e6c7c173">  104</a></span>&#160;    u32 <a class="code" href="classMFM_1_1ElementRegistry.html#aa313c67599759d26a4c868c0e6c7c173">GetEntryCount</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keywordflow">return</span> m_registeredElementsCount;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classMFM_1_1ElementRegistry.html#a56c18183e2ecca45679d820a214c94d5">  118</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1UUID.html">UUID</a>&amp; <a class="code" href="classMFM_1_1ElementRegistry.html#a56c18183e2ecca45679d820a214c94d5">GetEntryUUID</a>(<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> entryIdx)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classMFM_1_1ElementRegistry.html#a56c18183e2ecca45679d820a214c94d5">  118</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1UUID.html">UUID</a>&amp; <a class="code" href="classMFM_1_1ElementRegistry.html#a56c18183e2ecca45679d820a214c94d5">GetEntryUUID</a>(u32 entryIdx)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keywordflow">if</span> (entryIdx &gt;= <a class="code" href="classMFM_1_1ElementRegistry.html#aa313c67599759d26a4c868c0e6c7c173">GetEntryCount</a>())</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        FAIL(ARRAY_INDEX_OUT_OF_BOUNDS);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="keywordflow">return</span> m_registeredElements[entryIdx].m_uuid;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classMFM_1_1ElementRegistry.html#aedbe9b5551f3e0e6524099a2a5a1a98a">  134</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1Element.html">Element&lt;CC&gt;</a>* <a class="code" href="classMFM_1_1ElementRegistry.html#aedbe9b5551f3e0e6524099a2a5a1a98a">GetEntryElement</a>(<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> entryIdx)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classMFM_1_1ElementRegistry.html#aedbe9b5551f3e0e6524099a2a5a1a98a">  134</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1Element.html">Element&lt;CC&gt;</a>* <a class="code" href="classMFM_1_1ElementRegistry.html#aedbe9b5551f3e0e6524099a2a5a1a98a">GetEntryElement</a>(u32 entryIdx)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      <span class="keywordflow">if</span> (entryIdx &gt;= <a class="code" href="classMFM_1_1ElementRegistry.html#aa313c67599759d26a4c868c0e6c7c173">GetEntryCount</a>())</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        FAIL(ARRAY_INDEX_OUT_OF_BOUNDS);</div>
@@ -184,14 +183,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">struct </span>ElementEntry {</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <a class="code" href="classMFM_1_1UUID.html">UUID</a> m_uuid;                   <span class="comment">//&lt; Set in all cases</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      <a class="code" href="classMFM_1_1Element.html">Element&lt;CC&gt;</a>* m_element;  <span class="comment">//&lt; Set if element is loaded</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> m_pathIndex;               <span class="comment">//&lt; Set if the element was found in this pathentry</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      s32 m_pathIndex;               <span class="comment">//&lt; Set if the element was found in this pathentry</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      ElementEntry() : m_element(0), m_pathIndex(-1) { }</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    } m_registeredElements[TABLE_SIZE];</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> m_registeredElementsCount;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    u32 m_registeredElementsCount;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">const</span> ElementEntry * FindMatching(<span class="keyword">const</span> UUID &amp; uuid)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> i = 0; i &lt; m_registeredElementsCount; ++i) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <span class="keywordflow">for</span> (u32 i = 0; i &lt; m_registeredElementsCount; ++i) {</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">if</span> (m_registeredElements[i].m_uuid == uuid)</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;          <span class="keywordflow">return</span> &amp;m_registeredElements[i];</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      }</div>
@@ -199,17 +198,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    ElementEntry * FindMatching(<span class="keyword">const</span> UUID &amp; uuid) {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> i = 0; i &lt; m_registeredElementsCount; ++i) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keywordflow">for</span> (u32 i = 0; i &lt; m_registeredElementsCount; ++i) {</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span> (m_registeredElements[i].m_uuid == uuid)</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;          <span class="keywordflow">return</span> &amp;m_registeredElements[i];</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      }</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> FindCompatibleIndex(<span class="keyword">const</span> UUID &amp; uuid, <a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> lastIndex)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    s32 FindCompatibleIndex(<span class="keyword">const</span> UUID &amp; uuid, s32 lastIndex)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keywordflow">if</span> (lastIndex &lt; -1)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        FAIL(ILLEGAL_ARGUMENT);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a> i = lastIndex + 1; i &lt; (<a class="code" href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">s32</a>) m_registeredElementsCount; ++i) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <span class="keywordflow">for</span> (s32 i = lastIndex + 1; i &lt; (s32) m_registeredElementsCount; ++i) {</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">if</span> (m_registeredElements[i].m_uuid.Compatible(uuid))</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;          <span class="keywordflow">return</span> i;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      }</div>
@@ -217,7 +216,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    PathString m_searchPaths[MAX_PATHS];</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> m_searchPathsCount;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    u32 m_searchPathsCount;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  };</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
@@ -228,7 +227,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*ELEMENTREGISTRY_H*/</span><span class="preprocessor"></span></div>
 <div class="ttc" id="classMFM_1_1ElementRegistry_html_afa28ab8adeb3e505230a25eec6854bd8"><div class="ttname"><a href="classMFM_1_1ElementRegistry.html#afa28ab8adeb3e505230a25eec6854bd8">MFM::ElementRegistry::RegisterElement</a></div><div class="ttdeci">bool RegisterElement(Element&lt; CC &gt; &amp;e)</div><div class="ttdef"><b>Definition:</b> ElementRegistry.tcc:70</div></div>
 <div class="ttc" id="classMFM_1_1ElementRegistry_html_adfc5da9bf73636258990703143442832"><div class="ttname"><a href="classMFM_1_1ElementRegistry.html#adfc5da9bf73636258990703143442832">MFM::ElementRegistry::RegisterUUID</a></div><div class="ttdeci">bool RegisterUUID(const UUID &amp;uuid)</div><div class="ttdef"><b>Definition:</b> ElementRegistry.tcc:83</div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="classMFM_1_1ElementRegistry_html_a9c0f1c7a4e777e5fd9848890cf2fe45d"><div class="ttname"><a href="classMFM_1_1ElementRegistry.html#a9c0f1c7a4e777e5fd9848890cf2fe45d">MFM::ElementRegistry::AddPath</a></div><div class="ttdeci">void AddPath(const char *path)</div><div class="ttdef"><b>Definition:</b> ElementRegistry.tcc:139</div></div>
 <div class="ttc" id="OverflowableCharBufferByteSink_8h_html"><div class="ttname"><a href="OverflowableCharBufferByteSink_8h.html">OverflowableCharBufferByteSink.h</a></div></div>
 <div class="ttc" id="classMFM_1_1ElementRegistry_html"><div class="ttname"><a href="classMFM_1_1ElementRegistry.html">MFM::ElementRegistry</a></div><div class="ttdef"><b>Definition:</b> ElementRegistry.h:48</div></div>
@@ -240,11 +238,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1ElementRegistry_html_aedbe9b5551f3e0e6524099a2a5a1a98a"><div class="ttname"><a href="classMFM_1_1ElementRegistry.html#aedbe9b5551f3e0e6524099a2a5a1a98a">MFM::ElementRegistry::GetEntryElement</a></div><div class="ttdeci">const Element&lt; CC &gt; * GetEntryElement(u32 entryIdx) const </div><div class="ttdef"><b>Definition:</b> ElementRegistry.h:134</div></div>
 <div class="ttc" id="Element_8h_html"><div class="ttname"><a href="Element_8h.html">Element.h</a></div></div>
 <div class="ttc" id="classMFM_1_1Element_html"><div class="ttname"><a href="classMFM_1_1Element.html">MFM::Element</a></div><div class="ttdef"><b>Definition:</b> Atom.h:43</div></div>
-<div class="ttc" id="namespaceMFM_html_af35531c1df0ac4c25ef5937c2c21a78d"><div class="ttname"><a href="namespaceMFM.html#af35531c1df0ac4c25ef5937c2c21a78d">MFM::s32</a></div><div class="ttdeci">int32_t s32</div><div class="ttdef"><b>Definition:</b> itype.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:15 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

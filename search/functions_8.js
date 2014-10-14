@@ -9,9 +9,11 @@ var searchData=
   ['internalputatom',['InternalPutAtom',['../classMFM_1_1Tile.html#aaf9c9aa9ff288698050159d80d2ffc14',1,'MFM::Tile']]],
   ['interpolatecolors',['InterpolateColors',['../classMFM_1_1Drawing.html#a6801166c119c8c35a3f9c18b0375127d',1,'MFM::Drawing']]],
   ['intersectwith',['IntersectWith',['../classMFM_1_1Rect.html#a2f759fb956170b5e55be376d129e2d9d',1,'MFM::Rect']]],
-  ['intlexencode',['IntLexEncode',['../namespaceMFM.html#a3428911e0be98f712ba455d16c098f7d',1,'MFM']]],
   ['inwindow',['InWindow',['../classMFM_1_1EventWindow.html#a635df0fec5a1afe20ba72c36b228b05b',1,'MFM::EventWindow']]],
   ['isbackgroundradiataionenabled',['IsBackgroundRadiataionEnabled',['../classMFM_1_1Grid.html#ac345aae3ce54c03c59c0284fed639652',1,'MFM::Grid']]],
+  ['isborderingmoore',['IsBorderingMoore',['../classMFM_1_1EventWindow.html#ae27f6df4eb8ff72ac7e77074500b4118',1,'MFM::EventWindow']]],
+  ['isborderingneighborhood',['IsBorderingNeighborhood',['../classMFM_1_1EventWindow.html#a847ac049768807359aacece4437c672f',1,'MFM::EventWindow']]],
+  ['isborderingvonneumann',['IsBorderingVonNeumann',['../classMFM_1_1EventWindow.html#a361a127865280bbc10cac60850bd9f15',1,'MFM::EventWindow']]],
   ['ischecked',['IsChecked',['../classMFM_1_1AbstractCheckbox.html#ade717fc5075440f4135d912a85b64708',1,'MFM::AbstractCheckbox::IsChecked()'],['../classMFM_1_1AbstractCheckboxExternal.html#aa349a155123b0f41ebfb6338f3e5f4b5',1,'MFM::AbstractCheckboxExternal::IsChecked()']]],
   ['isconnected',['IsConnected',['../classMFM_1_1Connection.html#a20473befb26e281bb7f2459bac0550b4',1,'MFM::Connection::IsConnected()'],['../classMFM_1_1Tile.html#a95eca196c1e23a296094007949f05f65',1,'MFM::Tile::IsConnected()']]],
   ['iscorner',['IsCorner',['../classMFM_1_1Dirs.html#aa036c8e89ec2ba80a8dbe46f66b9776f',1,'MFM::Dirs']]],
@@ -34,6 +36,5 @@ var searchData=
   ['issane',['IsSane',['../classMFM_1_1Atom.html#a69e317f93923f43a10286465c37e9e7d',1,'MFM::Atom']]],
   ['istype',['IsType',['../classMFM_1_1Atom.html#aaff0b1e386fddf1cd95f078e6e0f9db6',1,'MFM::Atom::IsType()'],['../classMFM_1_1Element.html#a5ea722a701c1484c350189885f8ac3fb',1,'MFM::Element::IsType()']]],
   ['isvalidatomicsymbol',['IsValidAtomicSymbol',['../classMFM_1_1Element.html#ab173d299b60b25eb613902168065b64f',1,'MFM::Element']]],
-  ['iszero',['IsZero',['../classMFM_1_1Point.html#a35b7e38a13750ff7c6404d4f471a4d7d',1,'MFM::Point']]],
-  ['item_5fcount',['ITEM_COUNT',['../namespaceMFM.html#a3cb010f6c78a407253a98e8e4d7a55cf',1,'MFM']]]
+  ['iszero',['IsZero',['../classMFM_1_1Point.html#a35b7e38a13750ff7c6404d4f471a4d7d',1,'MFM::Point']]]
 ];

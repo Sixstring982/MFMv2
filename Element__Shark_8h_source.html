@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -155,18 +154,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classMFM_1_1BitField.html">BitField&lt;BitVector&lt;BITS&gt;</a>, VD::U32, SHARK_ENERGY_LEN, SHARK_ENERGY_POS&gt; <a class="code" href="classMFM_1_1BitField.html">AFSharkEnergy</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> GetSharkEnergy(<span class="keyword">const</span> T&amp; us)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    u32 GetSharkEnergy(<span class="keyword">const</span> T&amp; us)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1BitField.html#a0270013cfb6607fe077dbf4abb123a35">AFSharkEnergy::Read</a>(this-&gt;<a class="code" href="classMFM_1_1Element.html#ae509d847b781e66fec6b2b3baefe93dd">GetBits</a>(us));</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> SetSharkEnergy(T&amp; us, <span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> age)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> SetSharkEnergy(T&amp; us, <span class="keyword">const</span> u32 age)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <a class="code" href="classMFM_1_1BitField.html#abc92d88dfd45548b347de0f138a47865">AFSharkEnergy::Write</a>(this-&gt;<a class="code" href="classMFM_1_1Element.html#ae509d847b781e66fec6b2b3baefe93dd">GetBits</a>(us), age);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">static</span> <a class="code" href="classMFM_1_1Element__Shark.html">Element_Shark</a> THE_INSTANCE;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> TYPE()</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> u32 TYPE()</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordflow">return</span> THE_INSTANCE.<a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
@@ -195,19 +194,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordflow">return</span> defaultAtom;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Shark.html#ae78ca5804f1b22b5257eeda7cf157062">  113</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1Element__Shark.html#ae78ca5804f1b22b5257eeda7cf157062">DefaultPhysicsColor</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Shark.html#ae78ca5804f1b22b5257eeda7cf157062">  113</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element__Shark.html#ae78ca5804f1b22b5257eeda7cf157062">DefaultPhysicsColor</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">return</span> 0xffff2244;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// Non-diffusable</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Shark.html#ad96deeaa0e4dbca16154231301f32726">  120</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1Element__Shark.html#ad96deeaa0e4dbca16154231301f32726">Diffusability</a>(<a class="code" href="classMFM_1_1EventWindow.html">EventWindow&lt;CC&gt;</a> &amp; ew, <a class="code" href="classMFM_1_1Point.html">SPoint</a> nowAt, <a class="code" href="classMFM_1_1Point.html">SPoint</a> maybeAt)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Shark.html#ad96deeaa0e4dbca16154231301f32726">  120</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element__Shark.html#ad96deeaa0e4dbca16154231301f32726">Diffusability</a>(<a class="code" href="classMFM_1_1EventWindow.html">EventWindow&lt;CC&gt;</a> &amp; ew, <a class="code" href="classMFM_1_1Point.html">SPoint</a> nowAt, <a class="code" href="classMFM_1_1Point.html">SPoint</a> maybeAt)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="keywordflow">return</span> nowAt.<a class="code" href="classMFM_1_1Point.html#a642c8c3620098a5e3787ae0a64776220">Equals</a>(maybeAt)?<a class="code" href="classMFM_1_1Element.html">Element&lt;CC&gt;::COMPLETE_DIFFUSABILITY</a>:0;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Shark.html#a2328e2a4c78e84cd64f49e4e5d3e1d63">  125</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> <a class="code" href="classMFM_1_1Element__Shark.html#a2328e2a4c78e84cd64f49e4e5d3e1d63">PercentMovable</a>(<span class="keyword">const</span> T&amp; you,</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classMFM_1_1Element__Shark.html#a2328e2a4c78e84cd64f49e4e5d3e1d63">  125</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element__Shark.html#a2328e2a4c78e84cd64f49e4e5d3e1d63">PercentMovable</a>(<span class="keyword">const</span> T&amp; you,</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                               <span class="keyword">const</span> T&amp; me, <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; offset)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keywordflow">return</span> 0;</div>
@@ -220,12 +219,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      <span class="keyword">const</span> <a class="code" href="classMFM_1_1MDist.html">MDist&lt;R&gt;</a> &amp; md = <a class="code" href="classMFM_1_1MDist.html#a5f137632126f8ffe1f6b5816c508619d">MDist&lt;R&gt;::get</a>();</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <a class="code" href="classMFM_1_1Point.html">SPoint</a> fishRel;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> fishCount = 0;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      u32 fishCount = 0;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <a class="code" href="classMFM_1_1Point.html">SPoint</a> emptyRel;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> emptyCount = 0;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      u32 emptyCount = 0;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> energy = GetSharkEnergy(<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      u32 energy = GetSharkEnergy(<span class="keyword">self</span>);</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="keywordtype">bool</span> starved = energy == 0;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <span class="keywordflow">if</span> (starved)</div>
@@ -237,16 +236,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      energy = energy - 1;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      this-&gt;SetSharkEnergy(<span class="keyword">self</span>, energy);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> age = this-&gt;GetCurrentAge(<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      u32 age = this-&gt;GetCurrentAge(<span class="keyword">self</span>);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="comment">// Don&#39;t use genetic birth age (yet): bool reproable = age &gt;= this-&gt;GetBirthAge(self);</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="keywordtype">bool</span> reproable = age &gt;= (<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>) m_sharkBirthAge.GetValue();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="keywordtype">bool</span> reproable = age &gt;= (u32) m_sharkBirthAge.GetValue();</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">if</span> (!reproable)</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      {</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        this-&gt;SetCurrentAge(<span class="keyword">self</span>, 1 + age);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      }</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> idx = md.<a class="code" href="classMFM_1_1MDist.html#ab7d590118f075f1fb40780c5aa3da828">GetFirstIndex</a>(1); idx &lt;= md.<a class="code" href="classMFM_1_1MDist.html#a6b3b0ca30551ec541313cf0b2b38191a">GetLastIndex</a>(1); ++idx)</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="keywordflow">for</span> (u32 idx = md.<a class="code" href="classMFM_1_1MDist.html#ab7d590118f075f1fb40780c5aa3da828">GetFirstIndex</a>(1); idx &lt;= md.<a class="code" href="classMFM_1_1MDist.html#a6b3b0ca30551ec541313cf0b2b38191a">GetLastIndex</a>(1); ++idx)</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      {</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a> rel = md.GetPoint(idx);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">if</span> (!window.<a class="code" href="classMFM_1_1EventWindow.html#a81a9f82636aa75fd134ca45d50e31291">IsLiveSite</a>(rel))</div>
@@ -254,7 +253,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;          <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        T other = window.<a class="code" href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">GetRelativeAtom</a>(rel);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a> type = other.GetType();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        u32 type = other.GetType();</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">if</span>(type == <a class="code" href="classMFM_1_1Element__Fish.html">Element_Fish&lt;CC&gt;::THE_INSTANCE</a>.<a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>())</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        {</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;          <span class="keywordflow">if</span> (random.<a class="code" href="classMFM_1_1Random.html#ab9c90ebd77ca1d2f13ad5e147a157355">OneIn</a>(++fishCount))</div>
@@ -274,7 +273,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      <span class="keywordflow">if</span> (fishCount &gt; 0)   <span class="comment">// Eating</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        energy = MIN((<a class="code" href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">u32</a>) MAX_SHARK_ENERGY, energy + m_sharkEnergyPerFish.GetValue());</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        energy = MIN((u32) MAX_SHARK_ENERGY, energy + m_sharkEnergyPerFish.GetValue());</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">if</span> (reproable)</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        {</div>
@@ -336,11 +335,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1Element_html_ab4d7e6b9447f709ea007ca245c12f4cf"><div class="ttname"><a href="classMFM_1_1Element.html#ab4d7e6b9447f709ea007ca245c12f4cf">MFM::Element::SetName</a></div><div class="ttdeci">void SetName(const char *name)</div><div class="ttdef"><b>Definition:</b> Element.h:209</div></div>
 <div class="ttc" id="classMFM_1_1Element_html_ae1dd9fcdee4a757fea02a7dba3e7c2ad"><div class="ttname"><a href="classMFM_1_1Element.html#ae1dd9fcdee4a757fea02a7dba3e7c2ad">MFM::Element::SetAtomicSymbol</a></div><div class="ttdeci">void SetAtomicSymbol(const char *symbol)</div><div class="ttdef"><b>Definition:</b> Element.h:193</div></div>
 <div class="ttc" id="ElementTable_8h_html"><div class="ttname"><a href="ElementTable_8h.html">ElementTable.h</a></div></div>
-<div class="ttc" id="namespaceMFM_html_a3ff9b2028ac2e0ecfa490dc8547ea6a3"><div class="ttname"><a href="namespaceMFM.html#a3ff9b2028ac2e0ecfa490dc8547ea6a3">MFM::u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition:</b> itype.h:60</div></div>
 <div class="ttc" id="classMFM_1_1EventWindow_html_a81a9f82636aa75fd134ca45d50e31291"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a81a9f82636aa75fd134ca45d50e31291">MFM::EventWindow::IsLiveSite</a></div><div class="ttdeci">bool IsLiveSite(const SPoint &amp;location) const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:147</div></div>
 <div class="ttc" id="classMFM_1_1Random_html_ab9c90ebd77ca1d2f13ad5e147a157355"><div class="ttname"><a href="classMFM_1_1Random.html#ab9c90ebd77ca1d2f13ad5e147a157355">MFM::Random::OneIn</a></div><div class="ttdeci">bool OneIn(u32 odds)</div><div class="ttdef"><b>Definition:</b> Random.h:96</div></div>
 <div class="ttc" id="classMFM_1_1EventWindow_html_a9d12bbd638be0a792379579803842c30"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a9d12bbd638be0a792379579803842c30">MFM::EventWindow::GetRandom</a></div><div class="ttdeci">Random &amp; GetRandom()</div><div class="ttdef"><b>Definition:</b> EventWindow.h:121</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_ad2763d07d8381b8097f59a7e344094c6"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">MFM::EventWindow::GetRelativeAtom</a></div><div class="ttdeci">const T &amp; GetRelativeAtom(const SPoint &amp;offset) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:26</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_ad2763d07d8381b8097f59a7e344094c6"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">MFM::EventWindow::GetRelativeAtom</a></div><div class="ttdeci">const T &amp; GetRelativeAtom(const SPoint &amp;offset) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:50</div></div>
 <div class="ttc" id="classMFM_1_1ElementParameterS32_html"><div class="ttname"><a href="classMFM_1_1ElementParameterS32.html">MFM::ElementParameterS32</a></div><div class="ttdef"><b>Definition:</b> Parameter.h:593</div></div>
 <div class="ttc" id="classMFM_1_1BitField_html"><div class="ttname"><a href="classMFM_1_1BitField.html">MFM::BitField</a></div><div class="ttdef"><b>Definition:</b> Atom.h:45</div></div>
 <div class="ttc" id="classMFM_1_1EventWindow_html_a9c406623e599af246697ac674dcce529"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a9c406623e599af246697ac674dcce529">MFM::EventWindow::GetCenterAtom</a></div><div class="ttdeci">const T &amp; GetCenterAtom() const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:207</div></div>
@@ -357,7 +355,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1Element_html_ae509d847b781e66fec6b2b3baefe93dd"><div class="ttname"><a href="classMFM_1_1Element.html#ae509d847b781e66fec6b2b3baefe93dd">MFM::Element::GetBits</a></div><div class="ttdeci">const BitVector&lt; P::BITS_PER_ATOM &gt; &amp; GetBits(const T &amp;atom) const </div><div class="ttdef"><b>Definition:</b> Element.h:132</div></div>
 <div class="ttc" id="Atom_8h_html"><div class="ttname"><a href="Atom_8h.html">Atom.h</a></div></div>
 <div class="ttc" id="classMFM_1_1Element__Shark_html_ad96deeaa0e4dbca16154231301f32726"><div class="ttname"><a href="classMFM_1_1Element__Shark.html#ad96deeaa0e4dbca16154231301f32726">MFM::Element_Shark::Diffusability</a></div><div class="ttdeci">virtual u32 Diffusability(EventWindow&lt; CC &gt; &amp;ew, SPoint nowAt, SPoint maybeAt) const </div><div class="ttdef"><b>Definition:</b> Element_Shark.h:120</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a4b499a32d5c8423e8cc72e7abf103f5b"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a4b499a32d5c8423e8cc72e7abf103f5b">MFM::EventWindow::SetRelativeAtom</a></div><div class="ttdeci">bool SetRelativeAtom(const SPoint &amp;offset, const T &amp;atom)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:14</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a4b499a32d5c8423e8cc72e7abf103f5b"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a4b499a32d5c8423e8cc72e7abf103f5b">MFM::EventWindow::SetRelativeAtom</a></div><div class="ttdeci">bool SetRelativeAtom(const SPoint &amp;offset, const T &amp;atom)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:39</div></div>
 <div class="ttc" id="Element_8h_html"><div class="ttname"><a href="Element_8h.html">Element.h</a></div></div>
 <div class="ttc" id="classMFM_1_1Element__Shark_html_a38b24c9e1d972e6cb504d9bfe096e623"><div class="ttname"><a href="classMFM_1_1Element__Shark.html#a38b24c9e1d972e6cb504d9bfe096e623">MFM::Element_Shark::GetDefaultAtom</a></div><div class="ttdeci">virtual const T &amp; GetDefaultAtom() const </div><div class="ttdef"><b>Definition:</b> Element_Shark.h:102</div></div>
 <div class="ttc" id="classMFM_1_1Element_html"><div class="ttname"><a href="classMFM_1_1Element.html">MFM::Element</a></div><div class="ttdef"><b>Definition:</b> Atom.h:43</div></div>
@@ -365,7 +363,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 14:34:14 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
