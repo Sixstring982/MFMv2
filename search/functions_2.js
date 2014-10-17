@@ -1,7 +1,7 @@
 var searchData=
 [
   ['cacheat',['CacheAt',['../classMFM_1_1Tile.html#a778540131a25f346539a83380302427f',1,'MFM::Tile']]],
-  ['canseeatomoftype',['CanSeeAtomOfType',['../classMFM_1_1EventWindow.html#a43cd56dbceeb4aab83288eec3bca9a6c',1,'MFM::EventWindow']]],
+  ['canseeatomoftype',['CanSeeAtomOfType',['../classMFM_1_1WindowScanner.html#a5c65e3fd74e7f81eaef8781d295d0086',1,'MFM::WindowScanner']]],
   ['canwrite',['CanWrite',['../classMFM_1_1ByteSink.html#aabf2e2d4e21f28b891fb593c4d005ea4',1,'MFM::ByteSink::CanWrite()'],['../classMFM_1_1DiscardBytes.html#a06131f68a916bc66ebe925f889ed65be',1,'MFM::DiscardBytes::CanWrite()'],['../classMFM_1_1CharBufferByteSink.html#a8e975fe3fd34222d7b8564b2556e1e34',1,'MFM::CharBufferByteSink::CanWrite()'],['../classMFM_1_1LineTailByteSink.html#a96b0b35d7b29775995ecc9ceba07cb81',1,'MFM::LineTailByteSink::CanWrite()'],['../classMFM_1_1OverflowableCharBufferByteSink.html#ab8462dfc8c7b1d72c90e8cda0264f7d7',1,'MFM::OverflowableCharBufferByteSink::CanWrite()'],['../classMFM_1_1TeeByteSink.html#aa77e2830dedce34eaf043ec29ca87996',1,'MFM::TeeByteSink::CanWrite()'],['../classMFM_1_1FileByteSink.html#a2d210a623b7ef109a63992aab772d0cc',1,'MFM::FileByteSink::CanWrite()']]],
   ['ccwdir',['CCWDir',['../classMFM_1_1Dirs.html#ae55fb0ecde1c7d61a918e9368c80e46b',1,'MFM::Dirs']]],
   ['changebuffer',['ChangeBuffer',['../classMFM_1_1CharBufferByteSource.html#af4cb83e7cb6d3a78d4e5e63a4ecc224a',1,'MFM::CharBufferByteSource']]],
@@ -20,6 +20,11 @@ var searchData=
   ['connection',['Connection',['../classMFM_1_1Connection.html#a54ca1ff7251e0acb632563c8e190dc62',1,'MFM::Connection']]],
   ['contains',['Contains',['../classMFM_1_1Rect.html#a50f27f95663269058203b3bc77f79a0a',1,'MFM::Rect::Contains()'],['../classMFM_1_1AbstractButton.html#a8d1ad06e40fe6bbeb2ecfb7fc09ea3fe',1,'MFM::AbstractButton::Contains()']]],
   ['correct2dparityifpossible',['Correct2DParityIfPossible',['../classMFM_1_1Parity2D__4x4.html#ad7b11e2a8c2a66b07156a5b862d52d16',1,'MFM::Parity2D_4x4']]],
+  ['countatomsoftype',['CountAtomsOfType',['../classMFM_1_1WindowScanner.html#a37e637c44c1a1eaed794d7126fd09e88',1,'MFM::WindowScanner']]],
+  ['countemptyatoms',['CountEmptyAtoms',['../classMFM_1_1WindowScanner.html#ac235c376d1e230feca7936fa1e64d6a1',1,'MFM::WindowScanner']]],
+  ['countinneighborhood',['CountInNeighborhood',['../classMFM_1_1WindowScanner.html#a86e1850ec572907a48de98f03297b77b',1,'MFM::WindowScanner']]],
+  ['countmooreneighbors',['CountMooreNeighbors',['../classMFM_1_1WindowScanner.html#ac208192aba4f3b433b3054484d9a0b2c',1,'MFM::WindowScanner']]],
+  ['countvonneumannneighbors',['CountVonNeumannNeighbors',['../classMFM_1_1WindowScanner.html#a837ff72fffac66c466fa3504dfd494ba',1,'MFM::WindowScanner']]],
   ['create',['Create',['../classMFM_1_1Random.html#aa2f43bbb751d3f6d9f75937b49047f3a',1,'MFM::Random::Create()'],['../classMFM_1_1Random.html#a8ed0ee62055f7fda6833af8d1247cc27',1,'MFM::Random::Create(u32 max)']]],
   ['createbool',['CreateBool',['../classMFM_1_1Random.html#ab6777bc7cbe4bb4c55d86c0c14d749a5',1,'MFM::Random']]],
   ['cwdir',['CWDir',['../classMFM_1_1Dirs.html#a9540419244c45beab5bb9ccdbbf3181f',1,'MFM::Dirs']]]

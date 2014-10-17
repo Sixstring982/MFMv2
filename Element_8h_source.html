@@ -212,256 +212,245 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      m_name = name;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a41ed13a0052b9d1028a392b5ed4c76e3">  218</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a> <a class="code" href="classMFM_1_1Element.html#a41ed13a0052b9d1028a392b5ed4c76e3">VNNeighbors</a>[4];</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1Element.html#a314bff267b279018a804f8865e76e12d">FillAvailableVNNeighbor</a>(<a class="code" href="classMFM_1_1EventWindow.html">EventWindow&lt;CC&gt;</a>&amp; window, <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; pt) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1Element.html#a7d26590257769859ce54cb50de75f6e3">FillPointWithType</a>(<a class="code" href="classMFM_1_1EventWindow.html">EventWindow&lt;CC&gt;</a>&amp; window,</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                           <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; pt, <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>* relevants, u32 relevantCount,</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                           Dir rotation, ElementType type) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Element.html#a93881c4d4a7e6d46421d2befec00fb1e">Diffuse</a>(<a class="code" href="classMFM_1_1EventWindow.html">EventWindow&lt;CC&gt;</a>&amp; window) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element.html#a65460ee2090c2efd04f34b47aa3a3926">PercentMovable</a>(<span class="keyword">const</span> T&amp; you,</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                               <span class="keyword">const</span> T&amp; me, <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; offset) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;   <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#acabf798cea4e848357b84c38d71307cc">  295</a></span>&#160;    <a class="code" href="classMFM_1_1Element.html#acabf798cea4e848357b84c38d71307cc">Element</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1UUID.html">UUID</a> &amp; uuid) : m_UUID(uuid), m_type(0),</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                 m_hasType(false),</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                                 m_renderLowlight(false),</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                 m_atomicSymbol(<span class="stringliteral">&quot;!!&quot;</span>),</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                 m_name(<span class="stringliteral">&quot;UNNAMED&quot;</span>)</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      LOG.<a class="code" href="classMFM_1_1Logger.html#a7137c6959d0e7bfe05d4f48db9e5e311">Debug</a>(<span class="stringliteral">&quot;Constructed %@&quot;</span>,&amp;m_UUID);</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    }</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">    // For use by Element_Empty only!</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">    Element(const UUID &amp; uuid, u32 type) : m_UUID(uuid), m_type(type),</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">                                           m_hasType(true),</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">                                           m_renderLowlight(false),</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment">                                           m_atomicSymbol(&quot;!!&quot;)</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment">    { }</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a98ff6561053690a19215f707445b4423">  322</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Element.html#a98ff6561053690a19215f707445b4423">AllocateType</a>()</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      <span class="keywordflow">if</span> (!m_hasType)</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        m_type = <a class="code" href="classMFM_1_1StaticLoader.html">StaticLoader&lt;CC,16&gt;::AllocateType</a>(m_UUID);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        m_hasType = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        m_defaultAtom = <a class="code" href="classMFM_1_1Element.html#a2490eb388c8366bdf43feaaa0e2d5a96">BuildDefaultAtom</a>();</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      }</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    }</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">  339</a></span>&#160;    u32 <a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      <span class="keywordflow">if</span> (!m_hasType)</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        FAIL(ILLEGAL_STATE);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      }</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      <span class="keywordflow">return</span> m_type;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a7c17125eeabd6650daf9ec10259423be">  354</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classMFM_1_1Element.html#a7c17125eeabd6650daf9ec10259423be">GetAtomicSymbol</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      <span class="keywordflow">return</span> m_atomicSymbol;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
-<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a4c935ab276c3d9ff771c03821539e9e7">  365</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classMFM_1_1Element.html#a4c935ab276c3d9ff771c03821539e9e7">GetName</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      <span class="keywordflow">return</span> m_name;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Element.html#a93881c4d4a7e6d46421d2befec00fb1e">Diffuse</a>(<a class="code" href="classMFM_1_1EventWindow.html">EventWindow&lt;CC&gt;</a>&amp; window) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element.html#a65460ee2090c2efd04f34b47aa3a3926">PercentMovable</a>(<span class="keyword">const</span> T&amp; you,</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                               <span class="keyword">const</span> T&amp; me, <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; offset) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;   <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#acabf798cea4e848357b84c38d71307cc">  246</a></span>&#160;    <a class="code" href="classMFM_1_1Element.html#acabf798cea4e848357b84c38d71307cc">Element</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1UUID.html">UUID</a> &amp; uuid) : m_UUID(uuid), m_type(0),</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                                 m_hasType(false),</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                 m_renderLowlight(false),</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                                 m_atomicSymbol(<span class="stringliteral">&quot;!!&quot;</span>),</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                 m_name(<span class="stringliteral">&quot;UNNAMED&quot;</span>)</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      LOG.<a class="code" href="classMFM_1_1Logger.html#a7137c6959d0e7bfe05d4f48db9e5e311">Debug</a>(<span class="stringliteral">&quot;Constructed %@&quot;</span>,&amp;m_UUID);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">    // For use by Element_Empty only!</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">    Element(const UUID &amp; uuid, u32 type) : m_UUID(uuid), m_type(type),</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment">                                           m_hasType(true),</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">                                           m_renderLowlight(false),</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">                                           m_atomicSymbol(&quot;!!&quot;)</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">    { }</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a98ff6561053690a19215f707445b4423">  273</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Element.html#a98ff6561053690a19215f707445b4423">AllocateType</a>()</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <span class="keywordflow">if</span> (!m_hasType)</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        m_type = <a class="code" href="classMFM_1_1StaticLoader.html">StaticLoader&lt;CC,16&gt;::AllocateType</a>(m_UUID);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        m_hasType = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        m_defaultAtom = <a class="code" href="classMFM_1_1Element.html#a2490eb388c8366bdf43feaaa0e2d5a96">BuildDefaultAtom</a>();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">  290</a></span>&#160;    u32 <a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      <span class="keywordflow">if</span> (!m_hasType)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        FAIL(ILLEGAL_STATE);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      <span class="keywordflow">return</span> m_type;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a7c17125eeabd6650daf9ec10259423be">  305</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classMFM_1_1Element.html#a7c17125eeabd6650daf9ec10259423be">GetAtomicSymbol</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <span class="keywordflow">return</span> m_atomicSymbol;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    }</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a4c935ab276c3d9ff771c03821539e9e7">  316</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classMFM_1_1Element.html#a4c935ab276c3d9ff771c03821539e9e7">GetName</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <span class="keywordflow">return</span> m_name;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    }</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a03067a5283a78c02554bcc58f1942c09">  331</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Element.html#a03067a5283a78c02554bcc58f1942c09">AppendDescription</a>(<span class="keyword">const</span> T* atom, <a class="code" href="classMFM_1_1OverflowableCharBufferByteSink.html">OString64</a>&amp; desc)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      <span class="comment">/* Default to no description */</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a5ea722a701c1484c350189885f8ac3fb">  345</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1Element.html#a5ea722a701c1484c350189885f8ac3fb">IsType</a>(u32 type)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>() == type;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a3406dd620b3306e6cc4d9d385cf19fee">  355</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1UUID.html">UUID</a> &amp; <a class="code" href="classMFM_1_1Element.html#a3406dd620b3306e6cc4d9d385cf19fee">GetUUID</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      <span class="keywordflow">return</span> m_UUID;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Element.html#ab65d32c463488300a8aa3723060b34cd">Behavior</a>(<a class="code" href="classMFM_1_1EventWindow.html">EventWindow&lt;CC&gt;</a>&amp; window) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
-<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a03067a5283a78c02554bcc58f1942c09">  380</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Element.html#a03067a5283a78c02554bcc58f1942c09">AppendDescription</a>(<span class="keyword">const</span> T* atom, <a class="code" href="classMFM_1_1OverflowableCharBufferByteSink.html">OString64</a>&amp; desc)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      <span class="comment">/* Default to no description */</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    }</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
-<div class="line"><a name="l00394"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a5ea722a701c1484c350189885f8ac3fb">  394</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1Element.html#a5ea722a701c1484c350189885f8ac3fb">IsType</a>(u32 type)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">GetType</a>() == type;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    }</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a3406dd620b3306e6cc4d9d385cf19fee">  404</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1UUID.html">UUID</a> &amp; <a class="code" href="classMFM_1_1Element.html#a3406dd620b3306e6cc4d9d385cf19fee">GetUUID</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      <span class="keywordflow">return</span> m_UUID;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    }</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Element.html#ab65d32c463488300a8aa3723060b34cd">Behavior</a>(<a class="code" href="classMFM_1_1EventWindow.html">EventWindow&lt;CC&gt;</a>&amp; window) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
-<div class="line"><a name="l00431"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a60c4830765f9691b0985c5b4d2005066">  431</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> T &amp; <a class="code" href="classMFM_1_1Element.html#a60c4830765f9691b0985c5b4d2005066">GetDefaultAtom</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;      <span class="keywordflow">if</span> (!m_hasType)</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;      {</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        FAIL(ILLEGAL_STATE);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      }</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      <span class="keywordflow">return</span> m_defaultAtom;</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    }</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
-<div class="line"><a name="l00447"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a2728dd6f071beb94f44adaf7c462d6e1">  447</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element.html#a2728dd6f071beb94f44adaf7c462d6e1">PhysicsColor</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;      <span class="keywordflow">if</span>(m_renderLowlight)</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;      {</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Element.html#aa70048817613901cc5a9105ae3943cee">DefaultLowlightColor</a>();</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;      }</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;      {</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Element.html#a02251a87b12acdd069e4866e6c45c88f">DefaultPhysicsColor</a>();</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;      }</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    }</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
-<div class="line"><a name="l00468"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a1338bf4853cfd7a5a287447a6065a33f">  468</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classMFM_1_1Element.html#a1338bf4853cfd7a5a287447a6065a33f">GetDescription</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;NO DESCRIPTION&quot;</span>;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    }</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element.html#a02251a87b12acdd069e4866e6c45c88f">DefaultPhysicsColor</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;</div>
-<div class="line"><a name="l00490"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#aa70048817613901cc5a9105ae3943cee">  490</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element.html#aa70048817613901cc5a9105ae3943cee">DefaultLowlightColor</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;      u8 r, g, b;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;      u32 oc = <a class="code" href="classMFM_1_1Element.html#a02251a87b12acdd069e4866e6c45c88f">DefaultPhysicsColor</a>();</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;      <span class="comment">/* Shift them one more to divide by 2 */</span></div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;      r = (oc &amp; 0x00ff0000) &gt;&gt; 17;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;      g = (oc &amp; 0x0000ff00) &gt;&gt; 9;</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;      b = (oc &amp; 0x000000ff) &gt;&gt; 1;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;      <span class="keywordflow">return</span> 0xff000000 | (r &lt;&lt; 16) | (g &lt;&lt; 8) | b;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    }</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div>
-<div class="line"><a name="l00507"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#aa9e4e3c61458a093cacd04935f50cefa">  507</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Element.html#aa9e4e3c61458a093cacd04935f50cefa">ToggleLowlightPhysicsColor</a>()</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    {</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;      m_renderLowlight = !m_renderLowlight;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    }</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;</div>
-<div class="line"><a name="l00527"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a9fa03051b6d2815f17062ccf2ec973b3">  527</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element.html#a9fa03051b6d2815f17062ccf2ec973b3">LocalPhysicsColor</a>(<span class="keyword">const</span> T&amp; atom, u32 selector)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Element.html#a2728dd6f071beb94f44adaf7c462d6e1">PhysicsColor</a>();</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    }</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
-<div class="line"><a name="l00546"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a70048e83c7a189191414d2eee9334a11">  546</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element.html#a70048e83c7a189191414d2eee9334a11">Diffusability</a>(<a class="code" href="classMFM_1_1EventWindow.html">EventWindow&lt;CC&gt;</a> &amp; ew, <a class="code" href="classMFM_1_1Point.html">SPoint</a> nowAt, <a class="code" href="classMFM_1_1Point.html">SPoint</a> maybeAt)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">COMPLETE_DIFFUSABILITY</a>;</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    }</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
-<div class="line"><a name="l00557"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a1bdd6c89fb1d6e183e71eb65a737c9fb">  557</a></span>&#160;    u32 <a class="code" href="classMFM_1_1Element.html#a1bdd6c89fb1d6e183e71eb65a737c9fb">NoDiffusability</a>(<a class="code" href="classMFM_1_1EventWindow.html">EventWindow&lt;CC&gt;</a> &amp; ew, <a class="code" href="classMFM_1_1Point.html">SPoint</a> nowAt, <a class="code" href="classMFM_1_1Point.html">SPoint</a> maybeAt)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;      <span class="keywordflow">return</span> (nowAt == maybeAt)? <a class="code" href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">COMPLETE_DIFFUSABILITY</a> : 0;</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    }</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;</div>
-<div class="line"><a name="l00565"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">  565</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> u32 <a class="code" href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">COMPLETE_DIFFUSABILITY</a> = 1000;</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1ElementParameters.html">ElementParameters&lt;CC&gt;</a> &amp; GetElementParameters()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;      <span class="keywordflow">return</span> m_elementParameters;</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    }</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <a class="code" href="classMFM_1_1ElementParameters.html">ElementParameters&lt;CC&gt;</a> &amp; GetElementParameters()</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    {</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;      <span class="keywordflow">return</span> m_elementParameters;</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    }</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    <span class="keyword">const</span> AtomicParameters&lt;CC&gt; &amp; GetAtomicParameters()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;      <span class="keywordflow">return</span> m_atomicParameters;</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    }</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    AtomicParameters&lt;CC&gt; &amp; GetAtomicParameters()</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    {</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;      <span class="keywordflow">return</span> m_atomicParameters;</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    }</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="preprocessor"></span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  };</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> CC, u32 R&gt;</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  <span class="keyword">struct </span>ElementParameterNeighborhood : <span class="keyword">public</span> Parameters::Neighborhood&lt;R&gt;</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  {</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    ElementParameterNeighborhood(Element&lt;CC&gt; * elt,</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">char</span> * tag,</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">char</span> * name,</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">char</span> * description)</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;      : Parameters::Neighborhood&lt;R&gt;(elt-&gt;GetElementParameters(), tag, name, description)</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    {</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    }</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;  };</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> CC&gt;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  <span class="keyword">struct </span>ElementParameterS32 : <span class="keyword">public</span> Parameters::S32</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;  {</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    ElementParameterS32(Element&lt;CC&gt; * elt,</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> * tag,</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> * name,</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> * description,</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;                        s32 min, s32 initial, s32 max, s32 snap)</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;      : Parameters::S32(elt-&gt;GetElementParameters(), tag, name, description, min, initial, max, snap)</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    {</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    }</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;=======</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;<span class="preprocessor"></span>  };</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;}</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;<span class="preprocessor">#include &quot;Element.tcc&quot;</span></div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ELEMENT_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="classMFM_1_1Element_html_a93881c4d4a7e6d46421d2befec00fb1e"><div class="ttname"><a href="classMFM_1_1Element.html#a93881c4d4a7e6d46421d2befec00fb1e">MFM::Element::Diffuse</a></div><div class="ttdeci">void Diffuse(EventWindow&lt; CC &gt; &amp;window) const </div><div class="ttdef"><b>Definition:</b> Element.tcc:113</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a41ed13a0052b9d1028a392b5ed4c76e3"><div class="ttname"><a href="classMFM_1_1Element.html#a41ed13a0052b9d1028a392b5ed4c76e3">MFM::Element::VNNeighbors</a></div><div class="ttdeci">static const SPoint VNNeighbors[4]</div><div class="ttdef"><b>Definition:</b> Element.h:218</div></div>
+<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a60c4830765f9691b0985c5b4d2005066">  382</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> T &amp; <a class="code" href="classMFM_1_1Element.html#a60c4830765f9691b0985c5b4d2005066">GetDefaultAtom</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <span class="keywordflow">if</span> (!m_hasType)</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        FAIL(ILLEGAL_STATE);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;      }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      <span class="keywordflow">return</span> m_defaultAtom;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a2728dd6f071beb94f44adaf7c462d6e1">  398</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element.html#a2728dd6f071beb94f44adaf7c462d6e1">PhysicsColor</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <span class="keywordflow">if</span>(m_renderLowlight)</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      {</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Element.html#aa70048817613901cc5a9105ae3943cee">DefaultLowlightColor</a>();</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;      }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Element.html#a02251a87b12acdd069e4866e6c45c88f">DefaultPhysicsColor</a>();</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;      }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    }</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
+<div class="line"><a name="l00419"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a1338bf4853cfd7a5a287447a6065a33f">  419</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classMFM_1_1Element.html#a1338bf4853cfd7a5a287447a6065a33f">GetDescription</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;NO DESCRIPTION&quot;</span>;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    }</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element.html#a02251a87b12acdd069e4866e6c45c88f">DefaultPhysicsColor</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
+<div class="line"><a name="l00441"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#aa70048817613901cc5a9105ae3943cee">  441</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element.html#aa70048817613901cc5a9105ae3943cee">DefaultLowlightColor</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;      u8 r, g, b;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;      u32 oc = <a class="code" href="classMFM_1_1Element.html#a02251a87b12acdd069e4866e6c45c88f">DefaultPhysicsColor</a>();</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;      <span class="comment">/* Shift them one more to divide by 2 */</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;      r = (oc &amp; 0x00ff0000) &gt;&gt; 17;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;      g = (oc &amp; 0x0000ff00) &gt;&gt; 9;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;      b = (oc &amp; 0x000000ff) &gt;&gt; 1;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;      <span class="keywordflow">return</span> 0xff000000 | (r &lt;&lt; 16) | (g &lt;&lt; 8) | b;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    }</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
+<div class="line"><a name="l00458"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#aa9e4e3c61458a093cacd04935f50cefa">  458</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1Element.html#aa9e4e3c61458a093cacd04935f50cefa">ToggleLowlightPhysicsColor</a>()</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    {</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;      m_renderLowlight = !m_renderLowlight;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    }</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
+<div class="line"><a name="l00478"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a9fa03051b6d2815f17062ccf2ec973b3">  478</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element.html#a9fa03051b6d2815f17062ccf2ec973b3">LocalPhysicsColor</a>(<span class="keyword">const</span> T&amp; atom, u32 selector)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Element.html#a2728dd6f071beb94f44adaf7c462d6e1">PhysicsColor</a>();</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    }</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;</div>
+<div class="line"><a name="l00497"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a70048e83c7a189191414d2eee9334a11">  497</a></span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="classMFM_1_1Element.html#a70048e83c7a189191414d2eee9334a11">Diffusability</a>(<a class="code" href="classMFM_1_1EventWindow.html">EventWindow&lt;CC&gt;</a> &amp; ew, <a class="code" href="classMFM_1_1Point.html">SPoint</a> nowAt, <a class="code" href="classMFM_1_1Point.html">SPoint</a> maybeAt)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">COMPLETE_DIFFUSABILITY</a>;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    }</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
+<div class="line"><a name="l00508"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a1bdd6c89fb1d6e183e71eb65a737c9fb">  508</a></span>&#160;    u32 <a class="code" href="classMFM_1_1Element.html#a1bdd6c89fb1d6e183e71eb65a737c9fb">NoDiffusability</a>(<a class="code" href="classMFM_1_1EventWindow.html">EventWindow&lt;CC&gt;</a> &amp; ew, <a class="code" href="classMFM_1_1Point.html">SPoint</a> nowAt, <a class="code" href="classMFM_1_1Point.html">SPoint</a> maybeAt)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;      <span class="keywordflow">return</span> (nowAt == maybeAt)? <a class="code" href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">COMPLETE_DIFFUSABILITY</a> : 0;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    }</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div>
+<div class="line"><a name="l00516"></a><span class="lineno"><a class="line" href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">  516</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> u32 <a class="code" href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">COMPLETE_DIFFUSABILITY</a> = 1000;</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1ElementParameters.html">ElementParameters&lt;CC&gt;</a> &amp; GetElementParameters()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;      <span class="keywordflow">return</span> m_elementParameters;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    }</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <a class="code" href="classMFM_1_1ElementParameters.html">ElementParameters&lt;CC&gt;</a> &amp; GetElementParameters()</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    {</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;      <span class="keywordflow">return</span> m_elementParameters;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    }</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    <span class="keyword">const</span> AtomicParameters&lt;CC&gt; &amp; GetAtomicParameters()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;      <span class="keywordflow">return</span> m_atomicParameters;</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    }</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    AtomicParameters&lt;CC&gt; &amp; GetAtomicParameters()</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    {</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;      <span class="keywordflow">return</span> m_atomicParameters;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    }</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="preprocessor"></span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  };</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> CC, u32 R&gt;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  <span class="keyword">struct </span>ElementParameterNeighborhood : <span class="keyword">public</span> Parameters::Neighborhood&lt;R&gt;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  {</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    ElementParameterNeighborhood(Element&lt;CC&gt; * elt,</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">char</span> * tag,</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">char</span> * name,</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">char</span> * description)</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;      : Parameters::Neighborhood&lt;R&gt;(elt-&gt;GetElementParameters(), tag, name, description)</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    {</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    }</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;  };</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> CC&gt;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;  <span class="keyword">struct </span>ElementParameterS32 : <span class="keyword">public</span> Parameters::S32</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;  {</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    ElementParameterS32(Element&lt;CC&gt; * elt,</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> * tag,</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> * name,</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> * description,</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;                        s32 min, s32 initial, s32 max, s32 snap)</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;      : Parameters::S32(elt-&gt;GetElementParameters(), tag, name, description, min, initial, max, snap)</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    {</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    }</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;=======</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="preprocessor"></span>  };</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;}</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="preprocessor">#include &quot;Element.tcc&quot;</span></div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ELEMENT_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classMFM_1_1Element_html_a93881c4d4a7e6d46421d2befec00fb1e"><div class="ttname"><a href="classMFM_1_1Element.html#a93881c4d4a7e6d46421d2befec00fb1e">MFM::Element::Diffuse</a></div><div class="ttdeci">void Diffuse(EventWindow&lt; CC &gt; &amp;window) const </div><div class="ttdef"><b>Definition:</b> Element.tcc:73</div></div>
 <div class="ttc" id="BitField_8h_html"><div class="ttname"><a href="BitField_8h.html">BitField.h</a></div></div>
-<div class="ttc" id="classMFM_1_1Element_html_ad5996762a71ff9998222bf89a4d0dfd6"><div class="ttname"><a href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">MFM::Element::GetType</a></div><div class="ttdeci">u32 GetType() const </div><div class="ttdef"><b>Definition:</b> Element.h:339</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_ad5996762a71ff9998222bf89a4d0dfd6"><div class="ttname"><a href="classMFM_1_1Element.html#ad5996762a71ff9998222bf89a4d0dfd6">MFM::Element::GetType</a></div><div class="ttdeci">u32 GetType() const </div><div class="ttdef"><b>Definition:</b> Element.h:290</div></div>
 <div class="ttc" id="classMFM_1_1ElementParameters_html"><div class="ttname"><a href="classMFM_1_1ElementParameters.html">MFM::ElementParameters</a></div><div class="ttdef"><b>Definition:</b> Parameter.h:48</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a98ff6561053690a19215f707445b4423"><div class="ttname"><a href="classMFM_1_1Element.html#a98ff6561053690a19215f707445b4423">MFM::Element::AllocateType</a></div><div class="ttdeci">void AllocateType()</div><div class="ttdef"><b>Definition:</b> Element.h:322</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a1338bf4853cfd7a5a287447a6065a33f"><div class="ttname"><a href="classMFM_1_1Element.html#a1338bf4853cfd7a5a287447a6065a33f">MFM::Element::GetDescription</a></div><div class="ttdeci">virtual const char * GetDescription() const </div><div class="ttdef"><b>Definition:</b> Element.h:468</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a94892de98cadfb7ec96ebb28dcf9c179"><div class="ttname"><a href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">MFM::Element::COMPLETE_DIFFUSABILITY</a></div><div class="ttdeci">static const u32 COMPLETE_DIFFUSABILITY</div><div class="ttdef"><b>Definition:</b> Element.h:565</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a1bdd6c89fb1d6e183e71eb65a737c9fb"><div class="ttname"><a href="classMFM_1_1Element.html#a1bdd6c89fb1d6e183e71eb65a737c9fb">MFM::Element::NoDiffusability</a></div><div class="ttdeci">u32 NoDiffusability(EventWindow&lt; CC &gt; &amp;ew, SPoint nowAt, SPoint maybeAt) const </div><div class="ttdef"><b>Definition:</b> Element.h:557</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_aa9e4e3c61458a093cacd04935f50cefa"><div class="ttname"><a href="classMFM_1_1Element.html#aa9e4e3c61458a093cacd04935f50cefa">MFM::Element::ToggleLowlightPhysicsColor</a></div><div class="ttdeci">void ToggleLowlightPhysicsColor()</div><div class="ttdef"><b>Definition:</b> Element.h:507</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a98ff6561053690a19215f707445b4423"><div class="ttname"><a href="classMFM_1_1Element.html#a98ff6561053690a19215f707445b4423">MFM::Element::AllocateType</a></div><div class="ttdeci">void AllocateType()</div><div class="ttdef"><b>Definition:</b> Element.h:273</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a1338bf4853cfd7a5a287447a6065a33f"><div class="ttname"><a href="classMFM_1_1Element.html#a1338bf4853cfd7a5a287447a6065a33f">MFM::Element::GetDescription</a></div><div class="ttdeci">virtual const char * GetDescription() const </div><div class="ttdef"><b>Definition:</b> Element.h:419</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a94892de98cadfb7ec96ebb28dcf9c179"><div class="ttname"><a href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">MFM::Element::COMPLETE_DIFFUSABILITY</a></div><div class="ttdeci">static const u32 COMPLETE_DIFFUSABILITY</div><div class="ttdef"><b>Definition:</b> Element.h:516</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a1bdd6c89fb1d6e183e71eb65a737c9fb"><div class="ttname"><a href="classMFM_1_1Element.html#a1bdd6c89fb1d6e183e71eb65a737c9fb">MFM::Element::NoDiffusability</a></div><div class="ttdeci">u32 NoDiffusability(EventWindow&lt; CC &gt; &amp;ew, SPoint nowAt, SPoint maybeAt) const </div><div class="ttdef"><b>Definition:</b> Element.h:508</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_aa9e4e3c61458a093cacd04935f50cefa"><div class="ttname"><a href="classMFM_1_1Element.html#aa9e4e3c61458a093cacd04935f50cefa">MFM::Element::ToggleLowlightPhysicsColor</a></div><div class="ttdeci">void ToggleLowlightPhysicsColor()</div><div class="ttdef"><b>Definition:</b> Element.h:458</div></div>
 <div class="ttc" id="classMFM_1_1Element_html_a02251a87b12acdd069e4866e6c45c88f"><div class="ttname"><a href="classMFM_1_1Element.html#a02251a87b12acdd069e4866e6c45c88f">MFM::Element::DefaultPhysicsColor</a></div><div class="ttdeci">virtual u32 DefaultPhysicsColor() const =0</div></div>
 <div class="ttc" id="Dirs_8h_html"><div class="ttname"><a href="Dirs_8h.html">Dirs.h</a></div></div>
 <div class="ttc" id="classMFM_1_1Element_html_ab4d7e6b9447f709ea007ca245c12f4cf"><div class="ttname"><a href="classMFM_1_1Element.html#ab4d7e6b9447f709ea007ca245c12f4cf">MFM::Element::SetName</a></div><div class="ttdeci">void SetName(const char *name)</div><div class="ttdef"><b>Definition:</b> Element.h:209</div></div>
 <div class="ttc" id="classMFM_1_1Element_html_ae1dd9fcdee4a757fea02a7dba3e7c2ad"><div class="ttname"><a href="classMFM_1_1Element.html#ae1dd9fcdee4a757fea02a7dba3e7c2ad">MFM::Element::SetAtomicSymbol</a></div><div class="ttdeci">void SetAtomicSymbol(const char *symbol)</div><div class="ttdef"><b>Definition:</b> Element.h:193</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a4c935ab276c3d9ff771c03821539e9e7"><div class="ttname"><a href="classMFM_1_1Element.html#a4c935ab276c3d9ff771c03821539e9e7">MFM::Element::GetName</a></div><div class="ttdeci">const char * GetName() const </div><div class="ttdef"><b>Definition:</b> Element.h:365</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a4c935ab276c3d9ff771c03821539e9e7"><div class="ttname"><a href="classMFM_1_1Element.html#a4c935ab276c3d9ff771c03821539e9e7">MFM::Element::GetName</a></div><div class="ttdeci">const char * GetName() const </div><div class="ttdef"><b>Definition:</b> Element.h:316</div></div>
 <div class="ttc" id="Parameter_8h_html"><div class="ttname"><a href="Parameter_8h.html">Parameter.h</a></div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a70048e83c7a189191414d2eee9334a11"><div class="ttname"><a href="classMFM_1_1Element.html#a70048e83c7a189191414d2eee9334a11">MFM::Element::Diffusability</a></div><div class="ttdeci">virtual u32 Diffusability(EventWindow&lt; CC &gt; &amp;ew, SPoint nowAt, SPoint maybeAt) const </div><div class="ttdef"><b>Definition:</b> Element.h:546</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a3406dd620b3306e6cc4d9d385cf19fee"><div class="ttname"><a href="classMFM_1_1Element.html#a3406dd620b3306e6cc4d9d385cf19fee">MFM::Element::GetUUID</a></div><div class="ttdeci">const UUID &amp; GetUUID() const </div><div class="ttdef"><b>Definition:</b> Element.h:404</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a70048e83c7a189191414d2eee9334a11"><div class="ttname"><a href="classMFM_1_1Element.html#a70048e83c7a189191414d2eee9334a11">MFM::Element::Diffusability</a></div><div class="ttdeci">virtual u32 Diffusability(EventWindow&lt; CC &gt; &amp;ew, SPoint nowAt, SPoint maybeAt) const </div><div class="ttdef"><b>Definition:</b> Element.h:497</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a3406dd620b3306e6cc4d9d385cf19fee"><div class="ttname"><a href="classMFM_1_1Element.html#a3406dd620b3306e6cc4d9d385cf19fee">MFM::Element::GetUUID</a></div><div class="ttdeci">const UUID &amp; GetUUID() const </div><div class="ttdef"><b>Definition:</b> Element.h:355</div></div>
 <div class="ttc" id="classMFM_1_1OverflowableCharBufferByteSink_html"><div class="ttname"><a href="classMFM_1_1OverflowableCharBufferByteSink.html">MFM::OverflowableCharBufferByteSink&lt; 64+2 &gt;</a></div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a60c4830765f9691b0985c5b4d2005066"><div class="ttname"><a href="classMFM_1_1Element.html#a60c4830765f9691b0985c5b4d2005066">MFM::Element::GetDefaultAtom</a></div><div class="ttdeci">virtual const T &amp; GetDefaultAtom() const </div><div class="ttdef"><b>Definition:</b> Element.h:431</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a60c4830765f9691b0985c5b4d2005066"><div class="ttname"><a href="classMFM_1_1Element.html#a60c4830765f9691b0985c5b4d2005066">MFM::Element::GetDefaultAtom</a></div><div class="ttdeci">virtual const T &amp; GetDefaultAtom() const </div><div class="ttdef"><b>Definition:</b> Element.h:382</div></div>
 <div class="ttc" id="EventWindow_8h_html"><div class="ttname"><a href="EventWindow_8h.html">EventWindow.h</a></div></div>
 <div class="ttc" id="classMFM_1_1Element_html_a65460ee2090c2efd04f34b47aa3a3926"><div class="ttname"><a href="classMFM_1_1Element.html#a65460ee2090c2efd04f34b47aa3a3926">MFM::Element::PercentMovable</a></div><div class="ttdeci">virtual u32 PercentMovable(const T &amp;you, const T &amp;me, const SPoint &amp;offset) const =0</div></div>
 <div class="ttc" id="classMFM_1_1Element_html_ab65d32c463488300a8aa3723060b34cd"><div class="ttname"><a href="classMFM_1_1Element.html#ab65d32c463488300a8aa3723060b34cd">MFM::Element::Behavior</a></div><div class="ttdeci">virtual void Behavior(EventWindow&lt; CC &gt; &amp;window) const =0</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a7d26590257769859ce54cb50de75f6e3"><div class="ttname"><a href="classMFM_1_1Element.html#a7d26590257769859ce54cb50de75f6e3">MFM::Element::FillPointWithType</a></div><div class="ttdeci">bool FillPointWithType(EventWindow&lt; CC &gt; &amp;window, SPoint &amp;pt, const SPoint *relevants, u32 relevantCount, Dir rotation, ElementType type) const </div><div class="ttdef"><b>Definition:</b> Element.tcc:28</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a314bff267b279018a804f8865e76e12d"><div class="ttname"><a href="classMFM_1_1Element.html#a314bff267b279018a804f8865e76e12d">MFM::Element::FillAvailableVNNeighbor</a></div><div class="ttdeci">bool FillAvailableVNNeighbor(EventWindow&lt; CC &gt; &amp;window, SPoint &amp;pt) const </div><div class="ttdef"><b>Definition:</b> Element.tcc:18</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a5ea722a701c1484c350189885f8ac3fb"><div class="ttname"><a href="classMFM_1_1Element.html#a5ea722a701c1484c350189885f8ac3fb">MFM::Element::IsType</a></div><div class="ttdeci">bool IsType(u32 type) const </div><div class="ttdef"><b>Definition:</b> Element.h:394</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a5ea722a701c1484c350189885f8ac3fb"><div class="ttname"><a href="classMFM_1_1Element.html#a5ea722a701c1484c350189885f8ac3fb">MFM::Element::IsType</a></div><div class="ttdeci">bool IsType(u32 type) const </div><div class="ttdef"><b>Definition:</b> Element.h:345</div></div>
 <div class="ttc" id="classMFM_1_1Logger_html_a7137c6959d0e7bfe05d4f48db9e5e311"><div class="ttname"><a href="classMFM_1_1Logger.html#a7137c6959d0e7bfe05d4f48db9e5e311">MFM::Logger::Debug</a></div><div class="ttdeci">void Debug(const char *format,...)</div><div class="ttdef"><b>Definition:</b> Logger.h:301</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_acabf798cea4e848357b84c38d71307cc"><div class="ttname"><a href="classMFM_1_1Element.html#acabf798cea4e848357b84c38d71307cc">MFM::Element::Element</a></div><div class="ttdeci">Element(const UUID &amp;uuid)</div><div class="ttdef"><b>Definition:</b> Element.h:295</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a9fa03051b6d2815f17062ccf2ec973b3"><div class="ttname"><a href="classMFM_1_1Element.html#a9fa03051b6d2815f17062ccf2ec973b3">MFM::Element::LocalPhysicsColor</a></div><div class="ttdeci">virtual u32 LocalPhysicsColor(const T &amp;atom, u32 selector) const </div><div class="ttdef"><b>Definition:</b> Element.h:527</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_acabf798cea4e848357b84c38d71307cc"><div class="ttname"><a href="classMFM_1_1Element.html#acabf798cea4e848357b84c38d71307cc">MFM::Element::Element</a></div><div class="ttdeci">Element(const UUID &amp;uuid)</div><div class="ttdef"><b>Definition:</b> Element.h:246</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a9fa03051b6d2815f17062ccf2ec973b3"><div class="ttname"><a href="classMFM_1_1Element.html#a9fa03051b6d2815f17062ccf2ec973b3">MFM::Element::LocalPhysicsColor</a></div><div class="ttdeci">virtual u32 LocalPhysicsColor(const T &amp;atom, u32 selector) const </div><div class="ttdef"><b>Definition:</b> Element.h:478</div></div>
 <div class="ttc" id="Logger_8h_html"><div class="ttname"><a href="Logger_8h.html">Logger.h</a></div></div>
 <div class="ttc" id="classMFM_1_1Element_html_a2490eb388c8366bdf43feaaa0e2d5a96"><div class="ttname"><a href="classMFM_1_1Element.html#a2490eb388c8366bdf43feaaa0e2d5a96">MFM::Element::BuildDefaultAtom</a></div><div class="ttdeci">virtual T BuildDefaultAtom() const </div><div class="ttdef"><b>Definition:</b> Element.h:119</div></div>
 <div class="ttc" id="itype_8h_html"><div class="ttname"><a href="itype_8h.html">itype.h</a></div></div>
 <div class="ttc" id="UUID_8h_html"><div class="ttname"><a href="UUID_8h.html">UUID.h</a></div></div>
 <div class="ttc" id="classMFM_1_1EventWindow_html"><div class="ttname"><a href="classMFM_1_1EventWindow.html">MFM::EventWindow</a></div><div class="ttdef"><b>Definition:</b> ElementTable.h:43</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a7c17125eeabd6650daf9ec10259423be"><div class="ttname"><a href="classMFM_1_1Element.html#a7c17125eeabd6650daf9ec10259423be">MFM::Element::GetAtomicSymbol</a></div><div class="ttdeci">const char * GetAtomicSymbol() const </div><div class="ttdef"><b>Definition:</b> Element.h:354</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a7c17125eeabd6650daf9ec10259423be"><div class="ttname"><a href="classMFM_1_1Element.html#a7c17125eeabd6650daf9ec10259423be">MFM::Element::GetAtomicSymbol</a></div><div class="ttdeci">const char * GetAtomicSymbol() const </div><div class="ttdef"><b>Definition:</b> Element.h:305</div></div>
 <div class="ttc" id="classMFM_1_1Element_html_ab173d299b60b25eb613902168065b64f"><div class="ttname"><a href="classMFM_1_1Element.html#ab173d299b60b25eb613902168065b64f">MFM::Element::IsValidAtomicSymbol</a></div><div class="ttdeci">bool IsValidAtomicSymbol(const char *symbol)</div><div class="ttdef"><b>Definition:</b> Element.h:159</div></div>
 <div class="ttc" id="classMFM_1_1BitVector_html"><div class="ttname"><a href="classMFM_1_1BitVector.html">MFM::BitVector</a></div><div class="ttdef"><b>Definition:</b> BitVector.h:47</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a2728dd6f071beb94f44adaf7c462d6e1"><div class="ttname"><a href="classMFM_1_1Element.html#a2728dd6f071beb94f44adaf7c462d6e1">MFM::Element::PhysicsColor</a></div><div class="ttdeci">virtual u32 PhysicsColor() const </div><div class="ttdef"><b>Definition:</b> Element.h:447</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a2728dd6f071beb94f44adaf7c462d6e1"><div class="ttname"><a href="classMFM_1_1Element.html#a2728dd6f071beb94f44adaf7c462d6e1">MFM::Element::PhysicsColor</a></div><div class="ttdeci">virtual u32 PhysicsColor() const </div><div class="ttdef"><b>Definition:</b> Element.h:398</div></div>
 <div class="ttc" id="classMFM_1_1UUID_html"><div class="ttname"><a href="classMFM_1_1UUID.html">MFM::UUID</a></div><div class="ttdef"><b>Definition:</b> UUID.h:44</div></div>
 <div class="ttc" id="classMFM_1_1StaticLoader_html"><div class="ttname"><a href="classMFM_1_1StaticLoader.html">MFM::StaticLoader</a></div><div class="ttdef"><b>Definition:</b> StaticLoader.h:58</div></div>
 <div class="ttc" id="classMFM_1_1Element_html_ae509d847b781e66fec6b2b3baefe93dd"><div class="ttname"><a href="classMFM_1_1Element.html#ae509d847b781e66fec6b2b3baefe93dd">MFM::Element::GetBits</a></div><div class="ttdeci">const BitVector&lt; P::BITS_PER_ATOM &gt; &amp; GetBits(const T &amp;atom) const </div><div class="ttdef"><b>Definition:</b> Element.h:132</div></div>
 <div class="ttc" id="Atom_8h_html"><div class="ttname"><a href="Atom_8h.html">Atom.h</a></div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a03067a5283a78c02554bcc58f1942c09"><div class="ttname"><a href="classMFM_1_1Element.html#a03067a5283a78c02554bcc58f1942c09">MFM::Element::AppendDescription</a></div><div class="ttdeci">virtual void AppendDescription(const T *atom, OString64 &amp;desc) const </div><div class="ttdef"><b>Definition:</b> Element.h:380</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_aa70048817613901cc5a9105ae3943cee"><div class="ttname"><a href="classMFM_1_1Element.html#aa70048817613901cc5a9105ae3943cee">MFM::Element::DefaultLowlightColor</a></div><div class="ttdeci">virtual u32 DefaultLowlightColor() const </div><div class="ttdef"><b>Definition:</b> Element.h:490</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a03067a5283a78c02554bcc58f1942c09"><div class="ttname"><a href="classMFM_1_1Element.html#a03067a5283a78c02554bcc58f1942c09">MFM::Element::AppendDescription</a></div><div class="ttdeci">virtual void AppendDescription(const T *atom, OString64 &amp;desc) const </div><div class="ttdef"><b>Definition:</b> Element.h:331</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_aa70048817613901cc5a9105ae3943cee"><div class="ttname"><a href="classMFM_1_1Element.html#aa70048817613901cc5a9105ae3943cee">MFM::Element::DefaultLowlightColor</a></div><div class="ttdeci">virtual u32 DefaultLowlightColor() const </div><div class="ttdef"><b>Definition:</b> Element.h:441</div></div>
 <div class="ttc" id="classMFM_1_1Element_html_a3a2e96a5c26b18fd7ec961d914c6024a"><div class="ttname"><a href="classMFM_1_1Element.html#a3a2e96a5c26b18fd7ec961d914c6024a">MFM::Element::GetBits</a></div><div class="ttdeci">BitVector&lt; P::BITS_PER_ATOM &gt; &amp; GetBits(T &amp;atom) const </div><div class="ttdef"><b>Definition:</b> Element.h:144</div></div>
-<div class="ttc" id="classMFM_1_1Point_html"><div class="ttname"><a href="classMFM_1_1Point.html">MFM::Point&lt; s32 &gt;</a></div></div>
+<div class="ttc" id="classMFM_1_1Point_html"><div class="ttname"><a href="classMFM_1_1Point.html">MFM::Point</a></div><div class="ttdef"><b>Definition:</b> Point.h:45</div></div>
 <div class="ttc" id="StaticLoader_8h_html"><div class="ttname"><a href="StaticLoader_8h.html">StaticLoader.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 17 2014 15:10:30 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

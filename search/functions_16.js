@@ -8,5 +8,6 @@ var searchData=
   ['_7emutex',['~Mutex',['../classMFM_1_1Mutex.html#a0f3724fa2a785b2253a8c98a957204e7',1,'MFM::Mutex']]],
   ['_7epoint',['~Point',['../classMFM_1_1Point.html#ae406bc0b4af7cc62f115314ec2702aed',1,'MFM::Point']]],
   ['_7ethreadpauser',['~ThreadPauser',['../classMFM_1_1ThreadPauser.html#aaa8cfa29d03f63f0c4dc66b3eb3d6406',1,'MFM::ThreadPauser']]],
-  ['_7ethreadqueue',['~ThreadQueue',['../classMFM_1_1ThreadQueue.html#af6bc60791dd9a3dc5d976fe77772a4e6',1,'MFM::ThreadQueue']]]
+  ['_7ethreadqueue',['~ThreadQueue',['../classMFM_1_1ThreadQueue.html#af6bc60791dd9a3dc5d976fe77772a4e6',1,'MFM::ThreadQueue']]],
+  ['_7ewindowscanner',['~WindowScanner',['../classMFM_1_1WindowScanner.html#a4868d74bc1d6e99f79d6dc6927d81d83',1,'MFM::WindowScanner']]]
 ];

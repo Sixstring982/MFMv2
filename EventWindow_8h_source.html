@@ -117,167 +117,146 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="MDist_8h.html">MDist.h</a>&quot;</span>  <span class="comment">/* for EVENT_WINDOW_SITES */</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="PSym_8h.html">PSym.h</a>&quot;</span>   <span class="comment">/* For PointSymmetry, Map */</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>MFM {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// Forward declaration</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> CC&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classMFM_1_1Tile.html">   40</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classMFM_1_1Tile.html">Tile</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> CC&gt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">class </span><a class="code" href="classMFM_1_1EventWindow.html">EventWindow</a></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Extract short names for parameter types</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> CC::ATOM_TYPE T;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> CC::PARAM_CONFIG P;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">enum</span> { R = P::EVENT_WINDOW_RADIUS };</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">enum</span> { W = P::TILE_WIDTH };</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">enum</span> { B = P::ELEMENT_TABLE_BITS };</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    Tile&lt;CC&gt; &amp; m_tile;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    SPoint m_center;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    PointSymmetry m_sym;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    SPoint MapToTile(<span class="keyword">const</span> SPoint &amp; loc)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> Map(loc,m_sym,loc)+m_center;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a635df0fec5a1afe20ba72c36b228b05b">   86</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#a635df0fec5a1afe20ba72c36b228b05b">InWindow</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a> &amp; offset)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="comment">// Ignores m_sym since point symmetries can&#39;t change this answer</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">return</span> offset.<a class="code" href="classMFM_1_1Point.html#a7d75d950bda48c62b51db385c6f011f8">GetManhattanLength</a>() &lt;= R;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classMFM_1_1Point.html">SPoint</a> <a class="code" href="classMFM_1_1EventWindow.html#a71c7d90d48e638ca9576499a39415ba6">MapToTileValid</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a> &amp; offset) <span class="keyword">const</span> ;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a4ce8cb429038c81c69f22c6a6361d71a">  102</a></span>&#160;    PointSymmetry <a class="code" href="classMFM_1_1EventWindow.html#a4ce8cb429038c81c69f22c6a6361d71a">GetSymmetry</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sym; }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#afc08537847e8e0ec6db3778f23ed287f">  109</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1EventWindow.html#afc08537847e8e0ec6db3778f23ed287f">SetSymmetry</a>(<span class="keyword">const</span> PointSymmetry psym)</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      m_sym = psym;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a9d12bbd638be0a792379579803842c30">  121</a></span>&#160;    <a class="code" href="classMFM_1_1Random.html">Random</a> &amp; <a class="code" href="classMFM_1_1EventWindow.html#a9d12bbd638be0a792379579803842c30">GetRandom</a>()</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="keywordflow">return</span> m_tile.GetRandom();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a7a606f42f900437f90286c47077105a6">  131</a></span>&#160;    <a class="code" href="classMFM_1_1Tile.html">Tile&lt;CC&gt;</a>&amp; <a class="code" href="classMFM_1_1EventWindow.html#a7a606f42f900437f90286c47077105a6">GetTile</a>()</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      <span class="keywordflow">return</span> m_tile;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a81a9f82636aa75fd134ca45d50e31291">  147</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#a81a9f82636aa75fd134ca45d50e31291">IsLiveSite</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a> &amp; location)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="keywordflow">return</span> m_tile.IsLiveSite(MapToTile(location));</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a79979e96c65cb4ba1b318fafd9a56cc7">  158</a></span>&#160;    <a class="code" href="classMFM_1_1EventWindow.html#a79979e96c65cb4ba1b318fafd9a56cc7">EventWindow</a>(<a class="code" href="classMFM_1_1Tile.html">Tile&lt;CC&gt;</a> &amp; tile) : m_tile(tile), m_sym(PSYM_NORMAL)</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    { }</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#ad8e4ff7ce17c1c7171a9615c74a54b9c">  167</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1EventWindow.html#ad8e4ff7ce17c1c7171a9615c74a54b9c">SetCenterInTile</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; center) {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      m_center = center;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a5668d7d6d2263baee258ec2631f71156">  178</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; <a class="code" href="classMFM_1_1EventWindow.html#a5668d7d6d2263baee258ec2631f71156">GetCenterInTile</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keywordflow">return</span> m_center;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#aef505583dac621f90892ec37cf82cb81">  186</a></span>&#160;    <a class="code" href="classMFM_1_1EventWindow.html#aef505583dac621f90892ec37cf82cb81">~EventWindow</a>()</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    { }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a4d3ac16d9cd4f5df26b56eb2173c0bd0">  195</a></span>&#160;    u32 <a class="code" href="classMFM_1_1EventWindow.html#a4d3ac16d9cd4f5df26b56eb2173c0bd0">GetAtomCount</a>()</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="MDist_8h.html#a7610c7258af09380d59da99f7ae114c4">EVENT_WINDOW_SITES</a>(R);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a9c406623e599af246697ac674dcce529">  207</a></span>&#160;    <span class="keyword">const</span> T&amp; <a class="code" href="classMFM_1_1EventWindow.html#a9c406623e599af246697ac674dcce529">GetCenterAtom</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="keywordflow">return</span> *m_tile.GetAtom(m_center);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a12ac8db782f8b47df2dc01ef54ec498e">  218</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1EventWindow.html#a12ac8db782f8b47df2dc01ef54ec498e">SetCenterAtom</a>(<span class="keyword">const</span> T&amp; atom)</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    {</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      <span class="keywordflow">return</span> m_tile.PlaceAtom(atom, m_center);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">const</span> T&amp; <a class="code" href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">GetRelativeAtom</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; offset) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keyword">const</span> T&amp; <a class="code" href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">GetRelativeAtom</a>(<span class="keyword">const</span> Dir mooreOffset) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#aa63a63667bfeb67aece70fbdc39ef33f">FillIfType</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a> relative, <span class="keyword">const</span> u32 type, <span class="keyword">const</span> T&amp; atom);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#ac592b0f5a5e5a9d295c91b4b18308753">FillIfNotType</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a> relative, <span class="keyword">const</span> u32 type, <span class="keyword">const</span> T&amp; atom);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#a4b499a32d5c8423e8cc72e7abf103f5b">SetRelativeAtom</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; offset, <span class="keyword">const</span> T &amp; atom);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#a43cd56dbceeb4aab83288eec3bca9a6c">CanSeeAtomOfType</a>(<span class="keyword">const</span> u32 type, <span class="keyword">const</span> u32 radius) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#ae27f6df4eb8ff72ac7e77074500b4118">IsBorderingMoore</a>(<span class="keyword">const</span> u32 type) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#a361a127865280bbc10cac60850bd9f15">IsBorderingVonNeumann</a>(<span class="keyword">const</span> u32 type) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#a847ac049768807359aacece4437c672f">IsBorderingNeighborhood</a>(<span class="keyword">const</span> u32 type, <span class="keyword">const</span> Dir* dirs, <span class="keyword">const</span> u32 dirCount) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#a5f90d6477b1300402b503dd3c49f1864">FindRandomLocationOfType</a>(<span class="keyword">const</span> u32 type, <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; outPoint) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#a5f90d6477b1300402b503dd3c49f1864">FindRandomLocationOfType</a>(<span class="keyword">const</span> u32 type, <span class="keyword">const</span> u32 radius, <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; outPoint) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1EventWindow.html#ac58f8e3e36e72b8e3f88b1ee675b38c2">SwapAtoms</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; locA, <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; locB);</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1EventWindow.html#a905177b4d4bf835d2deed5cb546c5589">SwapCenterAtom</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; relative);</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  };</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;} <span class="comment">/* namespace MFM */</span></div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor">#include &quot;EventWindow.tcc&quot;</span></div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*EVENTWINDOW_H*/</span><span class="preprocessor"></span></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a635df0fec5a1afe20ba72c36b228b05b"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a635df0fec5a1afe20ba72c36b228b05b">MFM::EventWindow::InWindow</a></div><div class="ttdeci">bool InWindow(const SPoint &amp;offset) const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:86</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_aa63a63667bfeb67aece70fbdc39ef33f"><div class="ttname"><a href="classMFM_1_1EventWindow.html#aa63a63667bfeb67aece70fbdc39ef33f">MFM::EventWindow::FillIfType</a></div><div class="ttdeci">const bool FillIfType(const SPoint relative, const u32 type, const T &amp;atom)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:15</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a905177b4d4bf835d2deed5cb546c5589"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a905177b4d4bf835d2deed5cb546c5589">MFM::EventWindow::SwapCenterAtom</a></div><div class="ttdeci">void SwapCenterAtom(const SPoint &amp;relative)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:160</div></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>MFM</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// Forward declaration</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> CC&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classMFM_1_1Tile.html">   41</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classMFM_1_1Tile.html">Tile</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> CC&gt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">class </span><a class="code" href="classMFM_1_1EventWindow.html">EventWindow</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Extract short names for parameter types</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> CC::ATOM_TYPE T;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> CC::PARAM_CONFIG P;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">enum</span> { R = P::EVENT_WINDOW_RADIUS };</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">enum</span> { W = P::TILE_WIDTH };</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">enum</span> { B = P::ELEMENT_TABLE_BITS };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    Tile&lt;CC&gt; &amp; m_tile;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    SPoint m_center;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    PointSymmetry m_sym;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    SPoint MapToTile(<span class="keyword">const</span> SPoint &amp; loc)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span> Map(loc,m_sym,loc)+m_center;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a635df0fec5a1afe20ba72c36b228b05b">   87</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#a635df0fec5a1afe20ba72c36b228b05b">InWindow</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a> &amp; offset)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="comment">// Ignores m_sym since point symmetries can&#39;t change this answer</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">return</span> offset.<a class="code" href="classMFM_1_1Point.html#a7d75d950bda48c62b51db385c6f011f8">GetManhattanLength</a>() &lt;= R;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classMFM_1_1Point.html">SPoint</a> <a class="code" href="classMFM_1_1EventWindow.html#a71c7d90d48e638ca9576499a39415ba6">MapToTileValid</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a> &amp; offset) <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a4ce8cb429038c81c69f22c6a6361d71a">  103</a></span>&#160;    PointSymmetry <a class="code" href="classMFM_1_1EventWindow.html#a4ce8cb429038c81c69f22c6a6361d71a">GetSymmetry</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sym; }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#afc08537847e8e0ec6db3778f23ed287f">  110</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1EventWindow.html#afc08537847e8e0ec6db3778f23ed287f">SetSymmetry</a>(<span class="keyword">const</span> PointSymmetry psym)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      m_sym = psym;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a9d12bbd638be0a792379579803842c30">  122</a></span>&#160;    <a class="code" href="classMFM_1_1Random.html">Random</a> &amp; <a class="code" href="classMFM_1_1EventWindow.html#a9d12bbd638be0a792379579803842c30">GetRandom</a>()</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keywordflow">return</span> m_tile.GetRandom();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a7a606f42f900437f90286c47077105a6">  132</a></span>&#160;    <a class="code" href="classMFM_1_1Tile.html">Tile&lt;CC&gt;</a>&amp; <a class="code" href="classMFM_1_1EventWindow.html#a7a606f42f900437f90286c47077105a6">GetTile</a>()</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <span class="keywordflow">return</span> m_tile;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a81a9f82636aa75fd134ca45d50e31291">  148</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#a81a9f82636aa75fd134ca45d50e31291">IsLiveSite</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a> &amp; location)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordflow">return</span> m_tile.IsLiveSite(MapToTile(location));</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a79979e96c65cb4ba1b318fafd9a56cc7">  159</a></span>&#160;    <a class="code" href="classMFM_1_1EventWindow.html#a79979e96c65cb4ba1b318fafd9a56cc7">EventWindow</a>(<a class="code" href="classMFM_1_1Tile.html">Tile&lt;CC&gt;</a> &amp; tile) : m_tile(tile), m_sym(PSYM_NORMAL)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    { }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#ad8e4ff7ce17c1c7171a9615c74a54b9c">  168</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1EventWindow.html#ad8e4ff7ce17c1c7171a9615c74a54b9c">SetCenterInTile</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; center)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      m_center = center;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a5668d7d6d2263baee258ec2631f71156">  180</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; <a class="code" href="classMFM_1_1EventWindow.html#a5668d7d6d2263baee258ec2631f71156">GetCenterInTile</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      <span class="keywordflow">return</span> m_center;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#aef505583dac621f90892ec37cf82cb81">  188</a></span>&#160;    <a class="code" href="classMFM_1_1EventWindow.html#aef505583dac621f90892ec37cf82cb81">~EventWindow</a>()</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    { }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a4d3ac16d9cd4f5df26b56eb2173c0bd0">  197</a></span>&#160;    u32 <a class="code" href="classMFM_1_1EventWindow.html#a4d3ac16d9cd4f5df26b56eb2173c0bd0">GetAtomCount</a>()</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="MDist_8h.html#a7610c7258af09380d59da99f7ae114c4">EVENT_WINDOW_SITES</a>(R);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a9c406623e599af246697ac674dcce529">  209</a></span>&#160;    <span class="keyword">const</span> T&amp; <a class="code" href="classMFM_1_1EventWindow.html#a9c406623e599af246697ac674dcce529">GetCenterAtom</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <span class="keywordflow">return</span> *m_tile.GetAtom(m_center);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="classMFM_1_1EventWindow.html#a12ac8db782f8b47df2dc01ef54ec498e">  220</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1EventWindow.html#a12ac8db782f8b47df2dc01ef54ec498e">SetCenterAtom</a>(<span class="keyword">const</span> T&amp; atom)</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      <span class="keywordflow">return</span> m_tile.PlaceAtom(atom, m_center);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keyword">const</span> T&amp; <a class="code" href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">GetRelativeAtom</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; offset) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">const</span> T&amp; <a class="code" href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">GetRelativeAtom</a>(<span class="keyword">const</span> Dir mooreOffset) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMFM_1_1EventWindow.html#a4b499a32d5c8423e8cc72e7abf103f5b">SetRelativeAtom</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; offset, <span class="keyword">const</span> T &amp; atom);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1EventWindow.html#ac58f8e3e36e72b8e3f88b1ee675b38c2">SwapAtoms</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; locA, <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; locB);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMFM_1_1EventWindow.html#a905177b4d4bf835d2deed5cb546c5589">SwapCenterAtom</a>(<span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a>&amp; relative);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  };</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;} <span class="comment">/* namespace MFM */</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor">#include &quot;EventWindow.tcc&quot;</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*EVENTWINDOW_H*/</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a635df0fec5a1afe20ba72c36b228b05b"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a635df0fec5a1afe20ba72c36b228b05b">MFM::EventWindow::InWindow</a></div><div class="ttdeci">bool InWindow(const SPoint &amp;offset) const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:87</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a905177b4d4bf835d2deed5cb546c5589"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a905177b4d4bf835d2deed5cb546c5589">MFM::EventWindow::SwapCenterAtom</a></div><div class="ttdeci">void SwapCenterAtom(const SPoint &amp;relative)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:52</div></div>
 <div class="ttc" id="classMFM_1_1Random_html"><div class="ttname"><a href="classMFM_1_1Random.html">MFM::Random</a></div><div class="ttdef"><b>Definition:</b> Random.h:45</div></div>
 <div class="ttc" id="PSym_8h_html"><div class="ttname"><a href="PSym_8h.html">PSym.h</a></div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a4ce8cb429038c81c69f22c6a6361d71a"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a4ce8cb429038c81c69f22c6a6361d71a">MFM::EventWindow::GetSymmetry</a></div><div class="ttdeci">PointSymmetry GetSymmetry() const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:102</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_afc08537847e8e0ec6db3778f23ed287f"><div class="ttname"><a href="classMFM_1_1EventWindow.html#afc08537847e8e0ec6db3778f23ed287f">MFM::EventWindow::SetSymmetry</a></div><div class="ttdeci">void SetSymmetry(const PointSymmetry psym)</div><div class="ttdef"><b>Definition:</b> EventWindow.h:109</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a4ce8cb429038c81c69f22c6a6361d71a"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a4ce8cb429038c81c69f22c6a6361d71a">MFM::EventWindow::GetSymmetry</a></div><div class="ttdeci">PointSymmetry GetSymmetry() const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:103</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_afc08537847e8e0ec6db3778f23ed287f"><div class="ttname"><a href="classMFM_1_1EventWindow.html#afc08537847e8e0ec6db3778f23ed287f">MFM::EventWindow::SetSymmetry</a></div><div class="ttdeci">void SetSymmetry(const PointSymmetry psym)</div><div class="ttdef"><b>Definition:</b> EventWindow.h:110</div></div>
 <div class="ttc" id="Point_8h_html"><div class="ttname"><a href="Point_8h.html">Point.h</a></div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a12ac8db782f8b47df2dc01ef54ec498e"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a12ac8db782f8b47df2dc01ef54ec498e">MFM::EventWindow::SetCenterAtom</a></div><div class="ttdeci">void SetCenterAtom(const T &amp;atom)</div><div class="ttdef"><b>Definition:</b> EventWindow.h:218</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a7a606f42f900437f90286c47077105a6"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a7a606f42f900437f90286c47077105a6">MFM::EventWindow::GetTile</a></div><div class="ttdeci">Tile&lt; CC &gt; &amp; GetTile()</div><div class="ttdef"><b>Definition:</b> EventWindow.h:131</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_ad8e4ff7ce17c1c7171a9615c74a54b9c"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ad8e4ff7ce17c1c7171a9615c74a54b9c">MFM::EventWindow::SetCenterInTile</a></div><div class="ttdeci">void SetCenterInTile(const SPoint &amp;center)</div><div class="ttdef"><b>Definition:</b> EventWindow.h:167</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a4d3ac16d9cd4f5df26b56eb2173c0bd0"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a4d3ac16d9cd4f5df26b56eb2173c0bd0">MFM::EventWindow::GetAtomCount</a></div><div class="ttdeci">u32 GetAtomCount()</div><div class="ttdef"><b>Definition:</b> EventWindow.h:195</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_aef505583dac621f90892ec37cf82cb81"><div class="ttname"><a href="classMFM_1_1EventWindow.html#aef505583dac621f90892ec37cf82cb81">MFM::EventWindow::~EventWindow</a></div><div class="ttdeci">~EventWindow()</div><div class="ttdef"><b>Definition:</b> EventWindow.h:186</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a81a9f82636aa75fd134ca45d50e31291"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a81a9f82636aa75fd134ca45d50e31291">MFM::EventWindow::IsLiveSite</a></div><div class="ttdeci">bool IsLiveSite(const SPoint &amp;location) const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:147</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a9d12bbd638be0a792379579803842c30"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a9d12bbd638be0a792379579803842c30">MFM::EventWindow::GetRandom</a></div><div class="ttdeci">Random &amp; GetRandom()</div><div class="ttdef"><b>Definition:</b> EventWindow.h:121</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_ad2763d07d8381b8097f59a7e344094c6"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">MFM::EventWindow::GetRelativeAtom</a></div><div class="ttdeci">const T &amp; GetRelativeAtom(const SPoint &amp;offset) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:50</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a79979e96c65cb4ba1b318fafd9a56cc7"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a79979e96c65cb4ba1b318fafd9a56cc7">MFM::EventWindow::EventWindow</a></div><div class="ttdeci">EventWindow(Tile&lt; CC &gt; &amp;tile)</div><div class="ttdef"><b>Definition:</b> EventWindow.h:158</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a12ac8db782f8b47df2dc01ef54ec498e"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a12ac8db782f8b47df2dc01ef54ec498e">MFM::EventWindow::SetCenterAtom</a></div><div class="ttdeci">void SetCenterAtom(const T &amp;atom)</div><div class="ttdef"><b>Definition:</b> EventWindow.h:220</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a7a606f42f900437f90286c47077105a6"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a7a606f42f900437f90286c47077105a6">MFM::EventWindow::GetTile</a></div><div class="ttdeci">Tile&lt; CC &gt; &amp; GetTile()</div><div class="ttdef"><b>Definition:</b> EventWindow.h:132</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_ad8e4ff7ce17c1c7171a9615c74a54b9c"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ad8e4ff7ce17c1c7171a9615c74a54b9c">MFM::EventWindow::SetCenterInTile</a></div><div class="ttdeci">void SetCenterInTile(const SPoint &amp;center)</div><div class="ttdef"><b>Definition:</b> EventWindow.h:168</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a4d3ac16d9cd4f5df26b56eb2173c0bd0"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a4d3ac16d9cd4f5df26b56eb2173c0bd0">MFM::EventWindow::GetAtomCount</a></div><div class="ttdeci">u32 GetAtomCount()</div><div class="ttdef"><b>Definition:</b> EventWindow.h:197</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_aef505583dac621f90892ec37cf82cb81"><div class="ttname"><a href="classMFM_1_1EventWindow.html#aef505583dac621f90892ec37cf82cb81">MFM::EventWindow::~EventWindow</a></div><div class="ttdeci">~EventWindow()</div><div class="ttdef"><b>Definition:</b> EventWindow.h:188</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a81a9f82636aa75fd134ca45d50e31291"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a81a9f82636aa75fd134ca45d50e31291">MFM::EventWindow::IsLiveSite</a></div><div class="ttdeci">bool IsLiveSite(const SPoint &amp;location) const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:148</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a9d12bbd638be0a792379579803842c30"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a9d12bbd638be0a792379579803842c30">MFM::EventWindow::GetRandom</a></div><div class="ttdeci">Random &amp; GetRandom()</div><div class="ttdef"><b>Definition:</b> EventWindow.h:122</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_ad2763d07d8381b8097f59a7e344094c6"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ad2763d07d8381b8097f59a7e344094c6">MFM::EventWindow::GetRelativeAtom</a></div><div class="ttdeci">const T &amp; GetRelativeAtom(const SPoint &amp;offset) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:26</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a79979e96c65cb4ba1b318fafd9a56cc7"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a79979e96c65cb4ba1b318fafd9a56cc7">MFM::EventWindow::EventWindow</a></div><div class="ttdeci">EventWindow(Tile&lt; CC &gt; &amp;tile)</div><div class="ttdef"><b>Definition:</b> EventWindow.h:159</div></div>
 <div class="ttc" id="classMFM_1_1Point_html_a7d75d950bda48c62b51db385c6f011f8"><div class="ttname"><a href="classMFM_1_1Point.html#a7d75d950bda48c62b51db385c6f011f8">MFM::Point::GetManhattanLength</a></div><div class="ttdeci">u32 GetManhattanLength() const </div><div class="ttdef"><b>Definition:</b> Point.tcc:46</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a9c406623e599af246697ac674dcce529"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a9c406623e599af246697ac674dcce529">MFM::EventWindow::GetCenterAtom</a></div><div class="ttdeci">const T &amp; GetCenterAtom() const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:207</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a5668d7d6d2263baee258ec2631f71156"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a5668d7d6d2263baee258ec2631f71156">MFM::EventWindow::GetCenterInTile</a></div><div class="ttdeci">const SPoint &amp; GetCenterInTile() const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:178</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a9c406623e599af246697ac674dcce529"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a9c406623e599af246697ac674dcce529">MFM::EventWindow::GetCenterAtom</a></div><div class="ttdeci">const T &amp; GetCenterAtom() const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:209</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a5668d7d6d2263baee258ec2631f71156"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a5668d7d6d2263baee258ec2631f71156">MFM::EventWindow::GetCenterInTile</a></div><div class="ttdeci">const SPoint &amp; GetCenterInTile() const </div><div class="ttdef"><b>Definition:</b> EventWindow.h:180</div></div>
 <div class="ttc" id="MDist_8h_html"><div class="ttname"><a href="MDist_8h.html">MDist.h</a></div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_ac592b0f5a5e5a9d295c91b4b18308753"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ac592b0f5a5e5a9d295c91b4b18308753">MFM::EventWindow::FillIfNotType</a></div><div class="ttdeci">const bool FillIfNotType(const SPoint relative, const u32 type, const T &amp;atom)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:27</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_ae27f6df4eb8ff72ac7e77074500b4118"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ae27f6df4eb8ff72ac7e77074500b4118">MFM::EventWindow::IsBorderingMoore</a></div><div class="ttdeci">bool IsBorderingMoore(const u32 type) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:84</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a361a127865280bbc10cac60850bd9f15"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a361a127865280bbc10cac60850bd9f15">MFM::EventWindow::IsBorderingVonNeumann</a></div><div class="ttdeci">bool IsBorderingVonNeumann(const u32 type) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:90</div></div>
-<div class="ttc" id="classMFM_1_1Tile_html"><div class="ttname"><a href="classMFM_1_1Tile.html">MFM::Tile</a></div><div class="ttdef"><b>Definition:</b> EventWindow.h:40</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a5f90d6477b1300402b503dd3c49f1864"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a5f90d6477b1300402b503dd3c49f1864">MFM::EventWindow::FindRandomLocationOfType</a></div><div class="ttdeci">bool FindRandomLocationOfType(const u32 type, SPoint &amp;outPoint) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:114</div></div>
+<div class="ttc" id="classMFM_1_1Tile_html"><div class="ttname"><a href="classMFM_1_1Tile.html">MFM::Tile</a></div><div class="ttdef"><b>Definition:</b> EventWindow.h:41</div></div>
 <div class="ttc" id="itype_8h_html"><div class="ttname"><a href="itype_8h.html">itype.h</a></div></div>
 <div class="ttc" id="classMFM_1_1EventWindow_html"><div class="ttname"><a href="classMFM_1_1EventWindow.html">MFM::EventWindow</a></div><div class="ttdef"><b>Definition:</b> ElementTable.h:43</div></div>
 <div class="ttc" id="MDist_8h_html_a7610c7258af09380d59da99f7ae114c4"><div class="ttname"><a href="MDist_8h.html#a7610c7258af09380d59da99f7ae114c4">EVENT_WINDOW_SITES</a></div><div class="ttdeci">#define EVENT_WINDOW_SITES(radius)</div><div class="ttdef"><b>Definition:</b> MDist.h:46</div></div>
 <div class="ttc" id="classMFM_1_1EventWindow_html_a71c7d90d48e638ca9576499a39415ba6"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a71c7d90d48e638ca9576499a39415ba6">MFM::EventWindow::MapToTileValid</a></div><div class="ttdeci">SPoint MapToTileValid(const SPoint &amp;offset) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:8</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a4b499a32d5c8423e8cc72e7abf103f5b"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a4b499a32d5c8423e8cc72e7abf103f5b">MFM::EventWindow::SetRelativeAtom</a></div><div class="ttdeci">bool SetRelativeAtom(const SPoint &amp;offset, const T &amp;atom)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:39</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a43cd56dbceeb4aab83288eec3bca9a6c"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a43cd56dbceeb4aab83288eec3bca9a6c">MFM::EventWindow::CanSeeAtomOfType</a></div><div class="ttdeci">bool CanSeeAtomOfType(const u32 type, const u32 radius) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:64</div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_a847ac049768807359aacece4437c672f"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a847ac049768807359aacece4437c672f">MFM::EventWindow::IsBorderingNeighborhood</a></div><div class="ttdeci">bool IsBorderingNeighborhood(const u32 type, const Dir *dirs, const u32 dirCount) const </div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:96</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_a4b499a32d5c8423e8cc72e7abf103f5b"><div class="ttname"><a href="classMFM_1_1EventWindow.html#a4b499a32d5c8423e8cc72e7abf103f5b">MFM::EventWindow::SetRelativeAtom</a></div><div class="ttdeci">bool SetRelativeAtom(const SPoint &amp;offset, const T &amp;atom)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:15</div></div>
 <div class="ttc" id="classMFM_1_1Point_html"><div class="ttname"><a href="classMFM_1_1Point.html">MFM::Point&lt; s32 &gt;</a></div></div>
-<div class="ttc" id="classMFM_1_1EventWindow_html_ac58f8e3e36e72b8e3f88b1ee675b38c2"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ac58f8e3e36e72b8e3f88b1ee675b38c2">MFM::EventWindow::SwapAtoms</a></div><div class="ttdeci">void SwapAtoms(const SPoint &amp;locA, const SPoint &amp;locB)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:148</div></div>
+<div class="ttc" id="classMFM_1_1EventWindow_html_ac58f8e3e36e72b8e3f88b1ee675b38c2"><div class="ttname"><a href="classMFM_1_1EventWindow.html#ac58f8e3e36e72b8e3f88b1ee675b38c2">MFM::EventWindow::SwapAtoms</a></div><div class="ttdeci">void SwapAtoms(const SPoint &amp;locA, const SPoint &amp;locB)</div><div class="ttdef"><b>Definition:</b> EventWindow.tcc:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 17 2014 15:10:30 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

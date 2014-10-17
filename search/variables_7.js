@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vnneighbors',['VNNeighbors',['../classMFM_1_1Element.html#a41ed13a0052b9d1028a392b5ed4c76e3',1,'MFM::Element']]]
+  ['whitespace_5fchars',['WHITESPACE_CHARS',['../classMFM_1_1ByteSource.html#acc930ab20c71269f76f4c6b22cc07ae1',1,'MFM::ByteSource']]],
+  ['whitespace_5fset',['WHITESPACE_SET',['../classMFM_1_1ByteSource.html#a9d76e03116604772353d979028cab018',1,'MFM::ByteSource']]]
 ];

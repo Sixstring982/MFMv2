@@ -752,7 +752,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        snprintf(brushSizeArray, 64, <span class="stringliteral">&quot;%d&quot;</span>, m_brushSize);</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        <span class="keyword">const</span> <a class="code" href="classMFM_1_1Point.html">SPoint</a> brushPos = m_toolButtons[TOOL_AIRBRUSH].Panel::GetRenderPoint();</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        <a class="code" href="classMFM_1_1Point.html">UPoint</a> pos(brushPos.<a class="code" href="classMFM_1_1Point.html#a293a3d4c35e5cbaf6d7d3486a45287a8">GetX</a>() + 32, brushPos.<a class="code" href="classMFM_1_1Point.html#a3dc1de7350cbd1e82da54c456aabb268">GetY</a>());</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        <a class="code" href="classMFM_1_1Point.html">UPoint</a> pos(brushPos.<a class="code" href="classMFM_1_1Point.html#a293a3d4c35e5cbaf6d7d3486a45287a8">GetX</a>() + GetElementRenderSize(), brushPos.<a class="code" href="classMFM_1_1Point.html#a3dc1de7350cbd1e82da54c456aabb268">GetY</a>());</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        d.<a class="code" href="classMFM_1_1Drawing.html#a4710230fe49e5c58f1e92703464f1c56">BlitBackedText</a>(brushSizeArray, pos, <a class="code" href="classMFM_1_1Point.html">UPoint</a>(128, 128));</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;      }</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;</div>
@@ -774,7 +774,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="FileByteSink_8h_html"><div class="ttname"><a href="FileByteSink_8h.html">FileByteSink.h</a></div></div>
 <div class="ttc" id="classMFM_1_1Drawing_html_afe30dd885cbd5728724c9de34f10afc4"><div class="ttname"><a href="classMFM_1_1Drawing.html#afe30dd885cbd5728724c9de34f10afc4">MFM::Drawing::SetForeground</a></div><div class="ttdeci">u32 SetForeground(const u32 color)</div><div class="ttdef"><b>Definition:</b> Drawing.h:188</div></div>
 <div class="ttc" id="classMFM_1_1ParameterControllerBool_html"><div class="ttname"><a href="classMFM_1_1ParameterControllerBool.html">MFM::ParameterControllerBool</a></div><div class="ttdef"><b>Definition:</b> ParameterControllerBool.h:42</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_aa9e4e3c61458a093cacd04935f50cefa"><div class="ttname"><a href="classMFM_1_1Element.html#aa9e4e3c61458a093cacd04935f50cefa">MFM::Element::ToggleLowlightPhysicsColor</a></div><div class="ttdeci">void ToggleLowlightPhysicsColor()</div><div class="ttdef"><b>Definition:</b> Element.h:507</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_aa9e4e3c61458a093cacd04935f50cefa"><div class="ttname"><a href="classMFM_1_1Element.html#aa9e4e3c61458a093cacd04935f50cefa">MFM::Element::ToggleLowlightPhysicsColor</a></div><div class="ttdeci">void ToggleLowlightPhysicsColor()</div><div class="ttdef"><b>Definition:</b> Element.h:458</div></div>
 <div class="ttc" id="structMFM_1_1MouseButtonEvent_html"><div class="ttname"><a href="structMFM_1_1MouseButtonEvent.html">MFM::MouseButtonEvent</a></div><div class="ttdef"><b>Definition:</b> Panel.h:73</div></div>
 <div class="ttc" id="classMFM_1_1ElementParameterBool_html"><div class="ttname"><a href="classMFM_1_1ElementParameterBool.html">MFM::ElementParameterBool</a></div><div class="ttdef"><b>Definition:</b> Parameter.h:628</div></div>
 <div class="ttc" id="classMFM_1_1AbstractButton_html"><div class="ttname"><a href="classMFM_1_1AbstractButton.html">MFM::AbstractButton</a></div><div class="ttdef"><b>Definition:</b> AbstractButton.h:44</div></div>
@@ -799,7 +799,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="Slider_8h_html"><div class="ttname"><a href="Slider_8h.html">Slider.h</a></div></div>
 <div class="ttc" id="classMFM_1_1Slider_html"><div class="ttname"><a href="classMFM_1_1Slider.html">MFM::Slider</a></div><div class="ttdef"><b>Definition:</b> Slider.h:40</div></div>
 <div class="ttc" id="classMFM_1_1Point_html_a38eb0d33606a6b1b49e7809975cf31af"><div class="ttname"><a href="classMFM_1_1Point.html#a38eb0d33606a6b1b49e7809975cf31af">MFM::Point::SetY</a></div><div class="ttdeci">void SetY(T y)</div><div class="ttdef"><b>Definition:</b> Point.tcc:170</div></div>
-<div class="ttc" id="classMFM_1_1Element_html_a7c17125eeabd6650daf9ec10259423be"><div class="ttname"><a href="classMFM_1_1Element.html#a7c17125eeabd6650daf9ec10259423be">MFM::Element::GetAtomicSymbol</a></div><div class="ttdeci">const char * GetAtomicSymbol() const </div><div class="ttdef"><b>Definition:</b> Element.h:354</div></div>
+<div class="ttc" id="classMFM_1_1Element_html_a7c17125eeabd6650daf9ec10259423be"><div class="ttname"><a href="classMFM_1_1Element.html#a7c17125eeabd6650daf9ec10259423be">MFM::Element::GetAtomicSymbol</a></div><div class="ttdeci">const char * GetAtomicSymbol() const </div><div class="ttdef"><b>Definition:</b> Element.h:305</div></div>
 <div class="ttc" id="classMFM_1_1Drawing_html_ac29baa00a952d45402a4d53605cd5d6c"><div class="ttname"><a href="classMFM_1_1Drawing.html#ac29baa00a952d45402a4d53605cd5d6c">MFM::Drawing::FillRect</a></div><div class="ttdeci">void FillRect(int x, int y, int w, int h) const </div><div class="ttdef"><b>Definition:</b> Drawing.cpp:115</div></div>
 <div class="ttc" id="MDist_8h_html_a7610c7258af09380d59da99f7ae114c4"><div class="ttname"><a href="MDist_8h.html#a7610c7258af09380d59da99f7ae114c4">EVENT_WINDOW_SITES</a></div><div class="ttdeci">#define EVENT_WINDOW_SITES(radius)</div><div class="ttdef"><b>Definition:</b> MDist.h:46</div></div>
 <div class="ttc" id="classMFM_1_1ToolboxPanel_html"><div class="ttname"><a href="classMFM_1_1ToolboxPanel.html">MFM::ToolboxPanel</a></div><div class="ttdef"><b>Definition:</b> ToolboxPanel.h:45</div></div>
@@ -815,7 +815,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 14 2014 12:46:28 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 17 2014 15:10:30 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -107,6 +107,12 @@ Inheritance diagram for MFM::Element_Sorter&lt; CC &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab74b3078951a3cfe1119f4a52accdb0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab74b3078951a3cfe1119f4a52accdb0a"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataType</b> () const </td></tr>
+<tr class="separator:ab74b3078951a3cfe1119f4a52accdb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af890ced5c2e1b798a5d1070971014ef1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af890ced5c2e1b798a5d1070971014ef1"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetEmptyType</b> () const </td></tr>
+<tr class="separator:af890ced5c2e1b798a5d1070971014ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69af03468256fb3df060228a103f74cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69af03468256fb3df060228a103f74cd"></a>
 u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetThreshold</b> (const T &amp;atom, u32 badType) const </td></tr>
 <tr class="separator:a69af03468256fb3df060228a103f74cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,9 +123,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetThreshold</b> (T &
 <tr class="separator:af42c45bb0027d3e7a2ac2aa8005716a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecea2cf6d63c57d38d557afc68ce877d"><td class="memItemLeft" align="right" valign="top">virtual u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#aecea2cf6d63c57d38d557afc68ce877d">PercentMovable</a> (const T &amp;you, const T &amp;me, const <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;offset) const </td></tr>
 <tr class="separator:aecea2cf6d63c57d38d557afc68ce877d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4d4a0e27e6497eedb02e2e936989441"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4d4a0e27e6497eedb02e2e936989441"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>FillAvailableSubwindowPoint</b> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;window, <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;pt, Dir subwindow, ElementType type) const </td></tr>
-<tr class="separator:af4d4a0e27e6497eedb02e2e936989441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab65017c02e6726e38e2add8360fec03"><td class="memItemLeft" align="right" valign="top">virtual u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#aab65017c02e6726e38e2add8360fec03">DefaultPhysicsColor</a> () const </td></tr>
 <tr class="separator:aab65017c02e6726e38e2add8360fec03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e0a4673f45ae5c3f2a756058dd35b30"><td class="memItemLeft" align="right" valign="top">virtual u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element__Sorter.html#a8e0a4673f45ae5c3f2a756058dd35b30">DefaultLowlightColor</a> () const </td></tr>
@@ -188,8 +191,14 @@ static const u32&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_THR
 <tr class="memitem:aaea257d7519e550270942568b4935498"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaea257d7519e550270942568b4935498"></a>
 static const u32&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_BITS</b> = STATE_THRESHOLD_LEN</td></tr>
 <tr class="separator:aaea257d7519e550270942568b4935498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63d756903d6b020618053ad7bb5a49e1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classMFM_1_1Point.html">SPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_southeastSubwindow</b> [4]</td></tr>
-<tr class="separator:a63d756903d6b020618053ad7bb5a49e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7401a27fa6a40a0a5dea0de9cea031c9"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classMFM_1_1Point.html">SPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_southeastSubWindow</b> [4]</td></tr>
+<tr class="separator:a7401a27fa6a40a0a5dea0de9cea031c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7594a9cd805319c4175fda4457c9a3e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classMFM_1_1Point.html">SPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_northeastSubWindow</b> [4]</td></tr>
+<tr class="separator:ae7594a9cd805319c4175fda4457c9a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e2bcc05f7680b42601ad228102c186"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classMFM_1_1Point.html">SPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_southwestSubWindow</b> [4]</td></tr>
+<tr class="separator:a95e2bcc05f7680b42601ad228102c186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27af33513c072d657b74631d73baf12"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classMFM_1_1Point.html">SPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_northwestSubWindow</b> [4]</td></tr>
+<tr class="separator:ac27af33513c072d657b74631d73baf12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_classMFM_1_1Element"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classMFM_1_1Element')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classMFM_1_1Element.html">MFM::Element&lt; CC &gt;</a></td></tr>
 <tr class="memitem:a94892de98cadfb7ec96ebb28dcf9c179 inherit pub_static_attribs_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">static const u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a94892de98cadfb7ec96ebb28dcf9c179">COMPLETE_DIFFUSABILITY</a> = 1000</td></tr>
 <tr class="separator:a94892de98cadfb7ec96ebb28dcf9c179 inherit pub_static_attribs_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,15 +219,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ae1dd9fcdee4a757fea02a7dba3e7c2ad inherit pro_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d7e6b9447f709ea007ca245c12f4cf inherit pro_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#ab4d7e6b9447f709ea007ca245c12f4cf">SetName</a> (const char *name)</td></tr>
 <tr class="separator:ab4d7e6b9447f709ea007ca245c12f4cf inherit pro_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a314bff267b279018a804f8865e76e12d inherit pro_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a314bff267b279018a804f8865e76e12d">FillAvailableVNNeighbor</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;window, <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;pt) const </td></tr>
-<tr class="separator:a314bff267b279018a804f8865e76e12d inherit pro_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d26590257769859ce54cb50de75f6e3 inherit pro_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a7d26590257769859ce54cb50de75f6e3">FillPointWithType</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;window, <a class="el" href="classMFM_1_1Point.html">SPoint</a> &amp;pt, const <a class="el" href="classMFM_1_1Point.html">SPoint</a> *relevants, u32 relevantCount, Dir rotation, ElementType type) const </td></tr>
-<tr class="separator:a7d26590257769859ce54cb50de75f6e3 inherit pro_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93881c4d4a7e6d46421d2befec00fb1e inherit pro_methods_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a93881c4d4a7e6d46421d2befec00fb1e">Diffuse</a> (<a class="el" href="classMFM_1_1EventWindow.html">EventWindow</a>&lt; CC &gt; &amp;window) const </td></tr>
 <tr class="separator:a93881c4d4a7e6d46421d2befec00fb1e inherit pro_methods_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_attribs_classMFM_1_1Element"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classMFM_1_1Element')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classMFM_1_1Element.html">MFM::Element&lt; CC &gt;</a></td></tr>
-<tr class="memitem:a41ed13a0052b9d1028a392b5ed4c76e3 inherit pro_static_attribs_classMFM_1_1Element"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classMFM_1_1Point.html">SPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Element.html#a41ed13a0052b9d1028a392b5ed4c76e3">VNNeighbors</a> [4]</td></tr>
-<tr class="separator:a41ed13a0052b9d1028a392b5ed4c76e3 inherit pro_static_attribs_classMFM_1_1Element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a4bdeb16d12d15253bf75ed965ba6e8f7"></a>
@@ -513,7 +515,7 @@ template&lt;class CC &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a63d756903d6b020618053ad7bb5a49e1"></a>
+<a class="anchor" id="ae7594a9cd805319c4175fda4457c9a3e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -523,7 +525,59 @@ template&lt;class CC &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classMFM_1_1Point.html">SPoint</a> <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::m_southeastSubwindow</td>
+          <td class="memname">const <a class="el" href="classMFM_1_1Point.html">SPoint</a> <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::m_northeastSubWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">  {</div>
+<div class="line">    SPoint(1,-1),SPoint(1,-2),SPoint(2,-1),SPoint(2,-2)</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac27af33513c072d657b74631d73baf12"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CC &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classMFM_1_1Point.html">SPoint</a> <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::m_northwestSubWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">  {</div>
+<div class="line">    SPoint(-1,-1),SPoint(-1,-2),SPoint(-2,-1),SPoint(-2,-2)</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a7401a27fa6a40a0a5dea0de9cea031c9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CC &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classMFM_1_1Point.html">SPoint</a> <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::m_southeastSubWindow</td>
         </tr>
       </table>
   </td>
@@ -539,13 +593,39 @@ template&lt;class CC &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="a95e2bcc05f7680b42601ad228102c186"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CC &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classMFM_1_1Point.html">SPoint</a> <a class="el" href="classMFM_1_1Element__Sorter.html">MFM::Element_Sorter</a>&lt; CC &gt;::m_southwestSubWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">  {</div>
+<div class="line">    SPoint(-1,1),SPoint(-1,2),SPoint(-2,1),SPoint(-2,2)</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/elements/include/<a class="el" href="Element__Sorter_8h_source.html">Element_Sorter.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 14 2014 12:46:43 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 17 2014 15:10:45 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
