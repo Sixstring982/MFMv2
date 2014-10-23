@@ -27,10 +27,12 @@ var searchData=
   ['mousebuttonevent',['MouseButtonEvent',['../structMFM_1_1MouseButtonEvent.html',1,'MFM']]],
   ['mouseevent',['MouseEvent',['../structMFM_1_1MouseEvent.html',1,'MFM']]],
   ['mousemotionevent',['MouseMotionEvent',['../structMFM_1_1MouseMotionEvent.html',1,'MFM']]],
+  ['movablepanel',['MovablePanel',['../classMFM_1_1MovablePanel.html',1,'MFM']]],
+  ['movablepanel_2eh',['MovablePanel.h',['../MovablePanel_8h.html',1,'']]],
   ['msg',['Msg',['../classMFM_1_1LineCountingByteSource.html#a3ae8d88c5bce8752f074f9891a5f8ed0',1,'MFM::LineCountingByteSource']]],
   ['multiply',['Multiply',['../classMFM_1_1Point.html#ab7237caa48103285130d25c3a8cf25be',1,'MFM::Point']]],
-  ['mutex',['Mutex',['../classMFM_1_1Mutex.html#acb9e8822caa90581f82dc7afd2a201f4',1,'MFM::Mutex']]],
   ['mutex',['Mutex',['../classMFM_1_1Mutex.html',1,'MFM']]],
+  ['mutex',['Mutex',['../classMFM_1_1Mutex.html#acb9e8822caa90581f82dc7afd2a201f4',1,'MFM::Mutex']]],
   ['mutex_2eh',['Mutex.h',['../Mutex_8h.html',1,'']]],
   ['myiterator',['MyIterator',['../classMFM_1_1Grid_1_1MyIterator.html',1,'MFM::Grid']]]
 ];

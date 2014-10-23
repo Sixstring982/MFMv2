@@ -230,7 +230,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    {</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classMFM_1_1Logger.html#a38b12beb37a1ba01535de2a76c0a636a">IfLog</a>(level))</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="classMFM_1_1Mutex_1_1ScopeLock.html">Mutex::ScopeLock</a> lock(m_mutex, <span class="stringliteral">&quot;Vreport&quot;</span>); <span class="comment">// Hold lock for this block</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="classMFM_1_1Mutex_1_1ScopeLock.html">Mutex::ScopeLock</a> lock(m_mutex); <span class="comment">// Hold lock for this block</span></div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        m_sink-&gt;Printf(<span class="stringliteral">&quot;%@%s: &quot;</span>,m_timeStamper, <a class="code" href="classMFM_1_1Logger.html#af91ce6bb0b53e792453942dd5d0e412e">StrLevel</a>(level));</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        m_sink-&gt;Vprintf(format, ap);</div>
@@ -317,7 +317,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1Logger_html_ac134364a6cab97733d814523bd0ece7e"><div class="ttname"><a href="classMFM_1_1Logger.html#ac134364a6cab97733d814523bd0ece7e">MFM::Logger::SetLevel</a></div><div class="ttdeci">Level SetLevel(Level newLevel)</div><div class="ttdef"><b>Definition:</b> Logger.h:142</div></div>
 <div class="ttc" id="classMFM_1_1Logger_html_a452e7b39b21033d57dd3acb62012c64b"><div class="ttname"><a href="classMFM_1_1Logger.html#a452e7b39b21033d57dd3acb62012c64b">MFM::Logger::Error</a></div><div class="ttdeci">void Error(const char *format,...)</div><div class="ttdef"><b>Definition:</b> Logger.h:259</div></div>
 <div class="ttc" id="ByteSink_8h_html"><div class="ttname"><a href="ByteSink_8h.html">ByteSink.h</a></div></div>
-<div class="ttc" id="classMFM_1_1Mutex_1_1ScopeLock_html"><div class="ttname"><a href="classMFM_1_1Mutex_1_1ScopeLock.html">MFM::Mutex::ScopeLock</a></div><div class="ttdef"><b>Definition:</b> Mutex.h:130</div></div>
+<div class="ttc" id="classMFM_1_1Mutex_1_1ScopeLock_html"><div class="ttname"><a href="classMFM_1_1Mutex_1_1ScopeLock.html">MFM::Mutex::ScopeLock</a></div><div class="ttdef"><b>Definition:</b> Mutex.h:84</div></div>
 <div class="ttc" id="structMFM_1_1Format_html_af8b0efb1fad45cd8ecaae70c02ec1ceaa0a13c9afc2be34b59492dc497ea85867"><div class="ttname"><a href="structMFM_1_1Format.html#af8b0efb1fad45cd8ecaae70c02ec1ceaa0a13c9afc2be34b59492dc497ea85867">MFM::Format::LEX32</a></div><div class="ttdef"><b>Definition:</b> Format.h:49</div></div>
 <div class="ttc" id="classMFM_1_1Mutex_html"><div class="ttname"><a href="classMFM_1_1Mutex.html">MFM::Mutex</a></div><div class="ttdef"><b>Definition:</b> Mutex.h:42</div></div>
 <div class="ttc" id="classMFM_1_1Logger_html_af91ce6bb0b53e792453942dd5d0e412e"><div class="ttname"><a href="classMFM_1_1Logger.html#af91ce6bb0b53e792453942dd5d0e412e">MFM::Logger::StrLevel</a></div><div class="ttdeci">static const char * StrLevel(Level l)</div><div class="ttdef"><b>Definition:</b> Logger.h:75</div></div>
@@ -337,7 +337,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 17 2014 15:10:30 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 23 2014 17:14:13 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

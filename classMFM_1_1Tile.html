@@ -110,6 +110,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportTileStatus</b> 
 <tr class="separator:afd1aeb3fcef70568cd841ef6db061491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03271d282543b905eea40ea131186400"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Tile.html#a03271d282543b905eea40ea131186400">Tile</a> ()</td></tr>
 <tr class="separator:a03271d282543b905eea40ea131186400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae79ef8e4ab60e012c9e202f52188f3f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Tile.html#ae79ef8e4ab60e012c9e202f52188f3f3">SetIgnoreThreadingProblems</a> (bool value)</td></tr>
+<tr class="separator:ae79ef8e4ab60e012c9e202f52188f3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a686a4452490fee5757e6815fea79fbf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Tile.html#a686a4452490fee5757e6815fea79fbf2">Reinit</a> ()</td></tr>
 <tr class="separator:a686a4452490fee5757e6815fea79fbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada7947396380a8d936c4c22973e23031"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1Tile.html#ada7947396380a8d936c4c22973e23031">ClearAtoms</a> ()</td></tr>
@@ -1918,6 +1920,31 @@ template&lt;class CC&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ae79ef8e4ab60e012c9e202f52188f3f3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CC &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMFM_1_1Tile.html">MFM::Tile</a>&lt; CC &gt;::SetIgnoreThreadingProblems </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets a value in this <a class="el" href="classMFM_1_1Tile.html">Tile</a> corresponding to its tolerance of threading problems.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>If <code>true</code> , allows this <a class="el" href="classMFM_1_1Tile.html">Tile</a> to ignore threading problems encountered during <a class="el" href="classMFM_1_1Tile.html">Tile</a> execution. This is not normally recommended because since it will cause cache inconsistencies, but it will most likely keep your instance of the MFM from crashing if this is set. If <code>false</code> , will crash upon detecting a threading problem. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a7d80afaa5894d522c2361b48acc589f5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2231,7 +2258,7 @@ template&lt;class CC&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 17 2014 15:10:33 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 23 2014 17:14:16 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

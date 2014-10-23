@@ -120,6 +120,8 @@ ThreadState&#160;</td><td class="memItemRight" valign="bottom"><b>GetStateNonblo
 <tr class="separator:aaa8cfa29d03f63f0c4dc66b3eb3d6406"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ad0a0fedf2791a49d73c834d642e83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1ThreadPauser.html#ae6ad0a0fedf2791a49d73c834d642e83">RequestPause</a> ()</td></tr>
 <tr class="separator:ae6ad0a0fedf2791a49d73c834d642e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be8adfd60f644f81c981a6a2c267c52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1ThreadPauser.html#a6be8adfd60f644f81c981a6a2c267c52">SetIgnoreThreadingProblems</a> (bool value)</td></tr>
+<tr class="separator:a6be8adfd60f644f81c981a6a2c267c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4deb5c08562b11f349523051251ad626"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1ThreadPauser.html#a4deb5c08562b11f349523051251ad626">RequestRun</a> ()</td></tr>
 <tr class="separator:a4deb5c08562b11f349523051251ad626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae02c9a9397a49c5f348e1daafff3e46b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMFM_1_1ThreadPauser.html#ae02c9a9397a49c5f348e1daafff3e46b">Run</a> ()</td></tr>
@@ -339,6 +341,31 @@ static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetThr
 
 </div>
 </div>
+<a class="anchor" id="a6be8adfd60f644f81c981a6a2c267c52"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MFM::ThreadPauser::SetIgnoreThreadingProblems </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets whether or not this <a class="el" href="classMFM_1_1ThreadPauser.html">ThreadPauser</a> is allowed to ignore problems consistent with threading bugs. This is not normally reccomended because it will cause some corruptions, but it may keep your MFM instance from crashing. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/core/include/<a class="el" href="ThreadPauser_8h_source.html">ThreadPauser.h</a></li>
 <li>src/core/src/ThreadPauser.cpp</li>
@@ -346,7 +373,7 @@ static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetThr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 17 2014 15:10:36 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 23 2014 17:14:20 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

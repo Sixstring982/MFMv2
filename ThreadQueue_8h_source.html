@@ -129,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">struct </span>MoreInputIsAvailable : <span class="keyword">public</span> <a class="code" href="classMFM_1_1Mutex_1_1Predicate.html">Mutex::Predicate</a></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="classMFM_1_1ThreadQueue.html">ThreadQueue</a> &amp; m_threadQueue;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      MoreInputIsAvailable(<a class="code" href="classMFM_1_1ThreadQueue.html">ThreadQueue</a> &amp; tq) : Predicate(tq.m_mutex, <span class="stringliteral">&quot;MoreInput&quot;</span>), m_threadQueue(tq) { }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      MoreInputIsAvailable(<a class="code" href="classMFM_1_1ThreadQueue.html">ThreadQueue</a> &amp; tq) : Predicate(tq.m_mutex), m_threadQueue(tq) { }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">bool</span> EvaluatePrecondition()</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      {</div>
@@ -186,7 +186,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMFM_1_1ThreadQueue_html_aac83f0a149afe7ba08f5eb0269c9843b"><div class="ttname"><a href="classMFM_1_1ThreadQueue.html#aac83f0a149afe7ba08f5eb0269c9843b">MFM::ThreadQueue::PeekRead</a></div><div class="ttdeci">void PeekRead(u8 *toBuffer, u32 index, u32 length)</div><div class="ttdef"><b>Definition:</b> ThreadQueue.cpp:91</div></div>
 <div class="ttc" id="classMFM_1_1Mutex_html"><div class="ttname"><a href="classMFM_1_1Mutex.html">MFM::Mutex</a></div><div class="ttdef"><b>Definition:</b> Mutex.h:42</div></div>
 <div class="ttc" id="classMFM_1_1ThreadQueue_html_af6bc60791dd9a3dc5d976fe77772a4e6"><div class="ttname"><a href="classMFM_1_1ThreadQueue.html#af6bc60791dd9a3dc5d976fe77772a4e6">MFM::ThreadQueue::~ThreadQueue</a></div><div class="ttdeci">~ThreadQueue()</div><div class="ttdef"><b>Definition:</b> ThreadQueue.cpp:17</div></div>
-<div class="ttc" id="classMFM_1_1Mutex_1_1Predicate_html"><div class="ttname"><a href="classMFM_1_1Mutex_1_1Predicate.html">MFM::Mutex::Predicate</a></div><div class="ttdef"><b>Definition:</b> Mutex.h:147</div></div>
+<div class="ttc" id="classMFM_1_1Mutex_1_1Predicate_html"><div class="ttname"><a href="classMFM_1_1Mutex_1_1Predicate.html">MFM::Mutex::Predicate</a></div><div class="ttdef"><b>Definition:</b> Mutex.h:99</div></div>
 <div class="ttc" id="classMFM_1_1ThreadQueue_html_aa5bdb80279cbcdca6ec2f1146943128b"><div class="ttname"><a href="classMFM_1_1ThreadQueue.html#aa5bdb80279cbcdca6ec2f1146943128b">MFM::ThreadQueue::ThreadQueue</a></div><div class="ttdeci">ThreadQueue()</div><div class="ttdef"><b>Definition:</b> ThreadQueue.cpp:12</div></div>
 <div class="ttc" id="Mutex_8h_html"><div class="ttname"><a href="Mutex_8h.html">Mutex.h</a></div></div>
 <div class="ttc" id="Logger_8h_html"><div class="ttname"><a href="Logger_8h.html">Logger.h</a></div></div>
@@ -198,7 +198,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 17 2014 15:10:30 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 23 2014 17:14:13 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

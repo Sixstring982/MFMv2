@@ -6,6 +6,7 @@ var searchData=
   ['charbufferbytesource',['CharBufferByteSource',['../classMFM_1_1CharBufferByteSource.html',1,'MFM']]],
   ['clearbutton',['ClearButton',['../classMFM_1_1AbstractGUIDriver_1_1ClearButton.html',1,'MFM::AbstractGUIDriver']]],
   ['cleargridbutton',['ClearGridButton',['../classMFM_1_1AbstractGUIDriver_1_1ClearGridButton.html',1,'MFM::AbstractGUIDriver']]],
+  ['closewindowbutton',['CloseWindowButton',['../classMFM_1_1CloseWindowButton.html',1,'MFM']]],
   ['colormap',['ColorMap',['../classMFM_1_1ColorMap.html',1,'MFM']]],
   ['colormap_5ftest',['ColorMap_Test',['../classMFM_1_1ColorMap__Test.html',1,'MFM']]],
   ['configfunctioncall',['ConfigFunctionCall',['../classMFM_1_1ConfigFunctionCall.html',1,'MFM']]],

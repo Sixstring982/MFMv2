@@ -125,50 +125,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> CC&gt;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">class </span>AtomSerializer : <span class="keyword">public</span> ByteSerializable</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> CC::PARAM_CONFIG P;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">enum</span> { BPA = P::BITS_PER_ATOM };</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Atom&lt;CC&gt; &amp; m_atom;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    AtomSerializer(Atom&lt;CC&gt; &amp; atom) : m_atom(atom)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    { }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classMFM_1_1AtomSerializer.html#ac6956ae555b1cc56ef9c41259263ed8f">   58</a></span>&#160;    Result <a class="code" href="classMFM_1_1AtomSerializer.html#ac6956ae555b1cc56ef9c41259263ed8f">PrintTo</a>(<a class="code" href="classMFM_1_1ByteSink.html">ByteSink</a> &amp; bs, s32 argument = 0)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      m_atom.m_bits.Print(bs);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">return</span> SUCCESS;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classMFM_1_1AtomSerializer.html#aba03eeb25c5c3041c11dd34eae16c9d5">   64</a></span>&#160;    Result <a class="code" href="classMFM_1_1AtomSerializer.html#aba03eeb25c5c3041c11dd34eae16c9d5">ReadFrom</a>(<a class="code" href="classMFM_1_1ByteSource.html">ByteSource</a> &amp; bs, s32 argument = 0)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">if</span> (m_atom.m_bits.Read(bs))</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> SUCCESS;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">return</span> FAILURE;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1BitVector.html">BitVector&lt;BPA&gt;</a> &amp; GetBits()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">return</span> m_atom.m_bits;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  };</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">/* namespace MFM */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*ATOMSERIALIZER_H*/</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;   <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> CC::PARAM_CONFIG P;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">enum</span> { BPA = P::BITS_PER_ATOM };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Atom&lt;CC&gt; &amp; m_atom;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;   <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    AtomSerializer(Atom&lt;CC&gt; &amp; atom) : m_atom(atom)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    { }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classMFM_1_1AtomSerializer.html#ac6956ae555b1cc56ef9c41259263ed8f">   59</a></span>&#160;    Result <a class="code" href="classMFM_1_1AtomSerializer.html#ac6956ae555b1cc56ef9c41259263ed8f">PrintTo</a>(<a class="code" href="classMFM_1_1ByteSink.html">ByteSink</a> &amp; bs, s32 argument = 0)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      m_atom.m_bits.Print(bs);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> SUCCESS;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classMFM_1_1AtomSerializer.html#aba03eeb25c5c3041c11dd34eae16c9d5">   65</a></span>&#160;    Result <a class="code" href="classMFM_1_1AtomSerializer.html#aba03eeb25c5c3041c11dd34eae16c9d5">ReadFrom</a>(<a class="code" href="classMFM_1_1ByteSource.html">ByteSource</a> &amp; bs, s32 argument = 0)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">if</span> (m_atom.m_bits.Read(bs))</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> SUCCESS;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">return</span> FAILURE;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">const</span> <a class="code" href="classMFM_1_1BitVector.html">BitVector&lt;BPA&gt;</a> &amp; GetBits()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">return</span> m_atom.m_bits;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  };</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;} <span class="comment">/* namespace MFM */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*ATOMSERIALIZER_H*/</span><span class="preprocessor"></span></div>
 <div class="ttc" id="ByteSerializable_8h_html"><div class="ttname"><a href="ByteSerializable_8h.html">ByteSerializable.h</a></div></div>
-<div class="ttc" id="classMFM_1_1AtomSerializer_html_ac6956ae555b1cc56ef9c41259263ed8f"><div class="ttname"><a href="classMFM_1_1AtomSerializer.html#ac6956ae555b1cc56ef9c41259263ed8f">MFM::AtomSerializer::PrintTo</a></div><div class="ttdeci">Result PrintTo(ByteSink &amp;bs, s32 argument=0)</div><div class="ttdef"><b>Definition:</b> AtomSerializer.h:58</div></div>
+<div class="ttc" id="classMFM_1_1AtomSerializer_html_ac6956ae555b1cc56ef9c41259263ed8f"><div class="ttname"><a href="classMFM_1_1AtomSerializer.html#ac6956ae555b1cc56ef9c41259263ed8f">MFM::AtomSerializer::PrintTo</a></div><div class="ttdeci">Result PrintTo(ByteSink &amp;bs, s32 argument=0)</div><div class="ttdef"><b>Definition:</b> AtomSerializer.h:59</div></div>
 <div class="ttc" id="BitVector_8h_html"><div class="ttname"><a href="BitVector_8h.html">BitVector.h</a></div></div>
 <div class="ttc" id="classMFM_1_1ByteSource_html"><div class="ttname"><a href="classMFM_1_1ByteSource.html">MFM::ByteSource</a></div><div class="ttdef"><b>Definition:</b> ByteSource.h:44</div></div>
 <div class="ttc" id="classMFM_1_1ByteSink_html"><div class="ttname"><a href="classMFM_1_1ByteSink.html">MFM::ByteSink</a></div><div class="ttdef"><b>Definition:</b> ByteSink.h:47</div></div>
 <div class="ttc" id="itype_8h_html"><div class="ttname"><a href="itype_8h.html">itype.h</a></div></div>
 <div class="ttc" id="classMFM_1_1BitVector_html"><div class="ttname"><a href="classMFM_1_1BitVector.html">MFM::BitVector&lt; BPA &gt;</a></div></div>
 <div class="ttc" id="Atom_8h_html"><div class="ttname"><a href="Atom_8h.html">Atom.h</a></div></div>
-<div class="ttc" id="classMFM_1_1AtomSerializer_html_aba03eeb25c5c3041c11dd34eae16c9d5"><div class="ttname"><a href="classMFM_1_1AtomSerializer.html#aba03eeb25c5c3041c11dd34eae16c9d5">MFM::AtomSerializer::ReadFrom</a></div><div class="ttdeci">Result ReadFrom(ByteSource &amp;bs, s32 argument=0)</div><div class="ttdef"><b>Definition:</b> AtomSerializer.h:64</div></div>
+<div class="ttc" id="classMFM_1_1AtomSerializer_html_aba03eeb25c5c3041c11dd34eae16c9d5"><div class="ttname"><a href="classMFM_1_1AtomSerializer.html#aba03eeb25c5c3041c11dd34eae16c9d5">MFM::AtomSerializer::ReadFrom</a></div><div class="ttdeci">Result ReadFrom(ByteSource &amp;bs, s32 argument=0)</div><div class="ttdef"><b>Definition:</b> AtomSerializer.h:65</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 17 2014 15:10:30 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 23 2014 17:14:13 for MFMv2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -15,6 +15,7 @@ var searchData=
   ['clearbit',['ClearBit',['../classMFM_1_1BitField.html#a2a7459e4cdb237daa427110bdf979e83',1,'MFM::BitField::ClearBit()'],['../classMFM_1_1BitVector.html#aa66b77d49034036c995e8599c82d8a60',1,'MFM::BitVector::ClearBit()']]],
   ['clearbits',['ClearBits',['../classMFM_1_1BitVector.html#ae3f4303566b4f3fe6fad22cdf1504cb3',1,'MFM::BitVector']]],
   ['close',['Close',['../classMFM_1_1FileByteSink.html#a0dbb2c9220329f4802281b5123b13688',1,'MFM::FileByteSink::Close()'],['../classMFM_1_1FileByteSource.html#a00001b0fddf4e11f15420cf4550a2ceb',1,'MFM::FileByteSource::Close()']]],
+  ['closewindowbutton',['CloseWindowButton',['../classMFM_1_1CloseWindowButton.html#a22875493b3ce4112d44ada05bfced5a5',1,'MFM::CloseWindowButton']]],
   ['compute2dparity',['Compute2DParity',['../classMFM_1_1Parity2D__4x4.html#a5679dca14a1676f5448e65d48eb929ab',1,'MFM::Parity2D_4x4']]],
   ['connect',['Connect',['../classMFM_1_1Tile.html#a248c1dd486dc4da1a1d8a94105a28b7c',1,'MFM::Tile']]],
   ['connection',['Connection',['../classMFM_1_1Connection.html#a54ca1ff7251e0acb632563c8e190dc62',1,'MFM::Connection']]],
