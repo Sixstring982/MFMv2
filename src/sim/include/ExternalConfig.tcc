@@ -85,17 +85,17 @@ namespace MFM
     /* First, register all elements. */
 
     u32 elems = m_elementRegistry.GetEntryCount();
-    char lexOutput[24];
+    char alphaOutput[24];
 
     for(u32 i = 0; i < elems; i++)
     {
       const UUID& uuid = m_elementRegistry.GetEntryUUID(i);
 
-      IntLexEncode(i, lexOutput);
+      IntAlphaEncode(i, alphaOutput);
 
       byteSink.Printf("RegisterElement(");
       uuid.Print(byteSink);
-      byteSink.Printf(",%s)", lexOutput);
+      byteSink.Printf(",%s)", alphaOutput);
       byteSink.WriteNewline();
 
       /* Write configurable element values */
@@ -107,7 +107,7 @@ namespace MFM
       {
         const ElementParameter<CC> * p = parms.GetParameter(j);
         byteSink.Printf(" SetElementParameter(%s,%s,%@)",
-                        lexOutput,
+                        alphaOutput,
                         p->GetTag(),
                         p);
         byteSink.WriteNewline();
@@ -146,8 +146,8 @@ namespace MFM
             if(Atom<CC>::IsType(*m_grid.GetAtom(currentPt),
                                 m_elementRegistry.GetEntryElement(i)->GetType()))
             {
-              IntLexEncode(i, lexOutput);
-              byteSink.Printf("%s", lexOutput);
+              IntAlphaEncode(i, alphaOutput);
+              byteSink.Printf("%s", alphaOutput);
               break;
             }
           }
@@ -166,8 +166,9 @@ namespace MFM
       for(u32 x = 0; x < GC::GRID_WIDTH; x++)
       {
         SPoint currentPt(x, y);
+        Tile<CC> & tile = m_grid.GetTile(currentPt);
 
-        if(!m_grid.GetTileExecutionStatus(currentPt))
+        if(tile.GetCurrentState() != Tile<CC>::ACTIVE)
         {
           byteSink.Printf("DisableTile(%d,%d)", x, y);
           byteSink.WriteNewline();
@@ -250,15 +251,17 @@ namespace MFM
   template<class GC>
   void ExternalConfig<GC>::SetTileToExecuteOnly(const SPoint& tileLoc, bool value)
   {
-    m_grid.SetTileToExecuteOnly(tileLoc, value);
+    m_grid.SetTileEnabled(tileLoc, !value);
   }
 
   template<class GC>
   bool ExternalConfig<GC>::PlaceAtom(const Element<CC> & elt, s32 x, s32 y, const char* hexData)
   {
     SPoint pt(x, y);
-    m_grid.PlaceAtom(elt.GetDefaultAtom(), pt);
-    m_grid.GetWritableAtom(pt)->ReadStateBits(hexData);
+    T atom = elt.GetDefaultAtom();
+
+    atom.ReadStateBits(hexData);
+    m_grid.PlaceAtom(atom, pt);
     return true;
   }
 
@@ -266,8 +269,10 @@ namespace MFM
   bool ExternalConfig<GC>::PlaceAtom(const Element<CC> & elt, s32 x, s32 y, const BitVector<BPA> & bv)
   {
     SPoint pt(x, y);
-    m_grid.PlaceAtom(elt.GetDefaultAtom(), pt);
-    m_grid.GetWritableAtom(pt)->ReadStateBits(bv);
+    T atom = elt.GetDefaultAtom();
+
+    atom.ReadStateBits(bv);
+    m_grid.PlaceAtom(atom, pt);
     return true;
   }
 }

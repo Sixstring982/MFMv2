@@ -440,9 +440,9 @@ namespace MFM
 
         if(selectedTile.GetX() >= 0 && selectedTile.GetY() >= 0)
         {
-          AbstractGridButton::m_driver->GetGrid().SetTileToExecuteOnly(
+          AbstractGridButton::m_driver->GetGrid().SetTileEnabled(
             selectedTile,
-            !AbstractGridButton::m_driver->GetGrid().GetTileExecutionStatus(selectedTile));
+            !AbstractGridButton::m_driver->GetGrid().IsTileEnabled(selectedTile));
         }
 
       }
@@ -482,7 +482,8 @@ namespace MFM
       m_statisticsPanel.SetAEPS(Super::GetAEPS());
       m_statisticsPanel.SetAER(Super::GetRecentAER());  // Use backwards averaged value
       m_statisticsPanel.SetAEPSPerFrame(Super::GetAEPSPerFrame());
-      m_statisticsPanel.SetOverheadPercent(Super::GetOverheadPercent());
+      //      m_statisticsPanel.SetOverheadPercent(Super::GetOverheadPercent());
+      m_statisticsPanel.SetOverheadPercent(Super::GetGrid().GetAverageCacheRedundancy());
     }
 
     virtual void DoEpochEvents(OurGrid& grid, u32 epochs, u32 epochAEPS)
@@ -532,7 +533,9 @@ namespace MFM
       m_statisticsPanel.SetAEPS(Super::GetAEPS());
       m_statisticsPanel.SetAER(Super::GetRecentAER());
       m_statisticsPanel.SetAEPSPerFrame(Super::GetAEPSPerFrame());
-      m_statisticsPanel.SetOverheadPercent(Super::GetOverheadPercent());
+
+  //      m_statisticsPanel.SetOverheadPercent(Super::GetOverheadPercent());
+      m_statisticsPanel.SetOverheadPercent(Super::GetGrid().GetAverageCacheRedundancy());
       m_statisticsPanel.SetVisibility(false);
 
       m_rootPanel.Insert(&m_gridPanel, NULL);
@@ -640,10 +643,7 @@ namespace MFM
       }
       else
       {
-        const s32 ONE_THOUSAND = 1000;
-        const s32 ONE_MILLION = ONE_THOUSAND*ONE_THOUSAND;
-
-        Sleep(0,33*ONE_MILLION); // 33 ms ~= 30 fps idle
+        SleepMsec(33); // 33 ms ~= 30 fps idle
       }
     }
 
@@ -1122,7 +1122,7 @@ namespace MFM
 
     }m_buttonPanel;
 
-    TextPanel<120,100> m_logPanel;  // 120 for timestamp and 96 BPA..
+    TextPanel<200,100> m_logPanel;  // 200 for big timestamps and such..
     TeeByteSink m_logSplitter;
 
     void SetScreenSize(u32 width, u32 height)

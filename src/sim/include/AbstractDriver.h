@@ -201,11 +201,6 @@ namespace MFM
       fp.Println();
     }
 
-    void SetIgnoreThreadingProblems(bool value)
-    {
-      m_ignoreThreadingProblems = value;
-    }
-
     void WriteTimeBasedData()
     {
       const char* path = GetSimDirPathTemporary("tbd/data.dat");
@@ -238,9 +233,6 @@ namespace MFM
      */
     void UpdateGrid(OurGrid& grid)
     {
-      const s32 ONE_THOUSAND = 1000;
-      const s32 ONE_MILLION = ONE_THOUSAND*ONE_THOUSAND;
-
       grid.Unpause();  // pausing and unpausing should be overhead!
 
       u32 startMS = GetTicks();  // So get the ticks after unpausing
@@ -249,8 +241,7 @@ namespace MFM
       else
         m_msSpentOverhead = 0;
 
-      Sleep(m_microsSleepPerFrame/ONE_MILLION,
-            (u64) (m_microsSleepPerFrame%ONE_MILLION)*ONE_THOUSAND);
+      SleepUsec(m_microsSleepPerFrame);
 
       m_ticksLastStopped = GetTicks(); // and before pausing
 
@@ -284,7 +275,7 @@ namespace MFM
 
       // Correct up to 20% of current each frame
       m_microsSleepPerFrame = (100+20*err)*m_microsSleepPerFrame/100;
-      m_microsSleepPerFrame = MIN(100000000, MAX(1000, m_microsSleepPerFrame));
+      m_microsSleepPerFrame = MIN(1000000, MAX(1000, m_microsSleepPerFrame));
 
       m_lastFrameAEPS = m_AEPS;
 
@@ -426,12 +417,11 @@ namespace MFM
       m_elementRegistry.Init();
 
       DefineNeededElements();
-
-      m_grid.SetIgnoreThreadingProblems(m_ignoreThreadingProblems);
     }
 
     /**
-     * The main loop which runs this simulation.
+     * The main loop which runs this simulation -- unless overridden
+     * by a subclass.
      */
     virtual void RunHelper()
     {
@@ -483,8 +473,6 @@ namespace MFM
 
     bool m_gridImages;
     bool m_tileImages;
-
-    bool m_ignoreThreadingProblems;
 
     double m_AEPS;
     /**
@@ -661,6 +649,19 @@ namespace MFM
       driver.m_haltAfterAEPS = atoi(aeps);
     }
 
+    static void SetWarpFactorFromArgs(const char* wfs, void* driverptr)
+    {
+      AbstractDriver& driver = *((AbstractDriver*)driverptr);
+      VArguments& args = driver.m_varguments;
+
+      s32 warpFactor = atoi(wfs);
+      if (warpFactor < 0 || warpFactor > 10)
+      {
+        args.Die("Warp factor must be 0..10, not '%s'", wfs);
+      }
+      driver.m_grid.SetWarpFactor(warpFactor);
+    }
+
     static void LoadFromConfigFile(const char* path, void* driverptr)
     {
       AbstractDriver& driver = *((AbstractDriver*)driverptr);
@@ -674,15 +675,6 @@ namespace MFM
       }
       driver.m_configurationPaths[driver.m_configurationPathCount] = path;
       ++driver.m_configurationPathCount;
-    }
-
-    static void SetIgnoreThreadingProblems(const char* not_used, void* driverptr)
-    {
-      AbstractDriver& driver = *((AbstractDriver*)driverptr);
-
-      LOG.Warning("Threading errors treatead as warnings. Beware of inconsistencies.");
-
-      driver.SetIgnoreThreadingProblems(true);
     }
 
     void CheckEpochProcessing(OurGrid& grid)
@@ -798,9 +790,7 @@ namespace MFM
     {
       LOG.Debug("Epoch %d: %d AEPS", epochs, epochAEPS);
 
-      grid.CheckCaches();
-
-      grid.RecountAtoms();
+      // XXX grid.CheckCaches();
 
       if (m_gridImages)
       {
@@ -820,8 +810,6 @@ namespace MFM
         fclose(fp);
       }
 
-
-
       if (m_autosavePerEpochs > 0 && (epochs % m_autosavePerEpochs) == 0)
       {
         this->AutosaveGrid(epochs);
@@ -839,7 +827,6 @@ namespace MFM
         ++m_acceleration;
       }
     }
-
 
     AbstractDriver() :
       m_neededElementCount(0),
@@ -859,7 +846,6 @@ namespace MFM
       m_surgeAfterEpochs(0),
       m_gridImages(false),
       m_tileImages(false),
-      m_ignoreThreadingProblems(false),
       m_AEPS(0),
       m_recentAER(0),
       m_lastTotalEvents(0),
@@ -869,7 +855,7 @@ namespace MFM
       m_currentConfigurationPath(U32_MAX)
     { }
 
-    void Init(u32 argc, const char** argv)
+    void ProcessArguments(u32 argc, const char** argv)
     {
       AddDriverArguments();
 
@@ -960,9 +946,8 @@ namespace MFM
       RegisterArgument("Load initial configuration from file at path ARG (string)",
                        "-cp|--configpath", &LoadFromConfigFile, this, true);
 
-      RegisterArgument("Continue execution after detected thread failures",
-                       "--ignorethreadbugs", &SetIgnoreThreadingProblems,
-                       this, false);
+      RegisterArgument("Set warp factor 0..10 (0: flattest space; 10: highest AER)",
+                       "-wf|--warpfactor", &SetWarpFactorFromArgs, this, true);
     }
 
 
@@ -1023,13 +1008,15 @@ namespace MFM
       m_grid.SetSeed(seed);
     }
 
-    void Reinit()
+    void Init()
     {
       m_lastFrameAEPS = 0;
 
       ReinitUs();
 
-      m_grid.Reinit();
+      m_grid.Init();
+
+      m_grid.InitThreads();
 
       m_grid.Needed(Element_Empty<CC>::THE_INSTANCE);
 
@@ -1040,6 +1027,9 @@ namespace MFM
       PostReinit(m_varguments);
 
       LoadFromConfigurationPath();
+
+      m_grid.SetGridRunning(true);
+
     }
 
     void Run()

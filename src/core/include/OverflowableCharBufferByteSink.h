@@ -82,6 +82,8 @@ namespace MFM {
       {
         m_buf[m_written++] = 'X';
       }
+
+      m_buf[m_written] = '\0'; // HELGRIND
     }
 
     /**
@@ -142,7 +144,7 @@ namespace MFM {
      */
     const char * GetZString()
     {
-      m_buf[m_written] = '\0';
+      // HELGRIND      m_buf[m_written] = '\0';
       return GetBuffer();
     }
 
@@ -220,13 +222,14 @@ namespace MFM {
      */
     OverflowableCharBufferByteSink<BUFSIZE>& operator=(const char* zstr)
     {
-      /* Check for >= to account for null byte written by snprintf */
-      if((m_written = strlen(zstr)) >= BUFSIZE)
+      if(strlen(zstr) >= GetCapacity())
       {
         FAIL(OUT_OF_ROOM);
       }
 
-      snprintf((char*)m_buf, BUFSIZE, "%s", zstr);
+      Reset();
+      Print(zstr);
+      GetZString(); // null terminate
 
       return *this;
     }
